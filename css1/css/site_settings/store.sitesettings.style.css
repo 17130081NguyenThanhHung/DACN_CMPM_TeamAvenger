@@ -1,0 +1,57 @@
+div.site-settings-page div.site-logo-favicon-upload div.files-attach-area {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box {
+    width: calc(50% - 10px);
+    height: 120px;
+    flex-basis: calc(50% - 10px);
+    min-width: calc(50% - 10px); }
+    div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box input {
+      display: none;
+      visibility: hidden; }
+    div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box div.filed-box-inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      border: 2px dashed #d4e3eb;
+      border-radius: 5px;
+      background: #f8fafb;
+      cursor: pointer;
+      transition: all 0.27s ease; }
+      div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box div.filed-box-inner span.icon {
+        font-size: 0px;
+        padding: 0;
+        margin: 0;
+        line-height: 0px; }
+        div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box div.filed-box-inner span.icon i {
+          font-size: 26px;
+          line-height: 26px;
+          color: #1fb4ef;
+          opacity: 0.7;
+          transition: all 0.27s ease; }
+      div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box div.filed-box-inner span.c2a {
+        font-size: 12px;
+        height: 18px;
+        color: #1fb4ef;
+        opacity: 0.7;
+        transition: all 0.27s ease;
+        text-align: center;
+        padding: 0;
+        margin-top: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 70%; }
+      div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box div.filed-box-inner:hover, div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box div.filed-box-inner:active, div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box div.filed-box-inner:focus {
+        border: 2px dashed #1fb4ef; }
+        div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box div.filed-box-inner:hover span.c2a, div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box div.filed-box-inner:hover span.icon i, div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box div.filed-box-inner:active span.c2a, div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box div.filed-box-inner:active span.icon i, div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box div.filed-box-inner:focus span.c2a, div.site-settings-page div.site-logo-favicon-upload div.files-attach-area div.file-filed-box div.filed-box-inner:focus span.icon i {
+          opacity: 1 !important; }
+
+/*# sourceMappingURL=store.sitesettings.style.css.map */

@@ -1,0 +1,245 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  header div.header-top-line div.content-container div.search-form-wrapper {
+    width: 20rem !important; }
+  header div.header-top-line div.right-drop-down li.profile-nav-dd img {
+    width: 25px !important;
+    height: 25px !important; }
+  header div.header-top-line div.right-drop-down li.profile-nav-dd a span.user-name {
+    display: none !important; }
+  header div.header-top-line div.right-drop-down li.user-basket a span.total-items {
+    display: none !important; }
+    header div.header-top-line div.right-drop-down li.user-basket a span.total-items span {
+      display: inline-block; }
+  header div.header-bottom-line ul.navbar-nav li a.nav-link span {
+    font-size: 12px !important; }
+  header div.header-bottom-line ul.navbar-nav li:nth-child(9), header div.header-bottom-line ul.navbar-nav li:nth-child(8) {
+    display: none !important; } }
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  header div.header-top-line div.content-container nav.nav-bar-top-line div.search-form-wrapper {
+    width: 16rem !important; }
+  header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.profile-nav-dd img {
+    width: 25px !important;
+    height: 25px !important; }
+  header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.profile-nav-dd a span.user-name {
+    display: none !important; }
+  header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-basket a span.total-items span.txt {
+    display: none !important; }
+  header div.header-bottom-line ul.navbar-nav li a.nav-link span {
+    font-size: 12px !important; }
+  header div.header-bottom-line ul.navbar-nav li:nth-child(9), header div.header-bottom-line ul.navbar-nav li:nth-child(8), header div.header-bottom-line ul.navbar-nav li:nth-child(7) {
+    display: none !important; }
+
+  footer.footer-fluid div.content-container div.top-line ul li {
+    margin: 0 !important; }
+    footer.footer-fluid div.content-container div.top-line ul li a {
+      font-size: 12px !important; } }
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 780px) {
+  header div.header-top-line div.content-container {
+    padding: 0px 20px; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.mobile-navbar-toggle {
+      display: inherit !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.search-form-wrapper, header div.header-top-line div.content-container nav.nav-bar-top-line div.logo-block {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li {
+      margin-left: 5px !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.profile-nav-dd {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-basket .total-items {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-basket span.new-messages {
+      font-size: 11px !important;
+      display: inline-block !important;
+      right: -5px !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.search-bar {
+      display: inherit !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-wishlist {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-messages {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-language-dd {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-notifications-dd span.new-messages {
+      font-size: 11px !important;
+      display: inline-block !important;
+      right: -5px !important; }
+  header div.header-bottom-line {
+    display: none !important; }
+
+  div.main-container {
+    padding-top: 10px !important; }
+
+  footer.footer-fluid div.content-container {
+    padding: 0px 20px !important; }
+    footer.footer-fluid div.content-container div.top-line ul li {
+      margin: 0 !important; }
+      footer.footer-fluid div.content-container div.top-line ul li a {
+        font-size: 12px !important; }
+
+  div.scrollpage2-top {
+    right: 20px !important; }
+    div.scrollpage2-top button {
+      width: 30px;
+      height: 30px; }
+
+  div.announcements-container div.announcement {
+    padding: 20px 30px !important; }
+    div.announcements-container div.announcement div.got-it {
+      align-self: flex-start !important; }
+    div.announcements-container div.announcement div.icon {
+      display: none !important; }
+    div.announcements-container div.announcement div.message {
+      margin-left: 0px !important;
+      border-left: none !important;
+      padding-left: 0px !important; } }
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  header div.header-top-line div.content-container {
+    padding: 0px !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.mobile-navbar-toggle {
+      display: inherit !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.search-form-wrapper, header div.header-top-line div.content-container nav.nav-bar-top-line div.logo-block {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li {
+      margin-left: 5px !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.profile-nav-dd {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-basket .total-items {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-basket span.new-messages {
+      font-size: 9px !important;
+      display: inline-block !important;
+      right: -5px !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.search-bar {
+      display: inherit !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-wishlist {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-messages {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-language-dd {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-notifications-dd span.new-messages {
+      font-size: 9px !important;
+      display: inline-block !important;
+      right: -5px !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-notifications-dd div.dropdown-menu {
+      right: -35px !important;
+      top: 40px !important;
+      width: 300px !important; }
+  header div.header-bottom-line {
+    display: none !important; }
+
+  div.main-container {
+    padding-top: 10px !important; }
+
+  div.scrollpage2-top {
+    right: 10px !important; }
+    div.scrollpage2-top button {
+      width: 30px;
+      height: 30px; }
+
+  footer.footer-fluid div.content-container {
+    padding: 0px 20px !important; }
+    footer.footer-fluid div.content-container div.top-line ul li {
+      margin: 0 !important; }
+      footer.footer-fluid div.content-container div.top-line ul li a {
+        font-size: 10px !important;
+        line-height: 18px !important; }
+
+  div.announcements-container div.announcement {
+    padding: 15px 20px !important; }
+    div.announcements-container div.announcement div.got-it {
+      align-self: flex-start !important; }
+    div.announcements-container div.announcement div.icon {
+      display: none !important; }
+    div.announcements-container div.announcement div.message {
+      margin-left: 0px !important;
+      border-left: none !important;
+      padding-left: 0px !important; }
+      div.announcements-container div.announcement div.message h4 {
+        font-size: 12px !important;
+        line-height: 18px !important; }
+      div.announcements-container div.announcement div.message p {
+        font-size: 10px !important;
+        line-height: 14px !important; } }
+@media (min-width: 240px) and (max-width: 320px) {
+  header div.header-top-line div.content-container {
+    padding: 0px !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.mobile-navbar-toggle {
+      display: inherit !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.search-form-wrapper, header div.header-top-line div.content-container nav.nav-bar-top-line div.logo-block {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li {
+      margin-left: 5px !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.profile-nav-dd {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.search-bar {
+      display: inherit !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-wishlist {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-messages {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-language-dd {
+      display: none !important; }
+    header div.header-top-line div.content-container nav.nav-bar-top-line div.right-drop-down li.user-notifications-dd div.dropdown-menu {
+      right: -65px !important;
+      width: 270px !important; }
+  header div.header-bottom-line {
+    display: none !important; }
+
+  div.main-container {
+    padding-top: 10px !important; }
+
+  footer.footer-fluid div.content-container {
+    padding: 0px 10px !important; }
+    footer.footer-fluid div.content-container div.top-line ul li {
+      margin: 0 !important; }
+      footer.footer-fluid div.content-container div.top-line ul li a {
+        font-size: 10px !important;
+        line-height: 18px !important; }
+
+  div.scrollpage2-top {
+    right: 10px !important; }
+    div.scrollpage2-top button {
+      width: 30px;
+      height: 30px; }
+
+  div.announcements-container div.announcement {
+    padding: 15px 20px !important; }
+    div.announcements-container div.announcement div.got-it {
+      align-self: flex-start !important; }
+    div.announcements-container div.announcement div.icon {
+      display: none !important; }
+    div.announcements-container div.announcement div.message {
+      margin-left: 0px !important;
+      border-left: none !important;
+      padding-left: 0px !important; }
+      div.announcements-container div.announcement div.message h4 {
+        font-size: 12px !important;
+        line-height: 18px !important; }
+      div.announcements-container div.announcement div.message p {
+        font-size: 10px !important;
+        line-height: 14px !important; } }
+@media (min-width: 10px) and (max-width: 240px) {
+  body {
+    display: none !important; } }
+
+/*# sourceMappingURL=media.queries.css.map */

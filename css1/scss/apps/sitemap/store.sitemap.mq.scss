@@ -1,0 +1,136 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)                                    @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ HighExpress - The Ultimate Modern Marketplace Platform                  @
+// @ Copyright (c) 05.07.19 HighExpress. All rights reserved.                @
+// @*************************************************************************@
+
+$black:#192a32;
+$black2: #2d2f43;
+$main:#1fb4ef;
+$link:#003569;
+$border:#e6e6e6;
+$pl_holder:#72777c;
+$red:#ff7676;
+$red2:#f6546a;
+$green:#00ff7f;
+$btn_shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px;
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 780px) {
+    div.sitemap-generation-page{
+        div.form-fieldset-title{
+            div.row{
+                margin: 0px !important;
+            }
+        }
+
+        div.form-group.form-field-box{
+            div.row{
+                margin: 0px !important;
+                div.text-right{
+                    text-align: left !important;
+                    padding: 0 !important;
+                    label{
+                        padding-top: 0px !important;
+                        margin-bottom: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    div.sitemap-generation-page{
+        div.form-fieldset-title{
+            div.row{
+                margin: 0px !important;
+            }
+        }
+
+        div.form-group.form-field-box{
+            div.row{
+                margin: 0px !important;
+                div.text-right{
+                    text-align: left !important;
+                    padding: 0 !important;
+                    label{
+                        padding-top: 0px !important;
+                        margin-bottom: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 240px) and (max-width: 320px) {
+    div.sitemap-generation-page{
+        div.form-fieldset-title{
+            div.row{
+                margin: 0px !important;
+            }
+        }
+
+        div.form-group.form-field-box{
+            div.row{
+                margin: 0px !important;
+                div.text-right{
+                    text-align: left !important;
+                    padding: 0 !important;
+                    label{
+                        padding-top: 0px !important;
+                        margin-bottom: 10px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 10px) and (max-width: 240px) {
+    body{
+        display: none;
+    }
+}

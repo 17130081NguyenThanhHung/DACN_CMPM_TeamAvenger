@@ -1,0 +1,30 @@
+div.changelogs-timeline-page {
+  width: 100%; }
+  div.changelogs-timeline-page div.card div.header h2 small {
+    display: inline-block; }
+    div.changelogs-timeline-page div.card div.header h2 small i {
+      font-size: 16px;
+      line-height: 16px;
+      vertical-align: middle;
+      top: 0px; }
+  div.changelogs-timeline-page div.card div.body ul {
+    width: 100%;
+    margin-bottom: 0px;
+    padding: 0px; }
+    div.changelogs-timeline-page div.card div.body ul li {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin-bottom: 10px;
+      align-items: flex-start; }
+      div.changelogs-timeline-page div.card div.body ul li span.changelog-message {
+        font-size: 13px;
+        color: #1fb4ef; }
+      div.changelogs-timeline-page div.card div.body ul li span.badge {
+        margin-right: 10px; }
+      div.changelogs-timeline-page div.card div.body ul li:last-child {
+        margin-bottom: 0px !important; }
+
+/*# sourceMappingURL=store.changelogs.style.css.map */

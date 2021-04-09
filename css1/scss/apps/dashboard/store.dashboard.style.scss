@@ -1,0 +1,88 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)                                    @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ HighExpress - The Ultimate Modern Marketplace Platform                  @
+// @ Copyright (c) 05.07.19 HighExpress. All rights reserved.                @
+// @*************************************************************************@
+
+$black:#192a32;
+$black2: #2d2f43;
+$main:#1fb4ef;
+$link:#003569;
+$border:#e6e6e6;
+$pl_holder:#72777c;
+$red:#ff7676;
+$red2:#f6546a;
+$green:#00ff7f;
+$btn_shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px;
+
+
+div.store-dashboard-container{
+	&.user{
+		canvas#weekly_stats{
+			height: 400px !important;
+		}
+
+		div.quick-stats-card{
+			height: 325px;
+			overflow: hidden;
+
+
+			.dashboard-stat-list {
+				list-style: none;
+				padding-left: 0;
+				margin-top: 40px; 
+
+				li {
+			    	padding: 16px 0 0 0; 
+			    	small {
+				    	font-size: 8px; 
+				  	}
+				}
+			}
+		}
+
+		div.most-selling-items{
+			height: 325px;
+			overflow: hidden;
+			.body{
+				height: 100%;
+				ul.dashboard-stat-list{
+					li{
+						padding-top: 13px;
+						a{
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+
+		table.weekly-earnings-table{
+			tr td{
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+div.admin-dashboard-panel-wrapper{
+	width: 100%;
+	display: block;
+
+	canvas#yearly_markets_analytics{
+		width: 100%;
+		height: 370px !important;
+	}
+
+	table.annual-earnings-table{
+		tr td{
+			font-size: 12px;
+		}
+	}
+}
+
+

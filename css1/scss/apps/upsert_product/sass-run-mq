@@ -1,0 +1,1 @@
+scss --watch store.upsertprod.mq.scss:../../../css/apps/upsert_product/store.upsertprod.mq.css

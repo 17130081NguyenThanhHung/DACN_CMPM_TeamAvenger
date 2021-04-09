@@ -1,0 +1,619 @@
+div.wishlist-page-container {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  padding: 0px;
+  min-height: calc(100vh - 120px); }
+  div.wishlist-page-container nav.breadcrumbs-cust ol {
+    padding-bottom: 20px; }
+    div.wishlist-page-container nav.breadcrumbs-cust ol li {
+      color: #9697a1; }
+  div.wishlist-page-container .left-part {
+    width: 100%;
+    display: block; }
+    div.wishlist-page-container .left-part .wlist-navbar-wrapper {
+      width: 100%;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: none;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px; }
+      div.wishlist-page-container .left-part .wlist-navbar-wrapper .wlist-navbar {
+        width: 100%;
+        overflow: hidden;
+        display: block; }
+        div.wishlist-page-container .left-part .wlist-navbar-wrapper .wlist-navbar h5 {
+          width: 100%;
+          overflow: hidden;
+          padding: 15px 20px;
+          margin: 0 0 0 0;
+          font-size: 16px;
+          line-height: 20px;
+          color: #2d2f43;
+          border-bottom: 1px solid #eee; }
+        div.wishlist-page-container .left-part .wlist-navbar-wrapper .wlist-navbar ul {
+          width: 100%;
+          display: block;
+          padding: 5px 15px;
+          margin: 0;
+          list-style-type: none; }
+          div.wishlist-page-container .left-part .wlist-navbar-wrapper .wlist-navbar ul li a {
+            font-size: 13px;
+            line-height: 30px;
+            color: #2d2f43;
+            text-decoration: none;
+            width: 100%;
+            transition: all 0.15s ease-in-out; }
+            div.wishlist-page-container .left-part .wlist-navbar-wrapper .wlist-navbar ul li a:hover, div.wishlist-page-container .left-part .wlist-navbar-wrapper .wlist-navbar ul li a:active {
+              color: #ff7676; }
+        div.wishlist-page-container .left-part .wlist-navbar-wrapper .wlist-navbar .add-new-list {
+          width: 100%;
+          overflow: hidden;
+          border-top: 1px solid #eee;
+          padding: 15px; }
+          div.wishlist-page-container .left-part .wlist-navbar-wrapper .wlist-navbar .add-new-list button {
+            width: 100%;
+            background: #ff7676;
+            color: #fff;
+            font-size: 13px;
+            line-height: 16px;
+            border: 1px solid #ff7676;
+            border-color: #ff7676;
+            padding: 8px 0px; }
+    div.wishlist-page-container .left-part .footer-sm {
+      width: 100%;
+      overflow: hidden;
+      padding: 15px;
+      background: #fff;
+      border: none;
+      border-radius: 5px;
+      line-height: 0px; }
+      div.wishlist-page-container .left-part .footer-sm .top-line {
+        width: 100%;
+        overflow: hidden;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #e6e6e6; }
+        div.wishlist-page-container .left-part .footer-sm .top-line ul {
+          width: 100%;
+          overflow: hidden;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          list-style-type: none;
+          padding: 0;
+          margin: 0; }
+          div.wishlist-page-container .left-part .footer-sm .top-line ul li {
+            line-height: 0px; }
+            div.wishlist-page-container .left-part .footer-sm .top-line ul li a {
+              line-height: 20px;
+              color: #9697a1;
+              text-decoration: none;
+              margin-right: 20px;
+              font-size: 12px;
+              transition: color 0.27s ease-in-out; }
+              div.wishlist-page-container .left-part .footer-sm .top-line ul li a:hover, div.wishlist-page-container .left-part .footer-sm .top-line ul li a:active {
+                color: #ff7676; }
+      div.wishlist-page-container .left-part .footer-sm .bottom-line {
+        width: 100%;
+        overflow: hidden;
+        line-height: 0px;
+        margin-top: 10px; }
+        div.wishlist-page-container .left-part .footer-sm .bottom-line ul {
+          width: 100%;
+          overflow: hidden;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          line-height: 0px;
+          height: auto;
+          min-height: 0px; }
+          div.wishlist-page-container .left-part .footer-sm .bottom-line ul li {
+            line-height: 0px;
+            padding: 0px;
+            height: auto;
+            min-height: 0px; }
+            div.wishlist-page-container .left-part .footer-sm .bottom-line ul li a {
+              line-height: 12px;
+              color: #9697a1;
+              text-decoration: none;
+              font-size: 12px; }
+  div.wishlist-page-container .empty-wish-list {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    padding: 20px; }
+    div.wishlist-page-container .empty-wish-list .inner {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 300px; }
+      div.wishlist-page-container .empty-wish-list .inner div.icon svg {
+        width: 60px;
+        height: 60px;
+        fill: #ff7676; }
+      div.wishlist-page-container .empty-wish-list .inner h5 {
+        font-size: 22px;
+        line-height: 38px;
+        color: #192a32;
+        padding: 0;
+        margin: 0;
+        text-align: center; }
+      div.wishlist-page-container .empty-wish-list .inner p {
+        padding: 0;
+        margin: 0 0 20px 0;
+        font-size: 14px;
+        line-height: 16px;
+        color: #2d2f43;
+        text-align: center; }
+        div.wishlist-page-container .empty-wish-list .inner p svg {
+          width: 15px;
+          height: 15px;
+          fill: #ff7676; }
+      div.wishlist-page-container .empty-wish-list .inner a {
+        text-decoration: none; }
+        div.wishlist-page-container .empty-wish-list .inner a button {
+          border: 1px solid #ff7676;
+          outline: 0;
+          padding: 12px 40px;
+          box-shadow: none;
+          background: transparent;
+          color: #ff7676;
+          font-size: 14px;
+          line-height: 16px;
+          text-decoration: none;
+          border-radius: 3px; }
+          div.wishlist-page-container .empty-wish-list .inner a button:active, div.wishlist-page-container .empty-wish-list .inner a button:hover, div.wishlist-page-container .empty-wish-list .inner a button:focus {
+            background: transparent;
+            border-color: #ff7676;
+            outline: 0;
+            box-shadow: none; }
+          div.wishlist-page-container .empty-wish-list .inner a button.back {
+            background: #ff7676;
+            color: #fff; }
+  div.wishlist-page-container .right-part .prods-items-container {
+    margin: 0px -10px; }
+  div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel {
+    width: 100%;
+    background: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none; }
+    div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.curr-list {
+      width: 100%;
+      padding: 15px 20px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.curr-list div.curr-list-name {
+        line-height: 18px; }
+        div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.curr-list div.curr-list-name h5 {
+          font-size: 16px;
+          line-height: 20px;
+          color: #2d2f43;
+          margin: 0;
+          padding: 0px; }
+      div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.curr-list div.manage-list {
+        line-height: 18px; }
+        div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.curr-list div.manage-list a.dropdown-toggle {
+          cursor: pointer; }
+          div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.curr-list div.manage-list a.dropdown-toggle:before {
+            display: none; }
+          div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.curr-list div.manage-list a.dropdown-toggle svg {
+            width: 20px;
+            height: 20px;
+            fill: #72777c; }
+          div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.curr-list div.manage-list a.dropdown-toggle:hover svg, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.curr-list div.manage-list a.dropdown-toggle:active svg {
+            fill: #ff7676; }
+        div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.curr-list div.manage-list div.dropdown-menu {
+          right: 20px !important;
+          left: auto !important;
+          top: 20px !important;
+          border: none;
+          box-shadow: 2px 1rem 1.33rem rgba(0, 0, 0, 0.1), 0 0.6rem 1.33rem rgba(0, 0, 0, 0.1); }
+          div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.curr-list div.manage-list div.dropdown-menu a.dropdown-item {
+            font-size: 13px;
+            color: #192a32;
+            line-height: 30px; }
+            div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.curr-list div.manage-list div.dropdown-menu a.dropdown-item:active, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.curr-list div.manage-list div.dropdown-menu a.dropdown-item:hover {
+              background: #fff;
+              color: #ff7676; }
+    div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form {
+      padding: 15px 15px 0px 15px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center; }
+      div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option {
+        flex-basis: auto;
+        margin-right: 10px;
+        margin-bottom: 15px; }
+        div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option div.bootstrap-select {
+          width: auto !important; }
+        div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-toggle {
+          border: 1px solid #eee;
+          font-size: 12px;
+          color: #2d2f43;
+          padding: 0px 15px;
+          line-height: 30px;
+          border-radius: 3px;
+          display: block;
+          cursor: pointer; }
+          div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-toggle span {
+            line-height: inherit; }
+        div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu {
+          top: 40px !important;
+          border: none;
+          box-shadow: 0 -0.6rem 1.33rem rgba(0, 0, 0, 0.1), 0 0.6rem 1.33rem rgba(0, 0, 0, 0.1); }
+          div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table {
+            padding: 15px; }
+            div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table tr td.input {
+              padding: 5px 15px 5px 10px; }
+              div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table tr td.input input {
+                border: 1px solid #eee;
+                border-radius: 5px;
+                width: 130px;
+                outline: 0;
+                transition: all 0.30s ease-in-out;
+                color: #72777c;
+                font-size: 12px;
+                padding: 5px 5px 5px 15px; }
+                div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table tr td.input input:active, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table tr td.input input:hover, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table tr td.input input:focus {
+                  border: 1px solid #ff7676; }
+                  div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table tr td.input input:active::placeholder, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table tr td.input input:hover::placeholder, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table tr td.input input:focus::placeholder {
+                    color: #ff7676; }
+                div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table tr td.input input::placeholder {
+                  transition: all 0.30s ease-in-out;
+                  color: #72777c;
+                  font-size: 12px; }
+            div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table tr td.label {
+              padding-left: 15px; }
+              div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table tr td.label span {
+                font-size: 12px;
+                line-height: 12px;
+                color: #192a32;
+                font-weight: 700; }
+            div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table tr td.apply-filter {
+              padding: 10px 15px 5px 10px; }
+              div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.price-range .dropdown-menu table tr td.apply-filter button {
+                border: 1px solid #ff7676;
+                background: #ff7676;
+                color: #fff;
+                font-size: 12px;
+                width: 100%;
+                padding: 5px 0px;
+                text-align: center;
+                border-radius: 5px; }
+        div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-toggle, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-toggle {
+          border: 1px solid #eee;
+          font-size: 12px;
+          color: #2d2f43;
+          padding: 0px 15px;
+          line-height: 30px;
+          border-radius: 3px;
+          display: block;
+          cursor: pointer; }
+          div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-toggle span, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-toggle span {
+            line-height: inherit; }
+        div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu {
+          top: 40px !important;
+          border: none;
+          top: 40px !important;
+          box-shadow: 0 -0.6rem 1.33rem rgba(0, 0, 0, 0.1), 0 0.6rem 1.33rem rgba(0, 0, 0, 0.1); }
+          div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table {
+            padding: 15px; }
+            div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table tr td.input, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table tr td.input {
+              padding: 5px 15px 5px 10px; }
+              div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table tr td.input input, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table tr td.input input {
+                border: 1px solid #eee;
+                border-radius: 5px;
+                width: 200px;
+                outline: 0;
+                transition: all 0.30s ease-in-out;
+                color: #72777c;
+                font-size: 12px;
+                padding: 5px 5px 5px 15px; }
+                div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table tr td.input input:active, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table tr td.input input:hover, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table tr td.input input:focus, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table tr td.input input:active, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table tr td.input input:hover, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table tr td.input input:focus {
+                  border: 1px solid #ff7676; }
+                  div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table tr td.input input:active::placeholder, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table tr td.input input:hover::placeholder, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table tr td.input input:focus::placeholder, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table tr td.input input:active::placeholder, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table tr td.input input:hover::placeholder, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table tr td.input input:focus::placeholder {
+                    color: #ff7676; }
+                div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table tr td.input input::placeholder, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table tr td.input input::placeholder {
+                  transition: all 0.30s ease-in-out;
+                  color: #72777c;
+                  font-size: 12px; }
+            div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table tr td.label, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table tr td.label {
+              padding-left: 15px; }
+              div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table tr td.label span, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table tr td.label span {
+                font-size: 12px;
+                line-height: 12px;
+                color: #192a32;
+                font-weight: 700; }
+            div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table tr td.apply-filter, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table tr td.apply-filter {
+              padding: 10px 15px 5px 10px; }
+              div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.brand-name .dropdown-menu table tr td.apply-filter button, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.key-word .dropdown-menu table tr td.apply-filter button {
+                border: 1px solid #ff7676;
+                background: #ff7676;
+                color: #fff;
+                font-size: 12px;
+                width: 100%;
+                padding: 5px 0px;
+                text-align: center;
+                border-radius: 5px; }
+        div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.bootstrap-select-picker button.dropdown-toggle {
+          background: #fff;
+          border: 1px solid #eee;
+          font-size: 12px;
+          color: #192a32;
+          outline: 0 !important;
+          box-shadow: none; }
+        div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.bootstrap-select-picker .dropdown-menu {
+          max-height: 250px;
+          top: 40px !important;
+          border: none;
+          box-shadow: 0 -0.6rem 1.33rem rgba(0, 0, 0, 0.1), 0 0.6rem 1.33rem rgba(0, 0, 0, 0.1); }
+          div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.bootstrap-select-picker .dropdown-menu .bs-searchbox {
+            padding: 5px 15px; }
+            div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.bootstrap-select-picker .dropdown-menu .bs-searchbox input {
+              box-shadow: none;
+              border: 1px solid #eee;
+              border-radius: 5px;
+              padding: 0px 0px 0px 15px;
+              height: 30px;
+              color: #72777c;
+              font-size: 13px; }
+              div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.bootstrap-select-picker .dropdown-menu .bs-searchbox input:active, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.bootstrap-select-picker .dropdown-menu .bs-searchbox input:hover, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.bootstrap-select-picker .dropdown-menu .bs-searchbox input:focus {
+                border: 2px solid #ff7676; }
+          div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.bootstrap-select-picker .dropdown-menu .dropdown-item {
+            font-size: 13px;
+            color: #192a32; }
+            div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.bootstrap-select-picker .dropdown-menu .dropdown-item:hover, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.bootstrap-select-picker .dropdown-menu .dropdown-item:active, div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.bootstrap-select-picker .dropdown-menu .dropdown-item:focus {
+              background: #fff; }
+            div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option.bootstrap-select-picker .dropdown-menu .dropdown-item.active {
+              background: #fff; }
+        div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option button.reset-filter {
+          border: 1px solid #ff7676;
+          font-size: 12px;
+          line-height: 28px;
+          padding: 0 30px;
+          border-radius: 3px;
+          color: #fff;
+          background: #ff7676;
+          outline: 0 !important;
+          box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+        div.wishlist-page-container .right-part .pords-sorting-panel-wrapper .pords-sorting-panel div.filter-form-wrapper form div.filt-option button:disabled {
+          opacity: 0.3;
+          cursor: not-allowed; }
+  div.wishlist-page-container .right-part .active-filter-options {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    div.wishlist-page-container .right-part .active-filter-options div.option {
+      line-height: 0px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px;
+      padding: 1px 15px;
+      margin-bottom: 20px;
+      margin-right: 5px; }
+      div.wishlist-page-container .right-part .active-filter-options div.option span.val {
+        font-size: 12px;
+        line-height: 24px;
+        color: #192a32; }
+      div.wishlist-page-container .right-part .active-filter-options div.option span.delete {
+        cursor: pointer; }
+        div.wishlist-page-container .right-part .active-filter-options div.option span.delete svg {
+          width: 15px;
+          height: 15px;
+          fill: #192a32; }
+      div.wishlist-page-container .right-part .active-filter-options div.option:hover span svg {
+        fill: #ff7676; }
+  div.wishlist-page-container .right-part .prealoader-wrapper {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+    div.wishlist-page-container .right-part .prealoader-wrapper.hidden {
+      display: none;
+      visibility: hidden; }
+    div.wishlist-page-container .right-part .prealoader-wrapper:not(.hidden) ~ .prods-items-container {
+      display: none;
+      visibility: hidden; }
+    div.wishlist-page-container .right-part .prealoader-wrapper:not(.hidden) ~ .prods-items-container-404 {
+      display: none;
+      visibility: hidden; }
+    div.wishlist-page-container .right-part .prealoader-wrapper:not(.hidden) ~ .load-more-pruducts {
+      display: none;
+      visibility: hidden; }
+    div.wishlist-page-container .right-part .prealoader-wrapper div.loader-icon {
+      width: 30px;
+      height: 30px; }
+      div.wishlist-page-container .right-part .prealoader-wrapper div.loader-icon svg {
+        width: 100%;
+        height: 100%; }
+    div.wishlist-page-container .right-part .prealoader-wrapper h5 {
+      padding: 0;
+      margin: 0;
+      font-size: 13px;
+      font-weight: 300;
+      color: #72777c;
+      margin-top: 10px; }
+  div.wishlist-page-container .right-part .prods-items-container div.galcolumn {
+    padding: 0px 10px !important; }
+    div.wishlist-page-container .right-part .prods-items-container div.galcolumn div.prod-item {
+      border-radius: 5px;
+      overflow: hidden; }
+      div.wishlist-page-container .right-part .prods-items-container div.galcolumn div.prod-item > a {
+        overflow: visible !important;
+        position: relative; }
+      div.wishlist-page-container .right-part .prods-items-container div.galcolumn div.prod-item div.prod-img {
+        position: relative;
+        height: auto; }
+        div.wishlist-page-container .right-part .prods-items-container div.galcolumn div.prod-item div.prod-img .total-sales span.inline-label {
+          width: auto !important; }
+      div.wishlist-page-container .right-part .prods-items-container div.galcolumn div.prod-item .remove-from-list {
+        transition: all 0.27s ease;
+        position: absolute;
+        right: 15px;
+        bottom: 75px;
+        display: none; }
+        div.wishlist-page-container .right-part .prods-items-container div.galcolumn div.prod-item .remove-from-list button.delete-wl-item {
+          border-radius: 10em;
+          width: 30px;
+          height: 30px;
+          background: #ff7676;
+          border: none;
+          outline: 0;
+          margin: 0;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 20px 6px;
+          padding: 0;
+          position: relative; }
+          div.wishlist-page-container .right-part .prods-items-container div.galcolumn div.prod-item .remove-from-list button.delete-wl-item svg {
+            width: 25px;
+            height: 20px;
+            fill: rgba(0, 0, 0, 0.12);
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto; }
+      div.wishlist-page-container .right-part .prods-items-container div.galcolumn div.prod-item:hover {
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+        div.wishlist-page-container .right-part .prods-items-container div.galcolumn div.prod-item:hover .remove-from-list {
+          display: block; }
+  div.wishlist-page-container .right-part .filter-404 {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center; }
+    div.wishlist-page-container .right-part .filter-404 div.icon {
+      width: 30px;
+      height: 30px; }
+      div.wishlist-page-container .right-part .filter-404 div.icon svg {
+        width: 100%;
+        height: 100%;
+        fill: #72777c; }
+    div.wishlist-page-container .right-part .filter-404 h5 {
+      padding: 0;
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+      color: #192a32;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    div.wishlist-page-container .right-part .filter-404 p {
+      font-size: 13px;
+      line-height: 14px;
+      color: #2d2f43; }
+  div.wishlist-page-container div.wlist-navbar ul li.active {
+    font-weight: 700; }
+    div.wishlist-page-container div.wlist-navbar ul li.active a {
+      color: #ff7676 !important; }
+  div.wishlist-page-container .load-more-pruducts {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px 0; }
+    div.wishlist-page-container .load-more-pruducts button {
+      padding: 5px 20px;
+      color: #ff7676;
+      border-radius: 4px;
+      border: 1px solid #ff7676;
+      outline: 0;
+      font-size: 13px;
+      box-shadow: none;
+      background: transparent; }
+      div.wishlist-page-container .load-more-pruducts button:disabled {
+        cursor: not-allowed;
+        opacity: 0.5; }
+
+div.create--edit-wishlist-modal.show {
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100%;
+  height: 100%; }
+  div.create--edit-wishlist-modal.show div.modal-dialog {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: auto;
+    min-width: 440px;
+    max-width: 440px; }
+div.create--edit-wishlist-modal div.modal-content {
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+  div.create--edit-wishlist-modal div.modal-content div.modal-header {
+    padding: 15px 20px;
+    line-height: 0px;
+    border-bottom: 1px solid #eee; }
+    div.create--edit-wishlist-modal div.modal-content div.modal-header h5 {
+      font-size: 16px;
+      color: #2d2f43; }
+  div.create--edit-wishlist-modal div.modal-content div.modal-body {
+    padding: 15px 20px; }
+    div.create--edit-wishlist-modal div.modal-content div.modal-body div.input-box {
+      line-height: 0px;
+      width: 100%; }
+      div.create--edit-wishlist-modal div.modal-content div.modal-body div.input-box label {
+        font-size: 13px;
+        line-height: 13px;
+        color: #9697a1; }
+      div.create--edit-wishlist-modal div.modal-content div.modal-body div.input-box input {
+        border: 1px solid #eee;
+        border-radius: 2px;
+        height: 34px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+        div.create--edit-wishlist-modal div.modal-content div.modal-body div.input-box input::placeholder {
+          font-size: 13px;
+          color: #72777c; }
+      div.create--edit-wishlist-modal div.modal-content div.modal-body div.input-box small {
+        font-size: 11px;
+        color: #1fb4ef;
+        line-height: 22px; }
+        div.create--edit-wishlist-modal div.modal-content div.modal-body div.input-box small svg {
+          width: 13px;
+          height: 13px;
+          fill: #1fb4ef;
+          margin-right: 5px; }
+        div.create--edit-wishlist-modal div.modal-content div.modal-body div.input-box small.error-message {
+          color: #ff7676 !important; }
+  div.create--edit-wishlist-modal div.modal-content div.modal-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #eee; }
+    div.create--edit-wishlist-modal div.modal-content div.modal-footer button {
+      padding: 5px 15px;
+      line-height: 19px;
+      font-size: 13px;
+      border-radius: 2px;
+      font-weight: 300; }
+      div.create--edit-wishlist-modal div.modal-content div.modal-footer button.create {
+        border: 1px solid #ff7676;
+        color: #fff;
+        background: #ff7676; }
+      div.create--edit-wishlist-modal div.modal-content div.modal-footer button.cancel {
+        border: 1px solid #9d9d9d;
+        color: #fff;
+        background: #9d9d9d; }
+
+/*# sourceMappingURL=wishlist.master.style.css.map */

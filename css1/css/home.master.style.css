@@ -1,0 +1,22 @@
+div.home-page-content-wrapper {
+  width: 100%;
+  overflow: hidden;
+  min-height: calc(100vh - 210px); }
+  div.home-page-content-wrapper nav.breadcrumbs-cust {
+    padding-left: 10px !important;
+    padding-right: 10px !important; }
+  div.home-page-content-wrapper div.prods-grid-items-preloader {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    div.home-page-content-wrapper div.prods-grid-items-preloader.hidden {
+      display: none;
+      visibility: hidden;
+      opacity: 0; }
+    div.home-page-content-wrapper div.prods-grid-items-preloader div.data-preloader {
+      line-height: 0px; }
+
+/*# sourceMappingURL=home.master.style.css.map */

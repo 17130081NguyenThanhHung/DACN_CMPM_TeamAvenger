@@ -1,0 +1,135 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 780px) {
+  form.product-upsert-form div.body div.row {
+    margin: 0px !important; }
+
+  div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.row {
+    margin: 0px !important; }
+  div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.form-group div.text-right {
+    text-align: left !important;
+    margin-bottom: 10px !important;
+    padding: 0px !important; }
+    div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.form-group div.text-right label {
+      padding: 0px !important; }
+  div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.var-list-item div.body-content {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+
+  div.edit-prodvar-modal .row {
+    margin: 0px !important; } }
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  form.product-upsert-form div.body div.row {
+    margin: 0px !important; }
+  form.product-upsert-form div.body div.form-group.form-field-box div.prod-pickzone-wrapper div.left-part, form.product-upsert-form div.body div.form-group.form-field-box div.prod-pickzone-wrapper div.right-part {
+    width: 100% !important;
+    flex-basis: 100% !important; }
+  form.product-upsert-form div.body div.form-group.form-field-box div.prod-pickzone-wrapper div.left-part {
+    margin-bottom: 20px; }
+  form.product-upsert-form div.body div.form-group.form-field-box div.prod-images-dropzone {
+    padding: 10px;
+    padding-bottom: 0px; }
+    form.product-upsert-form div.body div.form-group.form-field-box div.prod-images-dropzone div.product-images-item {
+      margin-bottom: 8px !important;
+      margin-right: 8px !important; }
+    form.product-upsert-form div.body div.form-group.form-field-box div.prod-images-dropzone div.product-images-item.add-image {
+      border-width: 1px !important; }
+      form.product-upsert-form div.body div.form-group.form-field-box div.prod-images-dropzone div.product-images-item.add-image div.inner-cont i {
+        font-size: 12px !important; }
+  form.product-upsert-form div.body div.form-group.form-field-box div.rr-policy ul.conditions li span.rule-text {
+    font-size: 10px !important;
+    line-height: 12px !important; }
+  form.product-upsert-form div.body div.form-group.form-field-box div.rr-policy div.checkbox-wrapper label {
+    font-size: 11px !important; }
+  form.product-upsert-form div.body div.form-group.form-field-box div.add-prodvar div.btn-wrapper {
+    margin-right: 10px !important; }
+    form.product-upsert-form div.body div.form-group.form-field-box div.add-prodvar div.btn-wrapper button.btn {
+      padding: 7px 10px !important;
+      font-size: 9px !important; }
+  form.product-upsert-form div.body div.form-group.form-field-box div.form-control-buttons button.btn {
+    padding: 7px 10px !important;
+    font-size: 9px !important;
+    margin-right: 10px; }
+
+  div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.row {
+    margin: 0px !important; }
+  div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.form-group div.text-right {
+    text-align: left !important;
+    margin-bottom: 10px !important;
+    padding: 0px !important; }
+    div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.form-group div.text-right label {
+      padding: 0px !important; }
+  div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.form-group div.filed-box div.variation-color-image div.image {
+    width: 80px !important;
+    height: 80px !important; }
+    div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.form-group div.filed-box div.variation-color-image div.image i {
+      font-size: 18px !important; }
+  div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.var-list-item div.body-content {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+
+  div.edit-prodvar-modal .row {
+    margin: 0px !important; } }
+@media (min-width: 240px) and (max-width: 320px) {
+  form.product-upsert-form div.body div.row {
+    margin: 0px !important; }
+  form.product-upsert-form div.body div.form-group.form-field-box div.prod-pickzone-wrapper div.left-part, form.product-upsert-form div.body div.form-group.form-field-box div.prod-pickzone-wrapper div.right-part {
+    width: 100% !important;
+    flex-basis: 100% !important; }
+  form.product-upsert-form div.body div.form-group.form-field-box div.prod-pickzone-wrapper div.left-part {
+    margin-bottom: 20px; }
+  form.product-upsert-form div.body div.form-group.form-field-box div.prod-images-dropzone {
+    padding: 10px;
+    padding-bottom: 0px; }
+    form.product-upsert-form div.body div.form-group.form-field-box div.prod-images-dropzone div.product-images-item {
+      margin-bottom: 8px !important;
+      margin-right: 8px !important; }
+    form.product-upsert-form div.body div.form-group.form-field-box div.prod-images-dropzone div.product-images-item.add-image {
+      border-width: 1px !important; }
+      form.product-upsert-form div.body div.form-group.form-field-box div.prod-images-dropzone div.product-images-item.add-image div.inner-cont i {
+        font-size: 12px !important; }
+  form.product-upsert-form div.body div.form-group.form-field-box div.rr-policy ul.conditions li span.rule-text {
+    font-size: 10px !important;
+    line-height: 12px !important; }
+  form.product-upsert-form div.body div.form-group.form-field-box div.rr-policy div.checkbox-wrapper label {
+    font-size: 11px !important; }
+  form.product-upsert-form div.body div.form-group.form-field-box div.form-control-buttons button.btn {
+    padding: 5px 10px !important;
+    font-size: 10px !important; }
+
+  div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.row {
+    margin: 0px !important; }
+  div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.form-group div.filed-box div.variation-color-image div.image {
+    width: 60px !important;
+    height: 60px !important; }
+    div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.form-group div.filed-box div.variation-color-image div.image i {
+      font-size: 18px !important; }
+  div.modal.product-upsertvar-modal div.modal-dialog div.modal-body div.var-list-item div.body-content {
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+
+  div.edit-prodvar-modal .row {
+    margin: 0px !important; } }
+@media (min-width: 10px) and (max-width: 240px) {
+  body {
+    display: none !important; } }
+
+/*# sourceMappingURL=store.upsertprod.mq.css.map */

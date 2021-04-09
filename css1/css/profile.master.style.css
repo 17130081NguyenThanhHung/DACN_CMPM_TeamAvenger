@@ -1,0 +1,732 @@
+.user-profile-page-container {
+  width: 100%;
+  overflow: hidden; }
+  .user-profile-page-container nav.breadcrumbs-cust ol {
+    padding: 15px 10px !important; }
+  .user-profile-page-container .prof-info-heading {
+    background: #fff;
+    border-top: 1px solid #e6e6e6; }
+    .user-profile-page-container .prof-info-heading div.user-avatar-panel {
+      display: flex;
+      width: 100%;
+      background: #fff;
+      padding: 30px 0;
+      overflow: hidden; }
+      .user-profile-page-container .prof-info-heading div.user-avatar-panel div.avatar {
+        width: 120px;
+        height: 120px;
+        min-width: 120px;
+        border-radius: 10em;
+        overflow: hidden;
+        border: 1px solid #eee; }
+        .user-profile-page-container .prof-info-heading div.user-avatar-panel div.avatar img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info {
+        width: 100%;
+        overflow: hidden;
+        padding-left: 15px; }
+        .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info h4 {
+          padding: 0;
+          margin: 0;
+          font-weight: 500;
+          color: #2d2f43;
+          font-size: 20px;
+          line-height: 28px; }
+          .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info h4 span.verified {
+            color: #1fb4ef;
+            line-height: 28px; }
+            .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info h4 span.verified svg {
+              vertical-align: top; }
+        .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info p.profile-bio {
+          font-size: 13px;
+          color: #192a32;
+          opacity: 0.8;
+          padding: 0;
+          margin: 15px 0 0 0;
+          line-height: 22px;
+          max-width: 60%; }
+        .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.rating {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          height: 20px; }
+          .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.rating span {
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            position: relative;
+            margin-left: -5px; }
+            .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.rating span:first-child {
+              margin-left: 0px; }
+            .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.rating span svg {
+              width: 18px;
+              height: 18px;
+              position: absolute;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              right: auto;
+              margin: auto;
+              color: #f7d96c; }
+            .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.rating span.rating-num {
+              font-size: 13px;
+              line-height: 20px;
+              margin-left: 2px;
+              color: #616161; }
+        .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.address svg {
+          width: 15px;
+          height: 15px;
+          fill: #e0e0e0; }
+        .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.address span {
+          font-size: 12px;
+          line-height: 14px;
+          color: #9697a1; }
+          .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.address span a {
+            color: #9697a1;
+            line-height: 14px; }
+        .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.profile-activity-stats {
+          width: 100%;
+          overflow: hidden;
+          margin-top: 15px; }
+          .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.profile-activity-stats ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            line-height: 0px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap; }
+            .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.profile-activity-stats ul li {
+              width: auto;
+              line-height: 0px;
+              margin-right: 20px; }
+              .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.profile-activity-stats ul li:last-child {
+                margin-right: 0px; }
+              .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.profile-activity-stats ul li span.stat-num {
+                font-size: 20px;
+                line-height: 20px;
+                color: #192a32;
+                font-weight: bold;
+                opacity: 0.8; }
+              .user-profile-page-container .prof-info-heading div.user-avatar-panel .prof-user-info div.profile-activity-stats ul li span.stat-label {
+                font-size: 13px;
+                line-height: 13px;
+                font-weight: normal;
+                color: #9697a1; }
+    .user-profile-page-container .prof-info-heading .user-prof-navbar {
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.06), 0 -1px 0 0 rgba(0, 0, 0, 0.06); }
+      .user-profile-page-container .prof-info-heading .user-prof-navbar .navbar-wrapper {
+        width: 100%; }
+        .user-profile-page-container .prof-info-heading .user-prof-navbar .navbar-wrapper .navbar {
+          background: #fff !important;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-left: 10px;
+          padding-right: 10px; }
+          .user-profile-page-container .prof-info-heading .user-prof-navbar .navbar-wrapper .navbar ul {
+            width: 100%;
+            overflow: hidden;
+            flex-wrap: nowrap !important;
+            display: flex;
+            flex-direction: row; }
+            .user-profile-page-container .prof-info-heading .user-prof-navbar .navbar-wrapper .navbar ul li {
+              margin-left: 15px; }
+              .user-profile-page-container .prof-info-heading .user-prof-navbar .navbar-wrapper .navbar ul li:first-child {
+                margin-left: 0px; }
+              .user-profile-page-container .prof-info-heading .user-prof-navbar .navbar-wrapper .navbar ul li.contact-seller {
+                margin-left: 0px; }
+              .user-profile-page-container .prof-info-heading .user-prof-navbar .navbar-wrapper .navbar ul li a {
+                border-top: 1px solid #eee;
+                padding-top: 25px;
+                padding-bottom: 20px;
+                font-weight: normal;
+                font-size: 11px;
+                margin-top: -1px;
+                text-transform: uppercase;
+                color: #616161; }
+                .user-profile-page-container .prof-info-heading .user-prof-navbar .navbar-wrapper .navbar ul li a svg {
+                  width: 18px;
+                  height: 18px;
+                  fill: #616161; }
+                .user-profile-page-container .prof-info-heading .user-prof-navbar .navbar-wrapper .navbar ul li a:hover {
+                  color: #ff7676; }
+                  .user-profile-page-container .prof-info-heading .user-prof-navbar .navbar-wrapper .navbar ul li a:hover svg {
+                    fill: #ff7676; }
+              .user-profile-page-container .prof-info-heading .user-prof-navbar .navbar-wrapper .navbar ul li.active a {
+                border-color: #ff7676;
+                color: #ff7676; }
+                .user-profile-page-container .prof-info-heading .user-prof-navbar .navbar-wrapper .navbar ul li.active a svg {
+                  fill: #ff7676; }
+  .user-profile-page-container .user-prods-container {
+    margin-top: 0px; }
+    .user-profile-page-container .user-prods-container nav.navbar {
+      background: transparent !important;
+      margin: 0px auto;
+      padding-left: 5px;
+      padding-right: 5px; }
+      .user-profile-page-container .user-prods-container nav.navbar ul {
+        width: 100%;
+        color: #262626; }
+        .user-profile-page-container .user-prods-container nav.navbar ul li.dropdown {
+          margin-left: auto; }
+          .user-profile-page-container .user-prods-container nav.navbar ul li.dropdown a.dropdown-toggle {
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 500;
+            text-transform: uppercase; }
+          .user-profile-page-container .user-prods-container nav.navbar ul li.dropdown div.dropdown-menu.show {
+            top: 60%;
+            right: 0% !important;
+            left: unset; }
+            .user-profile-page-container .user-prods-container nav.navbar ul li.dropdown div.dropdown-menu.show a.dropdown-item {
+              font-size: 12px;
+              color: #192a32;
+              line-height: 14px;
+              font-weight: 500; }
+        .user-profile-page-container .user-prods-container nav.navbar ul li.active {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 24px; }
+    .user-profile-page-container .user-prods-container div.not-items-found {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 50vh;
+      align-items: center;
+      justify-content: center; }
+      .user-profile-page-container .user-prods-container div.not-items-found div.icon {
+        width: 60px;
+        height: 60px;
+        fill: #ff7676; }
+      .user-profile-page-container .user-prods-container div.not-items-found h5 {
+        font-size: 22px;
+        line-height: 35px;
+        color: #192a32;
+        padding: 0;
+        margin: 0;
+        font-weight: 500; }
+      .user-profile-page-container .user-prods-container div.not-items-found p {
+        padding: 0;
+        margin: 0 0 20px 0;
+        font-size: 14px;
+        line-height: 16px;
+        color: #2d2f43; }
+    .user-profile-page-container .user-prods-container div.load-more-products {
+      width: 100%;
+      overflow: hidden;
+      padding: 30px 0px;
+      text-align: center; }
+      .user-profile-page-container .user-prods-container div.load-more-products button {
+        border: 1px solid #ff7676;
+        background: transparent;
+        color: #ff7676;
+        font-size: 12px;
+        line-height: 0px;
+        padding: 15px 50px;
+        border-radius: 5px;
+        outline: 0;
+        font-weight: 500;
+        text-transform: uppercase;
+        transition: all 0.15s ease-in-out; }
+        .user-profile-page-container .user-prods-container div.load-more-products button:hover, .user-profile-page-container .user-prods-container div.load-more-products button:active, .user-profile-page-container .user-prods-container div.load-more-products button:focus {
+          background: #ff7676;
+          color: #fff; }
+      .user-profile-page-container .user-prods-container div.load-more-products div.preloader-wrapper {
+        line-height: 0px;
+        width: 100%; }
+        .user-profile-page-container .user-prods-container div.load-more-products div.preloader-wrapper.hidden {
+          display: none;
+          visibility: hidden;
+          opacity: 0; }
+  .user-profile-page-container .user-profile-reviews-container {
+    margin: 0px auto;
+    padding-bottom: 20px; }
+    .user-profile-page-container .user-profile-reviews-container .side-bar-filter {
+      width: 100%;
+      overflow: hidden;
+      box-shadow: none;
+      border: none;
+      border-radius: 5px;
+      padding: 20px;
+      background: #fff;
+      margin-bottom: 20px; }
+      .user-profile-page-container .user-profile-reviews-container .side-bar-filter .header {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 20px; }
+        .user-profile-page-container .user-profile-reviews-container .side-bar-filter .header h5 {
+          font-size: 14px;
+          color: #192a32;
+          padding: 0;
+          margin: 0;
+          font-weight: 700;
+          line-height: 25px; }
+        .user-profile-page-container .user-profile-reviews-container .side-bar-filter .header a {
+          margin-left: auto; }
+          .user-profile-page-container .user-profile-reviews-container .side-bar-filter .header a svg {
+            fill: #9697a1; }
+      .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 10px; }
+        .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display {
+          width: 100%;
+          overflow: hidden;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+          margin-bottom: 15px; }
+          .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .c100 {
+            margin: 0px; }
+            .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .c100 span.svg-icon {
+              margin-top: -30px; }
+          .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .rating-bars {
+            flex: 1;
+            padding-left: 15px; }
+            .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .rating-bars ul {
+              padding: 0;
+              margin: 0;
+              width: 100%;
+              overflow: hidden;
+              list-style-type: none; }
+              .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .rating-bars ul li {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                margin-bottom: 7px;
+                height: 12px; }
+                .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .rating-bars ul li:last-child {
+                  margin-bottom: 0px; }
+                .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .rating-bars ul li span.rating-bar {
+                  flex: 1;
+                  height: 12px;
+                  margin-left: 10px;
+                  line-height: inherit;
+                  background: #f5f3f5;
+                  border-radius: 5px; }
+                  .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .rating-bars ul li span.rating-bar .bar-inner {
+                    border-radius: 5px;
+                    vertical-align: top; }
+                .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .rating-bars ul li span.star svg {
+                  fill: #9597a0;
+                  vertical-align: top;
+                  margin-top: -2px; }
+                .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .rating-bars ul li span.rating-val {
+                  font-size: 12px;
+                  font-weight: 500;
+                  color: #737373;
+                  line-height: 13px; }
+                .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .rating-bars ul li:nth-child(1) .bar-inner {
+                  display: inline-block;
+                  height: 12px;
+                  background: #57bb8a;
+                  width: 0; }
+                .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .rating-bars ul li:nth-child(2) .bar-inner {
+                  display: inline-block;
+                  height: 12px;
+                  background: #aed787;
+                  width: 0; }
+                .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .rating-bars ul li:nth-child(3) .bar-inner {
+                  display: inline-block;
+                  height: 12px;
+                  background: #fad834;
+                  width: 0; }
+                .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .rating-bars ul li:nth-child(4) .bar-inner {
+                  display: inline-block;
+                  height: 12px;
+                  background: #ff9f02;
+                  width: 0; }
+                .user-profile-page-container .user-profile-reviews-container .side-bar-filter .store-rating-display-wrapper .store-rating-display .rating-bars ul li:nth-child(5) .bar-inner {
+                  display: inline-block;
+                  height: 12px;
+                  background: #f68a59;
+                  width: 0; }
+      .user-profile-page-container .user-profile-reviews-container .side-bar-filter div.reviews-filter-cont {
+        width: 100%;
+        overflow: hidden;
+        display: block;
+        line-height: 0px; }
+        .user-profile-page-container .user-profile-reviews-container .side-bar-filter div.reviews-filter-cont form {
+          width: 100%;
+          overflow: hidden;
+          display: block;
+          line-height: 0px; }
+          .user-profile-page-container .user-profile-reviews-container .side-bar-filter div.reviews-filter-cont form ul.list-group {
+            width: 100%;
+            overflow: hidden;
+            border: none; }
+            .user-profile-page-container .user-profile-reviews-container .side-bar-filter div.reviews-filter-cont form ul.list-group li.list-group-item {
+              border: none;
+              padding: 0px;
+              margin-bottom: 15px;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: nowrap;
+              align-items: center; }
+              .user-profile-page-container .user-profile-reviews-container .side-bar-filter div.reviews-filter-cont form ul.list-group li.list-group-item:last-child {
+                margin-bottom: 2px; }
+              .user-profile-page-container .user-profile-reviews-container .side-bar-filter div.reviews-filter-cont form ul.list-group li.list-group-item .filter-option {
+                height: 20px;
+                line-height: 20px; }
+                .user-profile-page-container .user-profile-reviews-container .side-bar-filter div.reviews-filter-cont form ul.list-group li.list-group-item .filter-option label {
+                  color: #2d2f43;
+                  font-weight: 500;
+                  cursor: pointer;
+                  display: inline-block;
+                  font-size: 14px;
+                  margin-bottom: 0px;
+                  line-height: 20px;
+                  padding-bottom: 0px;
+                  height: 20px; }
+      .user-profile-page-container .user-profile-reviews-container .side-bar-filter h5.fiter-by {
+        border-bottom: 1px solid #e6e6e6;
+        font-size: 13px;
+        color: #2d2f43;
+        padding: 0 0 5px 0;
+        margin: 0 0 20px 0;
+        font-weight: 700;
+        line-height: 25px; }
+    .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper {
+      box-shadow: none;
+      border: none;
+      border-radius: 5px;
+      padding: 20px;
+      background: #fff;
+      overflow: hidden;
+      position: relative; }
+      .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .header {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 20px; }
+        .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .header h5 {
+          font-size: 14px;
+          color: #192a32;
+          padding: 0;
+          margin: 0;
+          font-weight: 700;
+          line-height: 25px; }
+      .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list {
+        width: 100%;
+        overflow: hidden; }
+        .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review {
+          width: 100%;
+          overflow: hidden;
+          border-bottom: 1px solid #e6e6e6;
+          padding-top: 15px;
+          padding-bottom: 15px; }
+          .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review:last-child {
+            border-bottom: none; }
+          .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info {
+            width: 100%;
+            display: flex; }
+            .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .avatar {
+              width: 45px;
+              height: 45px;
+              min-width: 45px;
+              border-radius: 10em;
+              border: 1px solid #e6e6e6;
+              overflow: hidden; }
+              .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .avatar img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover; }
+            .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .user-name {
+              padding: 0px 10px 0 10px;
+              flex: 1; }
+              .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .user-name h6.user-name-holder {
+                font-weight: 600;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                font-size: 13px;
+                line-height: 14px;
+                padding: 0;
+                margin: 0; }
+                .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .user-name h6.user-name-holder a {
+                  color: #192a32; }
+                  .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .user-name h6.user-name-holder a span.verified svg {
+                    width: 15px;
+                    height: 15px;
+                    fill: #1fb4ef; }
+                    .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .user-name h6.user-name-holder a span.verified svg path {
+                      fill: #1fb4ef; }
+                .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .user-name h6.user-name-holder span {
+                  font-weight: 400;
+                  color: #9697a1;
+                  margin-left: auto; }
+            .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .rating {
+              width: 100%;
+              padding: 0;
+              line-height: 15px; }
+              .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .rating span {
+                padding: 0px;
+                display: inline-block;
+                text-align: center;
+                line-height: 14px;
+                margin-left: -3px; }
+                .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .rating span svg {
+                  vertical-align: middle;
+                  fill: #f7d96a;
+                  width: 15px;
+                  height: 15px; }
+            .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .review-body {
+              width: 100%;
+              overflow: hidden;
+              margin-top: 3px; }
+              .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .review-body div.review-text article {
+                font-weight: 400;
+                color: #192a32;
+                font-size: 13px;
+                line-height: 17px;
+                padding: 0;
+                margin: 0; }
+              .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .review-body .review-product-photos {
+                width: 100%;
+                overflow: hidden;
+                margin-top: 15px;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap; }
+                .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .review-body .review-product-photos .item-info {
+                  width: calc(10% - 5px);
+                  border-radius: 5px;
+                  overflow: hidden;
+                  margin-right: 10px;
+                  cursor: pointer; }
+                  .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .review-body .review-product-photos .item-info .prod-picture {
+                    width: 100%;
+                    height: 100%; }
+                    .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .review-body .review-product-photos .item-info .prod-picture img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover; }
+                  .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .review-body .review-product-photos .item-info.hidden {
+                    display: none;
+                    visibility: hidden; }
+                  .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .review-body .review-product-photos .item-info.collapse-images {
+                    position: relative; }
+                    .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .review-body .review-product-photos .item-info.collapse-images:before {
+                      content: "";
+                      position: absolute;
+                      left: 0;
+                      top: 0;
+                      bottom: 0;
+                      right: 0;
+                      background: #16161691; }
+                    .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .review-body .review-product-photos .item-info.collapse-images div.img-overlay {
+                      position: absolute;
+                      left: 0;
+                      top: 0;
+                      bottom: 0;
+                      right: 0;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center; }
+                      .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list .review .user-info .review-body .review-product-photos .item-info.collapse-images div.img-overlay span {
+                        color: #fff;
+                        font-weight: 700; }
+      .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper.strained {
+        position: relative; }
+        .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper.strained:after {
+          content: "";
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          background: #ffffff5e; }
+      .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .load-more-reviews-cont {
+        width: 100%;
+        overflow: hidden;
+        background: transparent;
+        line-height: 0px; }
+        .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .load-more-reviews-cont button {
+          display: block;
+          width: 100%;
+          font-size: 14px;
+          padding: 15px 30px;
+          color: #fff;
+          border-radius: 5px;
+          border: 1px solid #ff7676;
+          text-decoration: none;
+          background: #ff7676; }
+          .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .load-more-reviews-cont button.hidden {
+            display: none;
+            visibility: hidden;
+            opacity: 0; }
+          .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .load-more-reviews-cont button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed; }
+        .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .load-more-reviews-cont div.reviews-preloader {
+          width: 100%;
+          overflow: hidden;
+          line-height: 0px;
+          display: inline-block; }
+          .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .load-more-reviews-cont div.reviews-preloader.hidden {
+            display: none;
+            visibility: hidden;
+            opacity: 0; }
+          .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .load-more-reviews-cont div.reviews-preloader div.data-preloader {
+            line-height: 0px; }
+            .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .load-more-reviews-cont div.reviews-preloader div.data-preloader div.loading {
+              line-height: 0px; }
+      .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list-cont-preloader {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: #ffffff87;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; }
+        .user-profile-page-container .user-profile-reviews-container .prof-review-list-wrapper .prof-review-list-cont-preloader div.data-preloader {
+          margin-top: 120px; }
+    .user-profile-page-container .user-profile-reviews-container .no-profile-reviews {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 50vh; }
+      .user-profile-page-container .user-profile-reviews-container .no-profile-reviews div.icon {
+        width: 60px;
+        height: 60px;
+        color: #ff7676; }
+      .user-profile-page-container .user-profile-reviews-container .no-profile-reviews h5 {
+        font-size: 22px;
+        line-height: 35px;
+        color: #192a32;
+        padding: 0;
+        margin: 0;
+        font-weight: 500; }
+      .user-profile-page-container .user-profile-reviews-container .no-profile-reviews p {
+        padding: 0;
+        margin: 0 0 20px 0;
+        font-size: 14px;
+        line-height: 16px;
+        color: #2d2f43; }
+    .user-profile-page-container .user-profile-reviews-container div.col-lg-4 {
+      padding-right: 5px; }
+
+.modal.user-portfolio-container .modal-content {
+  background: #fff;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+  .modal.user-portfolio-container .modal-content .header {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee; }
+    .modal.user-portfolio-container .modal-content .header .avatar {
+      width: 40px;
+      height: 40px;
+      min-width: 40px;
+      overflow: hidden;
+      border-radius: 10em; }
+      .modal.user-portfolio-container .modal-content .header .avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    .modal.user-portfolio-container .modal-content .header .info {
+      flex: 1;
+      overflow: hidden;
+      padding-left: 10px; }
+      .modal.user-portfolio-container .modal-content .header .info h3 {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0;
+        margin: 0;
+        color: #192a32; }
+      .modal.user-portfolio-container .modal-content .header .info p {
+        font-size: 12px;
+        line-height: 17px;
+        color: #2d2f43;
+        padding: 0;
+        margin: 0;
+        opacity: 0.9; }
+  .modal.user-portfolio-container .modal-content .body {
+    padding: 0px 20px 15px 20px; }
+    .modal.user-portfolio-container .modal-content .body .user-info-list {
+      width: 100%;
+      overflow: hidden;
+      padding-top: 15px; }
+      .modal.user-portfolio-container .modal-content .body .user-info-list .list-item {
+        width: 100%;
+        overflow: hidden;
+        display: flex; }
+        .modal.user-portfolio-container .modal-content .body .user-info-list .list-item div.icon {
+          margin-right: 10px; }
+          .modal.user-portfolio-container .modal-content .body .user-info-list .list-item div.icon svg {
+            width: 15px;
+            height: 15px;
+            fill: #7f868b; }
+        .modal.user-portfolio-container .modal-content .body .user-info-list .list-item div.label span {
+          color: #7f868b;
+          font-size: 13px;
+          line-height: 16px; }
+  .modal.user-portfolio-container .modal-content .footer {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px;
+    border-top: 1px solid #eee; }
+    .modal.user-portfolio-container .modal-content .footer .contacts {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .modal.user-portfolio-container .modal-content .footer .contacts a.contact-link-item {
+        width: 25px;
+        height: 25px;
+        border-radius: 3px;
+        position: relative;
+        cursor: pointer;
+        margin-right: 10px; }
+        .modal.user-portfolio-container .modal-content .footer .contacts a.contact-link-item:last-child {
+          margin-right: 0px; }
+        .modal.user-portfolio-container .modal-content .footer .contacts a.contact-link-item svg {
+          position: absolute;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          width: 20px;
+          height: 20px; }
+        .modal.user-portfolio-container .modal-content .footer .contacts a.contact-link-item.contact-me svg {
+          fill: #ff7676; }
+        .modal.user-portfolio-container .modal-content .footer .contacts a.contact-link-item.facebook svg {
+          fill: #395794; }
+        .modal.user-portfolio-container .modal-content .footer .contacts a.contact-link-item.google-plus svg {
+          fill: #d84937; }
+        .modal.user-portfolio-container .modal-content .footer .contacts a.contact-link-item.twitter svg {
+          fill: #1c9dec; }
+        .modal.user-portfolio-container .modal-content .footer .contacts a.contact-link-item.instagram svg {
+          fill: #395794; }
+        .modal.user-portfolio-container .modal-content .footer .contacts a.contact-link-item.whatsapp svg {
+          fill: #52ed6c; }
+        .modal.user-portfolio-container .modal-content .footer .contacts a.contact-link-item.youtube svg {
+          fill: #f32d13; }
+
+/*# sourceMappingURL=profile.master.style.css.map */

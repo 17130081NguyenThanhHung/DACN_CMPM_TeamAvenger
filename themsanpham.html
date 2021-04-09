@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>
+        Tạo một sản phẩm mới    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="title" content="Tạo một sản phẩm mới"/>
+    <meta name="description" content="Sàn giao dịch"/>
+    <meta name="keywords" content="marketplace,ecommerce,shopping,ebusiness,ecom,store,online store,online business,ecommerce website,shopping cart,ecommunity,ecommerce platform"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+    <link href="css1/css/material_icon_fonts/material_icon.css" rel="stylesheet" type="text/css"/>
+    <link href="css1/css/bootstrap.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css1/css/preloader.min.css"/>
+    <link href="css1/css/waves.css" rel="stylesheet" />
+    <link href="css1/css/animate.css" rel="stylesheet" />
+    <link href="css1/css/style.css" rel="stylesheet"/>
+    <!-- ADP Default css styles END-->
+
+    <!-- ADP Custom common css styles -->
+    <link href="css1/css/store.common.style.css" rel="stylesheet"/>
+    <link href="css1/css/store.common.mq.css" rel="stylesheet"/>
+    <!-- ADP Custom common css styles END -->
+
+    <link href="css1/css/all-themes.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="css1/css/store.upsertprod.mq.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/store.upsertprod.style.css">
+    <link rel="stylesheet" type="text/css" href="css1/ss/bootstrap.notify.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/bootstrap-select.min.css">
+    <!-- Jquery Auto-Resize plugin -->
+    <script src="css1/js/txt.autoresize.min.js"></script>
+
+    <!-- Jquery Core Js -->
+    <script src="css1/js/jquery.min.js"></script>
+    <script src="css1/js/jquery.slimscroll.js"></script>
+
+    <!-- Bootstrap Core Js -->
+    <script src="css1/js/bootstrap.js"></script>
+
+    <script src="css1/js/jquery.equalheights.min.js"></script>
+
+    <!-- Waves Effect Plugin Js -->
+    <script src="css1/js/waves.js"></script>
+
+    <script src="css1/js/admin.js"></script>
+    <script src="css1/js/master.tools.js"></script>
+    <script src="css1/js/master.script.js"></script>
+    <script src="css1/js/jquery.form.min.js"></script>
+    <script src="css1/js/bootstrap-select.js"></script>
+    <script src="css1/js/bootstrap-notify.js"></script>
+    <script src="css1/js/jquery.sticky-sidebar.js"></script>
+
+
+    <script src="css1/js/tinymce.min.js"></script>
+
+
+
+
+    <script>
+        "use strict";
+
+        function hs_format_currency(money = "0.00") {
+            var curr_symbol_position = $.trim('before');
+            var curr_symbol_char     = $.trim('đ');
+
+            if (curr_symbol_position == 'before') {
+                return "{0}{1}".format(curr_symbol_char,money);
+            }
+            else {
+                return "{0}{1}".format(money,curr_symbol_char);
+            }
+        }
+    </script></head>
+
+<body class="theme-red">
+<input type="hidden" class="hidden d-none csrf-token" value="1606360196:f148ceee33a52e839b0dfea3393bf0a507d46855">
+<div class="main-preloader-holder" id="main-preloader-holder">
+    <div class="main-preloader">
+        <div class="loading">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        </div>
+    </div>
+</div>
+
+<header class="navbar main-sp-header" id="main-header-container">
+    <div class="navbar-flex-inner-top-line">
+        <div class="navbar-flex-inner">
+            <div class="navbar-header">
+                <div class="navbar-header-inner">
+                    <a href="javascript:void(0);" class="bars" onclick="$('body').toggleClass('overlay-open');"></a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-body">
+                <div class="navbar-body-inner">
+                    <div class="flex-ci left">
+                        <div class="search-form-wrapper">
+                            <form action="#" class="form search-form" id="search-form">
+                                <input type="hidden" class="hidden d-none" name="hash" value="1606360196:f148ceee33a52e839b0dfea3393bf0a507d46855">
+                                <div class="search-input">
+                                    <input type="text" class="form-control" id="search-keyword" placeholder="Tìm kiếm sản phẩm">
+                                    <button>
+                                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M337.509 305.372h-17.501l-6.571-5.486c20.791-25.232 33.922-57.054 33.922-93.257C347.358 127.632 283.896 64 205.135 64 127.452 64 64 127.632 64 206.629s63.452 142.628 142.225 142.628c35.011 0 67.831-13.167 92.991-34.008l6.561 5.487v17.551L415.18 448 448 415.086 337.509 305.372zm-131.284 0c-54.702 0-98.463-43.887-98.463-98.743 0-54.858 43.761-98.742 98.463-98.742 54.7 0 98.462 43.884 98.462 98.742 0 54.856-43.762 98.743-98.462 98.743z"/></svg>                                    </button>
+                                </div>
+                                <div class="dropdown" id="search-result">
+                                    <div class="dropdown-menu" id="result"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex-ci right">
+                        <ul class="right-side">
+                            <li class="nav-item user-wishlist">
+                                <a class="nav-link" href="wishlist.html">
+                                    <span class="new-messages"></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M256 448l-30.164-27.211C118.718 322.442 48 258.61 48 179.095 48 114.221 97.918 64 162.4 64c36.399 0 70.717 16.742 93.6 43.947C278.882 80.742 313.199 64 349.6 64 414.082 64 464 114.221 464 179.095c0 79.516-70.719 143.348-177.836 241.694L256 448z"/></svg>                                </a>
+                            </li>
+                            <li class="nav-item user-messages" id="rt-messages">
+                                <a class="nav-link" href="mess.html">
+                                    <span class="new-messages"></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M132.8 368c-20.2 0-44.8-24.6-44.8-44.8V160h-9.6C61.7 160 48 173.7 48 190.4V464l58.5-58h215.1c16.7 0 30.4-14.1 30.4-30.9V368H132.8z"/><path d="M429.1 48H149.9C130.7 48 115 63.7 115 82.9V309c0 19.2 15.7 35 34.9 35h238.2l75.9 53V82.9c0-19.2-15.7-34.9-34.9-34.9z"/></svg>                                </a>
+                            </li>
+                            <li class="nav-item user-notifications-dd" id="rt-notifications">
+                                <a class="nav-link dropdown-toggle"  id="load-notifications" data-toggle="dropdown">
+                                    <span class="new-messages"></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 512 512"><path d="M257 120.471c7.083 0 23.911 4.479 23.911 4.479 45.589 10.447 77.678 52.439 77.678 99.85V352.412l9.321 9.364 7.788 7.823H136.302l7.788-7.823 9.321-9.364V224.8c0-47.41 32.089-89.403 77.678-99.85 0 0 18.043-4.479 23.911-4.479M256 48c-17.602 0-31.059 13.518-31.059 31.2v14.559c-59.015 13.523-103.53 67.601-103.53 131.041v114.4L80 380.8v20.8h352v-20.8l-41.411-41.6V224.8c0-63.44-44.516-117.518-103.53-131.041V79.2c0-17.682-13.457-31.2-31.059-31.2zm41.411 374.4h-82.823c0 22.881 18.633 41.6 41.412 41.6s41.411-18.719 41.411-41.6z"/></svg>
+                                </a>
+                                <div class="dropdown-menu anim scale-up-tr">
+                                    <div class="header">
+                                        <span class="text-left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512"><path d="M257 120.471c7.083 0 23.911 4.479 23.911 4.479 45.589 10.447 77.678 52.439 77.678 99.85V352.412l9.321 9.364 7.788 7.823H136.302l7.788-7.823 9.321-9.364V224.8c0-47.41 32.089-89.403 77.678-99.85 0 0 18.043-4.479 23.911-4.479M256 48c-17.602 0-31.059 13.518-31.059 31.2v14.559c-59.015 13.523-103.53 67.601-103.53 131.041v114.4L80 380.8v20.8h352v-20.8l-41.411-41.6V224.8c0-63.44-44.516-117.518-103.53-131.041V79.2c0-17.682-13.457-31.2-31.059-31.2zm41.411 374.4h-82.823c0 22.881 18.633 41.6 41.412 41.6s41.411-18.719 41.411-41.6z"/></svg>
+                                        </span>
+                                        <span class="notifs">
+                                            Thông báo
+                                        </span>
+                                    </div>
+                                    <div class="body">
+                                        <div class="notifs-preloader hidden" id="notif-preloader">
+                                            <div class="loader">
+                                                <svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='40px' height='40px' viewBox='0 0 40 40' enable-background='new 0 0 40 40' xml:space='preserve'><path opacity='0.4' fill='#72777c' d='M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z'></path><path fill='#72777c' d='M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0 C22.32,8.481,24.301,9.057,26.013,10.047z' transform='rotate(323.368 20 20)'><animateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 20 20' to='360 20 20' dur='0.7s' repeatCount='indefinite'></animateTransform></path></svg>                                            </div>
+                                        </div>
+                                        <ul class="notifs-list" id="notifications-list"></ul>
+                                    </div>
+                                    <div class="footer hidden" id="view-all-notifications">
+                                        <p>
+                                            <a href="https://localhost/Web-raovat/notifications">Hiển thị tất cả</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item profile-nav-dd">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <img src="images/user-avatar.png" alt="User avatar" data-user-avatar-image="4">
+                                    <span class="user-name">
+                                        Người dùng
+                                    </span>
+                                </a>
+                                <div class="dropdown-menu scale-up-tr">
+                                    <a class="dropdown-item" href="index.html">
+                                        <span>Trang chủ</span>
+                                    </a>
+                                    <a class="dropdown-item" href="Admin/Admin_Bangquanly.html">
+                                        <span>Bảng gian hàng_Admin</span>
+                                    </a>
+                                    <a class="dropdown-item" href="HoSo.html">
+                                        <span>Hồ sơ</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span>Sản phẩm của tôi</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span>Đơn hàng của tôi</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span>Đơn hàng của khách hàng</span>
+                                    </a>
+                                    <hr>
+                                    <a class="dropdown-item" href="#">
+                                        <span>Ví tiền</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span>Xuất chi</span>
+                                    </a>
+                                    <a class="dropdown-item" href="caidattaikhoan.html">
+                                        <span>Cài đặt tài khoản</span>
+                                    </a>
+                                    <a class="dropdown-item" href="Help.html">
+                                        <span>Trợ giúp</span>
+                                    </a>
+                                    <hr>
+                                    <a class="dropdown-item" href="dangnhap.html">
+                                        <span>Đăng xuất</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item user-basket">
+                                <a class="nav-link" href="checkout.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M169.6 377.6c-22.882 0-41.6 18.718-41.6 41.601 0 22.882 18.718 41.6 41.6 41.6s41.601-18.718 41.601-41.6c-.001-22.884-18.72-41.601-41.601-41.601zM48 51.2v41.6h41.6l74.883 151.682-31.308 50.954c-3.118 5.2-5.2 12.482-5.2 19.765 0 27.85 19.025 41.6 44.825 41.6H416v-40H177.893c-3.118 0-5.2-2.082-5.2-5.2 0-1.036 2.207-5.2 2.207-5.2l20.782-32.8h154.954c15.601 0 29.128-8.317 36.4-21.836l74.882-128.8c1.237-2.461 2.082-6.246 2.082-10.399 0-11.446-9.364-19.765-20.8-19.765H135.364L115.6 51.2H48zm326.399 326.4c-22.882 0-41.6 18.718-41.6 41.601 0 22.882 18.718 41.6 41.6 41.6S416 442.082 416 419.2c0-22.883-18.719-41.6-41.601-41.6z"/></svg>                                    <span class="total-items"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item user-language-dd">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48C141.124 48 48 141.125 48 256s93.124 208 208 208c114.875 0 208-93.125 208-208S370.875 48 256 48zm-21.549 384.999c-39.464-4.726-75.978-22.392-104.519-50.932C96.258 348.393 77.714 303.622 77.714 256c0-42.87 15.036-83.424 42.601-115.659.71 8.517 2.463 17.648 2.014 24.175-1.64 23.795-3.988 38.687 9.94 58.762 5.426 7.819 6.759 19.028 9.4 28.078 2.583 8.854 12.902 13.498 20.019 18.953 14.359 11.009 28.096 23.805 43.322 33.494 10.049 6.395 16.326 9.576 13.383 21.839-2.367 9.862-3.028 15.937-8.13 24.723-1.557 2.681 5.877 19.918 8.351 22.392 7.498 7.497 14.938 14.375 23.111 21.125 12.671 10.469-1.231 24.072-7.274 39.117zm147.616-50.932c-25.633 25.633-57.699 42.486-92.556 49.081 4.94-12.216 13.736-23.07 21.895-29.362 7.097-5.476 15.986-16.009 19.693-24.352 3.704-8.332 8.611-15.555 13.577-23.217 7.065-10.899-17.419-27.336-25.353-30.781-17.854-7.751-31.294-18.21-47.161-29.375-11.305-7.954-34.257 4.154-47.02-1.417-17.481-7.633-31.883-20.896-47.078-32.339-15.68-11.809-14.922-25.576-14.922-42.997 12.282.453 29.754-3.399 37.908 6.478 2.573 3.117 11.42 17.042 17.342 12.094 4.838-4.043-3.585-20.249-5.212-24.059-5.005-11.715 11.404-16.284 19.803-24.228 10.96-10.364 34.47-26.618 32.612-34.047s-23.524-28.477-36.249-25.193c-1.907.492-18.697 18.097-21.941 20.859.086-5.746.172-11.491.26-17.237.055-3.628-6.768-7.352-6.451-9.692.8-5.914 17.262-16.647 21.357-21.357-2.869-1.793-12.659-10.202-15.622-8.968-7.174 2.99-15.276 5.05-22.45 8.039 0-2.488-.302-4.825-.662-7.133a176.585 176.585 0 0 1 45.31-13.152l14.084 5.66 9.944 11.801 9.924 10.233 8.675 2.795 13.779-12.995L282 87.929V79.59c27.25 3.958 52.984 14.124 75.522 29.8-4.032.361-8.463.954-13.462 1.59-2.065-1.22-4.714-1.774-6.965-2.623 6.531 14.042 13.343 27.89 20.264 41.746 7.393 14.801 23.793 30.677 26.673 46.301 3.394 18.416 1.039 35.144 2.896 56.811 1.788 20.865 23.524 44.572 23.524 44.572s10.037 3.419 18.384 2.228c-7.781 30.783-23.733 59.014-46.769 82.052z"/></svg>                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript:void(0);">
+                                        <span class="selected">Tiếng Việt</span>
+                                        <span class="lang-banner ml-auto">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-vn" viewBox="0 0 640 480">
+  <defs>
+    <clipPath id="a">
+      <path fill-opacity=".7" d="M-85.3 0h682.6v512H-85.3z"/>
+    </clipPath>
+  </defs>
+  <g fill-rule="evenodd" clip-path="url(#a)" transform="translate(80) scale(.9375)">
+    <path fill="#ec0015" d="M-128 0h768v512h-768z"/>
+    <path fill="#ff0" d="M349.6 381L260 314.3l-89 67.3L204 272l-89-67.7 110.1-1 34.2-109.4L294 203l110.1.1-88.5 68.4 33.9 109.6z"/>
+  </g>
+</svg>
+                                                    </span>
+                                    </a>
+                                    <a class="dropdown-item" href="https://localhost/Web-raovat/language/english">
+                                        <span>Tiếng Anh</span>
+                                        <span class="lang-banner ml-auto">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-gb" viewBox="0 0 640 480">
+  <defs>
+    <clipPath id="a">
+      <path fill-opacity=".7" d="M-85.3 0h682.6v512H-85.3z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="translate(80) scale(.94)">
+    <g stroke-width="1pt">
+      <path fill="#012169" d="M-256 0H768v512H-256z"/>
+      <path fill="#fff" d="M-256 0v57.2L653.5 512H768v-57.2L-141.5 0H-256zM768 0v57.2L-141.5 512H-256v-57.2L653.5 0H768z"/>
+      <path fill="#fff" d="M170.7 0v512h170.6V0H170.7zM-256 170.7v170.6H768V170.7H-256z"/>
+      <path fill="#c8102e" d="M-256 204.8v102.4H768V204.8H-256zM204.8 0v512h102.4V0H204.8zM-256 512L85.3 341.3h76.4L-179.7 512H-256zm0-512L85.3 170.7H9L-256 38.2V0zm606.4 170.7L691.7 0H768L426.7 170.7h-76.3zM768 512L426.7 341.3H503l265 132.5V512z"/>
+    </g>
+  </g>
+</svg>
+                                                    </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="navbar-flex-inner-bottom-line">
+        <div class="navbar-flex-inner">
+            <div class="header-bottom-line-wrapper">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bar-bottom-line">
+                    <ul class="navbar-nav">
+                        <li class="nav-item categories">
+                            <a class="nav-link dropdown-toggle" href="#" id="cat-dd-menu" data-toggle="dropdown">
+                                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 512 512"><path d="M96 176h80V96H96v80zm120 240h80v-80h-80v80zm-120 0h80v-80H96v80zm0-120h80v-80H96v80zm120 0h80v-80h-80v80zM336 96v80h80V96h-80zm-120 80h80V96h-80v80zm120 120h80v-80h-80v80zm0 120h80v-80h-80v80z"/></svg>
+                                <span class="all--catgs">Tất cả danh mục</span>
+                                <span class="arrow-down">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve">
+	<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+</svg>                                </span>
+                            </a>
+                            <div class="dropdown-menu rs-dropdmenu" aria-labelledby="cat-dd-menu">
+                                <a class="dropdown-item" href='ListProduct.html'>
+                                    IPhone                                    </a>
+                                <a class="dropdown-item" href='producttrong.html'>
+                                    SamSung                                    </a>
+                                <a class="dropdown-item" href='producttrong.html'>
+                                    Oppo                                    </a>
+                                <a class="dropdown-item" href='producttrong.html'>
+                                    Xiaomi                                    </a>
+                                <a class="dropdown-item" href='producttrong.html'>
+                                    Khác                                    </a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href='ListProduct.html'>
+                                        <span>
+                                            IPhone                                        </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href='producttrong.html'>
+                                        <span>
+                                            SamSung                                        </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href='producttrong.html'>
+                                        <span>
+                                            Oppo                                        </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href='producttrong.html'>
+                                        <span>
+                                            Xiaomi                                        </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href='producttrong.html'>
+                                        <span>
+                                            Khác                                        </span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<script>
+    jQuery(document).ready(function($) {
+        "use strict";
+        var MAIN_HEADER    = $("header#main-header-container");
+        var MAIN_HEADER_SF = MAIN_HEADER.find('form#search-form');
+        var MAIN_HEADER_SR = MAIN_HEADER_SF.find('div#search-result');
+
+        MAIN_HEADER_SF.find('input').keyup(function(event) {
+            delay(function() {
+                MAIN_HEADER_SR.removeClass('show');
+                MAIN_HEADER_SR.find('div#result').removeClass('show');
+                MAIN_HEADER_SR.find('div#result').empty();
+                if ($.trim(MAIN_HEADER_SF.find('input#search-keyword').val())) {
+                    $.ajax({
+                        url: 'https://localhost/Web-raovat/req/products/search_prods',
+                        type: 'GET',
+                        dataType: 'json',
+                        data: {keyword: $.trim(MAIN_HEADER_SF.find('input#search-keyword').val())},
+                    }).done(function(data) {
+                        MAIN_HEADER_SR.addClass('show');
+                        MAIN_HEADER_SR.find('div#result').addClass('show');
+                        if (data.status == 200) {
+                            $(data.result).each(function(index, el) {
+                                MAIN_HEADER_SR.find('div#result').append($('<a>',{
+                                    href: el.url,
+                                    text: el.query,
+                                }));
+                            });
+                        }
+                        else{
+                            MAIN_HEADER_SR.find('div#result').html($('<span>',{
+                                class:'no-result',
+                                text: "không tìm thấy kết quả nào",
+                            }));
+                        }
+                    });
+                }
+                else {
+                    MAIN_HEADER_SF.find('div#result').empty().removeClass('show');
+                }
+            },600);
+        });
+    });
+</script><script>
+    jQuery(document).ready(function($) {
+        "use strict";
+        var MAIN_HEADER       = $("header#main-header-container");
+        var RT_NOTIFICATIONS  = MAIN_HEADER.find("li#rt-notifications");
+        var RT_NOTIFS_HANDLER = Object({
+            state: 0,
+            interval: (1000 * 60),
+            get_unseen_notifs: function() {
+                $.ajax({
+                    url: "https://localhost/Web-raovat/req/notifications/get_unseen",
+                    type: 'GET',
+                    dataType: 'json',
+                }).done(function(data) {
+                    if (data.status == 200) {
+                        RT_NOTIFICATIONS.find('span.new-messages').text(data.count);
+                    }
+                    else {
+                        RT_NOTIFICATIONS.find('span.new-messages').text('');
+                    }
+                });
+            },
+            empty: function() {
+                RT_NOTIFICATIONS.find('ul#notifications-list').empty();
+                return this;
+            },
+            preloader: function(a = null) {
+                var not_preloader = RT_NOTIFICATIONS.find('div#notif-preloader');
+                if (a == 's') {
+                    not_preloader.removeClass('hidden');
+                }
+
+                else if(a == 'e') {
+                    not_preloader.addClass('hidden');
+                }
+
+                return this;
+            },
+            load_notifications: function() {
+                $.ajax({
+                    url: "https://localhost/Web-raovat/req/notifications/get_notifications",
+                    type: 'GET',
+                    dataType: 'json',
+                }).done(function(data) {
+                    if (data.status == 200) {
+                        RT_NOTIFICATIONS.find('div#view-all-notifications').removeClass('hidden');
+                    }
+                    else {
+                        RT_NOTIFICATIONS.find('div#view-all-notifications').addClass('hidden');
+                    }
+
+                    RT_NOTIFICATIONS.find('ul#notifications-list').html(data.html);
+                }).always(function(){
+                    RT_NOTIFS_HANDLER.preloader('e');
+                });
+            }
+        });
+
+
+        setInterval(function(){
+            RT_NOTIFS_HANDLER.get_unseen_notifs();
+        },RT_NOTIFS_HANDLER.interval);
+
+        RT_NOTIFICATIONS.find('a#load-notifications').on('click',function(event) {
+            if (RT_NOTIFS_HANDLER.state == 0) {
+                RT_NOTIFS_HANDLER.state = 1;
+                RT_NOTIFS_HANDLER.empty().preloader('s').load_notifications();
+            }
+            else {
+                RT_NOTIFS_HANDLER.state = 0;
+            }
+        });
+    });
+</script><script>
+    jQuery(document).ready(function($) {
+        "use strict";
+        var MAIN_HEADER       = $("header#main-header-container");
+        var RT_MESSAGES       = MAIN_HEADER.find("li#rt-messages");
+        var RT_MSGS_HANDLER   = Object({
+            interval: (1000 * 60),
+            get_unseen_messages: function() {
+                $.ajax({
+                    url: "https://localhost/Web-raovat/req/messages/get_unseen",
+                    type: 'GET',
+                    dataType: 'json',
+                }).done(function(data) {
+                    if (data.status == 200) {
+                        RT_MESSAGES.find('span.new-messages').text(data.count);
+                    }
+                    else {
+                        RT_MESSAGES.find('span.new-messages').text('');
+                    }
+                });
+            }
+        });
+
+        setInterval(function(){
+            RT_MSGS_HANDLER.get_unseen_messages();
+        },RT_MSGS_HANDLER.interval);
+    });
+</script>
+<aside id="leftsidebar" class="sidebar hs-store-main-sidebar">
+    <div class="user-info">
+        <div class="image">
+            <img src="images/user-avatar.png" alt="Avatar" data-user-avatar-image="4">
+        </div>
+        <div class="info-container">
+            <div class="name">Minh Chau 1 Trieu</div>
+            <div class="email">17130015@st.hcmuaf.edu.vn</div>
+        </div>
+    </div>
+    <div class="menu">
+        <ul class="list" data-snode="main-sidebarmenu">
+            <li class="header">Điều hướng chính</li>
+            <li class="mml" data-nav-list-item="dashboard">
+                <a href="bangquanly.html">
+                    <i class="material-icons">home</i>
+                    <span>Bảng điều khiển</span>
+                </a>
+            </li>
+            <li class="mtl">
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">shopping_basket</i>
+                    <span>Đơn đặt hàng</span>
+                </a>
+                <ul class="ml-menu">
+                    <li data-nav-list-item="customer_orders">
+                        <a href=donhangcuakhachhang.html>Đơn hàng của khách hàng</a>
+                    </li>
+                    <li data-nav-list-item="account_reviews">
+                        <a href="danhgiacuakhachhang.html">Đánh giá của khách hàng</a>
+                    </li>
+                    <li data-nav-list-item="my_orders">
+                        <a href="donhangcuatoi.html">Đơn hàng của tôi</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mtl">
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">assignment</i>
+                    <span>Mặt hàng đăng bán</span>
+                </a>
+                <ul class="ml-menu">
+                    <li data-nav-list-item="my_products">
+                        <a href="tatcasanpham.html">Tất cả sản phẩm</a>
+                    </li>
+                    <li data-nav-list-item="products_draft">
+                        <a href="sanphamnhap.html">Bản nháp</a>
+                    </li>
+                    <li data-nav-list-item="add_product">
+                        <a href="themsanpham.html">Thêm sản phẩm mới</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mml" data-nav-list-item="customers">
+                <a href="khachhang.html">
+                    <i class="material-icons">group</i>
+                    <span>Khách hàng</span>
+                </a>
+            </li>
+            <li class="mml" data-nav-list-item="wallet">
+                <a href="vitien.html">
+                    <i class="material-icons">account_balance_wallet</i>
+                    <span>Ví tiền</span>
+                </a>
+            </li>
+
+            <li class="mml" data-nav-list-item="withdrawals">
+                <a href="ruttien.html">
+                    <i class="material-icons">account_balance</i>
+                    <span>Rút tiền</span>
+                </a>
+            </li>
+            <li class="mtl">
+                <a href="javascript:void(0);" class="menu-toggle">
+                    <i class="material-icons">account_circle</i>
+                    <span>Tài khoản</span>
+                </a>
+                <ul class="ml-menu">
+                    <li data-nav-list-item="main_settings">
+                        <a href="caidattaikhoan.html">
+                            Cài đặt tài khoản
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="mml" data-nav-list-item="help">
+                <a href="Help.html">
+                    <i class="material-icons">help</i>
+                    <span>Trợ giúp</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="legal">
+        <div class="footer-content-container">
+            <div class="top-line">
+                <ul>
+                    <li>
+                        <a href="#">
+                            Chính sách bảo mật
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Điều khoản sử dụng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Về chúng tôi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Liên hệ chúng tôi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Điều khoản gian hàng
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Help.html">
+                            F.A.Q
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom-line">
+                <ul>
+                    <li>
+                        <a href="#">
+                            &copy; Nhóm 4
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>        </div>
+</aside>
+
+<section class="content" data-storepage="add_product">
+
+
+
+    <div class="clearfix data-management-page" id="product-upsert-page">
+        <div class="block-header">
+            <nav class="breadcrumbs-cust" aria-label="breadcrumb breadcrumb-cust">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="bangquanly.html">Bảng gian hàng</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="tatcasanpham.html">
+                            Mặt hàng đăng bán
+                        </a>
+                    </li>
+                    <li class="breadcrumb-item active">
+                        Thêm một sản phẩm mới
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <div class="clearfix">
+            <div class="affixed-page-section">
+                <div class="affixed-page-part-1">
+                    <form data-prod-id="19" class="clearfix form-horizontal product-upsert-form" id="product-upsert-form">
+                        <input type="hidden" class="hidden d-none" name="hash" value="1606360196:f148ceee33a52e839b0dfea3393bf0a507d46855">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Thêm một sản phẩm mới</h2>
+                            </div>
+                            <div class="body">
+                                <div class="data-management-area">
+                                    <div class="form-fieldset-title clearfix" data-affix-label="prod_basic_info">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p>
+                                                    Thông tin cơ bản về sản phẩm
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12" data-form-field="3">
+                                                <label class="form-label">
+                                                    Tên
+                                                </label>
+                                                <div class="filed-box">
+                                                    <input name="name" type="text" class="form-control" placeholder="Tên sản phẩm. Ví dụ. Iphone 11 Pro Max v.v...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-6 p-r-10" data-form-field="4">
+                                                <label class="form-label">
+                                                    Tình trạng
+                                                </label>
+                                                <div class="filed-box">
+                                                    <select name="condition" class="form-control">
+                                                        <option value="1">Mới</option>
+                                                        <option value="2">Đã sử dụng</option>
+                                                        <option value="3">Đã sửa chữa</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 p-l-10" data-form-field="5">
+                                                <label class="form-label">
+                                                    Thể loại
+                                                </label>
+                                                <div class="filed-box">
+                                                    <select data-size="5" name="category" class="form-control">
+                                                        <option value="iphone">
+                                                            IPhone                                                        </option>
+                                                        <option value="samsung">
+                                                            SamSung                                                        </option>
+                                                        <option value="oppo">
+                                                            Oppo                                                        </option>
+                                                        <option value="xiaomi">
+                                                            Xiaomi                                                        </option>
+                                                        <option value="other">
+                                                            Khác                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12 no-mb" data-form-field="6">
+                                                <label class="form-label">
+                                                    Miêu tả
+                                                </label>
+                                                <div class="filed-box">
+                                                    <textarea name="description" rows="5" class="form-control" id="product-description" placeholder="Nhập mô tả sản phẩm..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-fieldset-title clearfix" data-affix-label="prod_price_and_shipping">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p>
+                                                    Giá sản phẩm & vận chuyển
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-6 p-r-10" data-form-field="7">
+                                                <label class="form-label">
+                                                    Giá thực thị trường
+                                                </label>
+                                                <div class="filed-box">
+                                                    <input name="reg_price" step="any" type="number" class="form-control" placeholder="Chỉ cho phép giá trị số. Ví dụ. 149,99 - đ">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 p-l-10" data-form-field="8">
+                                                <label class="form-label">
+                                                    Giá bán lại
+                                                </label>
+                                                <div class="filed-box">
+                                                    <input name="sale_price" type="number" step="any" class="form-control" placeholder="Chỉ cho phép giá trị số. Ví dụ. 149,99 - đ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-6 p-r-10" data-form-field="9">
+                                                <label class="form-label">
+                                                    Số lượng
+                                                </label>
+                                                <div class="filed-box">
+                                                    <input name="quantity" type="number" class="form-control" placeholder="Max 1200">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 p-l-10" data-form-field="25">
+                                                <label class="form-label">
+                                                    SKU
+                                                </label>
+                                                <div class="filed-box">
+                                                    <input name="sku" type="text" class="form-control" placeholder="Nhập SKU">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12" data-form-field="12">
+                                                <label class="form-label">
+                                                    Thời gian vận chuyển
+                                                </label>
+                                                <div class="filed-box">
+                                                    <select name="shipping_time" class="form-control" title="Chọn ước tính thời gian vận chuyển">
+                                                        <option value="1_bd">Sẵn sàng giao hàng trong 1 ngày làm việc</option>
+                                                        <option value="2_3_bd">Sẵn sàng giao hàng trong 2-3 ngày làm việc</option>
+                                                        <option value="4_7_bd">Sẵn sàng giao hàng trong 4-7 ngày làm việc</option>
+                                                        <option value="8_15_bd">Sẵn sàng giao hàng trong 8-15 ngày làm việc</option>
+                                                        <option value="within_1_month">Sẵn sàng giao hàng trong vòng 1 tháng.</option>
+                                                        <option value="within_2_months">Sẵn sàng giao hàng trong vòng 2 tháng.</option>
+                                                        <option value="within_3_months">Sẵn sàng giao hàng trong vòng 3 tháng.</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-6 p-r-10" data-form-field="10">
+                                                <label class="form-label">
+                                                    Giá vận chuyển
+                                                </label>
+                                                <div class="filed-box">
+                                                    <select name="shipping_cost" class="form-control" id="select-prod-shipcost">
+                                                        <option value="free">Miễn phí vận chuyển</option>
+                                                        <option value="paid">Bên mua thanh toán</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 p-l-10" data-form-field="11">
+                                                <label class="form-label">
+                                                    Phí vận chuyển
+                                                </label>
+                                                <div class="filed-box">
+                                                    <input disabled="true" name="shipping_fee" id="shipping-fee-amount" type="text" class="form-control" placeholder="Nhập số tiền phí vận chuyển. Ví dụ: 10đ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12 no-mb" data-form-field="23">
+                                                <label class="form-label">
+                                                    Phương thức thanh toán
+                                                </label>
+                                                <div class="filed-box">
+                                                    <select name="payment_method" class="form-control" title="Chọn phương thức thanh toán">
+                                                        <option value="all_payments">Tất cả các phương pháp</option>
+                                                        <option value="cod_payments">Thanh toán khi giao hàng</option>
+                                                        <option value="pre_payments" selected="true">Trả trước</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-fieldset-title clearfix" data-affix-label="prod_logistics_info">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p>
+                                                    Thông tin sản phẩm thêm
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-6 p-r-10" data-form-field="13">
+                                                <label class="form-label">
+                                                    Nguồn gốc
+                                                </label>
+                                                <div class="filed-box">
+                                                    <input name="origin" type="text" class="form-control" placeholder="Nhập tên quốc gia xuất xứ sản phẩm...">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 p-l-10" data-form-field="14">
+                                                <label class="form-label">
+                                                    Nhãn hiệu
+                                                </label>
+                                                <div class="filed-box">
+                                                    <input name="brand" type="text" class="form-control" placeholder="Nhập tên thương hiệu sản phẩm...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-6 p-r-10" data-form-field="15">
+                                                <label class="form-label">
+                                                    Số mô hình
+                                                </label>
+                                                <div class="filed-box">
+                                                    <input name="model_number" type="text" class="form-control" placeholder="Nhập số kiểu sản phẩm...">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 p-l-10" data-form-field="16">
+                                                <label class="form-label">
+                                                    Cân nặng
+                                                </label>
+                                                <div class="filed-box">
+                                                    <input name="weight" type="text" class="form-control" placeholder="Ví dụ. 5kg, 11lb, 176oz, 50g">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-6 p-r-10" data-form-field="17">
+                                                <label class="form-label">
+                                                    Chiều dài
+                                                </label>
+                                                <div class="filed-box">
+                                                    <input name="length" type="text" class="form-control" placeholder="Ví dụ. 24in, 60.96cm, 5.5mm">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 p-l-10" data-form-field="18">
+                                                <label class="form-label">
+                                                    Chiều rộng
+                                                </label>
+                                                <div class="filed-box">
+                                                    <input name="width" type="text" class="form-control" placeholder="Ví dụ. 2in, 5.08cm, 0.8mm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12 no-mb" data-form-field="19">
+                                                <label class="form-label">
+                                                    Độ dày
+                                                </label>
+                                                <div class="filed-box">
+                                                    <input name="height" type="text" class="form-control" placeholder="Ví dụ. 6in, 15.24cm, 12.5mm">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-fieldset-title clearfix" data-affix-label="prod_images">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p>
+                                                    Poster sản phẩm & hình ảnh
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12" data-form-field="20">
+                                                <label class="form-label">
+                                                    Ảnh sản phẩm
+                                                </label>
+                                                <div class="filed-box">
+                                                    <div class="prod-pickzone-wrapper">
+                                                        <div class="left-part">
+                                                            <div class="pick-zone" id="select-prod-poster">
+                                                                <div class="pz-message">
+                                                                    <div class="drag-icon-cph">
+                                                                        <i class="material-icons">touch_app</i>
+                                                                    </div>
+                                                                    <h3>Nhấn vào đây để tải lên</h3>
+                                                                    <small>Select poster image</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="right-part">
+                                                            <div class="image-requirements-list">
+                                                                <h4>Thực hiện theo các yêu cầu hình ảnh cơ bản</h4>
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            Kích thước hình ảnh phải là 2800x2800
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            Loại hình ảnh sản phẩm phải là ảnh chuyên nghiệp hoặc ảnh bìa
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            Định dạng hình ảnh sản phẩm phải là: JPEG, PNG, GIF, TIFF
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            Thực hiện theo khung và cung cấp thông tin quan trọng!
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#">
+                                                                            Tôn trọng bản quyền đối với hình ảnh!
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box" id="prod-additional-images-holder">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12 no-mb" data-form-field="21">
+                                                <label class="form-label">
+                                                    Hình ảnh
+                                                </label>
+                                                <div class="filed-box">
+                                                    <div class="prod-images-dropzone" id="gallery-images-list">
+                                                        <div class="product-images-item eq-height add-image" id="add-gallery-images">
+                                                            <div class="inner-cont">
+                                                                <i class="material-icons">add_to_photos</i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <small class="col-cyan sub-title">Thêm hình ảnh bộ sưu tập sản phẩm. <i class="material-icons">info</i> Lưu ý: Sản phẩm có hình ảnh tốt và rõ ràng được bán nhanh hơn!</small>
+                                                    <template id="product-images-item-temp">
+                                                        <div class="product-images-item eq-height image-preview filled">
+                                                            <div class="image">
+                                                                <img src="" alt="Image">
+                                                                <span class="delete-image">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M405 136.798L375.202 107 256 226.202 136.798 107 107 136.798 226.202 256 107 375.202 136.798 405 256 285.798 375.202 405 405 375.202 285.798 256z"></path></svg>
+                                                            </span>
+                                                            </div>
+                                                        </div>
+                                                    </template>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-fieldset-title clearfix" data-affix-label="prod_variations">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p>
+                                                    Biến thể sản phẩm
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12 no-mb" data-form-field="22">
+                                                <label class="form-label">
+                                                    Loại biến thể
+                                                </label>
+                                                <div class="filed-box">
+                                                    <select id="prodvar-types" name="variation_type" class="form-control">
+                                                        <option value="single">Sản phẩm biến thể đơn</option>
+                                                        <option value="color">Sản phẩm biến thể màu</option>
+                                                        <option value="size">Kích thước sản phẩm biến thể</option>
+                                                        <option value="color_size">Sản phẩm biến thể màu sắc & kích thước</option>
+                                                    </select>
+                                                </div>
+                                                <small id="vartype-error" class="col-cyan">Để lại [Sản phẩm biến thể duy nhất] nếu sản phẩm không có tùy chọn</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box prod-sizing-types hidden" id="prod-sizing-types">
+                                        <div class="row clearfix m-t-20">
+                                            <div class="col-sm-12 no-mb">
+                                                <label class="form-label">
+                                                    Định cỡ
+                                                </label>
+                                                <div class="filed-box">
+                                                    <select data-size="5" id="sizing-types" class="form-control" title="Vui lòng chọn loại kích thước">
+                                                        <option value="mens_apparel">
+                                                            Trang phục nam                                                        </option>
+                                                        <option value="womens_apparel">
+                                                            Trang phục của phụ nữ                                                        </option>
+                                                        <option value="baby_children_apparel">
+                                                            Trang phục trẻ em và trẻ em                                                        </option>
+                                                        <option value="baby_children_shoes">
+                                                            Giày em bé                                                        </option>
+                                                        <option value="other_apparel_sizes">
+                                                            Kích cỡ trang phục khác                                                        </option>
+                                                        <option value="numeric_dimensions">
+                                                            Kích thước số                                                        </option>
+                                                        <option value="mens_shoes">
+                                                            Giày nam                                                        </option>
+                                                        <option value="womens_shoes">
+                                                            Giày nữ                                                        </option>
+                                                        <option value="memory_capacity">
+                                                            Dung lượng bộ nhớ                                                        </option>
+                                                        <option value="area_dimensions">
+                                                            Kích thước khu vực                                                        </option>
+                                                        <option value="length_dimensions">
+                                                            Kích thước chiều dài                                                        </option>
+                                                        <option value="voltage_units">
+                                                            Đơn vị điện áp                                                        </option>
+                                                        <option value="wattage_units">
+                                                            Đơn vị công suất                                                        </option>
+                                                        <option value="weight_units">
+                                                            Đơn vị trọng lượng                                                        </option>
+                                                        <option value="litre_capacity">
+                                                            Dung tích lít                                                        </option>
+
+                                                    </select>
+                                                </div>
+                                                <small id="vartype-error" class="col-cyan">
+                                                    <b> Định cỡ </b>: Vui lòng chọn loại đo cho các tùy chọn sản phẩm của bạn                                            </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box hidden" id="add-prodvar">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12 no-mb">
+                                                <div class="filed-box">
+                                                    <div class="add-prodvar">
+                                                        <div class="btn-wrapper">
+                                                            <button title="Thêm tùy chọn sản phẩm" id="add-prodvar-btn" type="button" class="btn bg-blue btn-custom btn-lg">
+                                                                <i class="material-icons">playlist_add</i> <span>Thêm tùy chọn sản phẩm</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="btn-wrapper">
+                                                            <button title="Tùy chọn sản phẩm" disabled="true" id="show-prodvar-btn" type="button" class="btn bg-grey btn-custom btn-lg">
+                                                                <i class="material-icons">menu</i> <span>Tùy chọn sản phẩm</span> (<b>0</b>)
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="clearfix" id="modal-templates-holder"></div>
+                    <div id="modal-templates-holder"></div>
+
+                    <form id="upload-product-poster" class="hidden">
+                        <input type="hidden" class="hidden d-none" name="hash" value="1606360196:f148ceee33a52e839b0dfea3393bf0a507d46855">
+                        <input name="poster" type="file" class="hidden" onchange="$(this).parent('form').submit();" accept="image/*">
+                    </form>
+
+                    <form id="upload-gallery-images" class="hidden">
+                        <input type="hidden" class="hidden d-none" name="hash" value="1606360196:f148ceee33a52e839b0dfea3393bf0a507d46855">
+                        <input name="image" type="file" class="hidden" onchange="$(this).parent('form').submit();" accept="image/*">
+                    </form>
+                </div>
+                <div class="affixed-page-part-2" id="right-sidepart">
+                    <div class="sidebar__inner">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Dữ liệu sản phẩm</h2>
+                            </div>
+                            <div class="body">
+                                <ul class="list-group">
+                                    <li class="list-group-item active" data-affix-scroll="prod_basic_info">
+                                        Thông tin cơ bản về sản phẩm
+                                    </li>
+                                    <li class="list-group-item" data-affix-scroll="prod_price_and_shipping">
+                                        Giá sản phẩm & vận chuyển
+                                    </li>
+                                    <li class="list-group-item" data-affix-scroll="prod_logistics_info">
+                                        Thông tin sản phẩm thêm
+                                    </li>
+                                    <li class="list-group-item" data-affix-scroll="prod_images">
+                                        Poster sản phẩm & hình ảnh
+                                    </li>
+                                    <li class="list-group-item" data-affix-scroll="prod_variations">
+                                        Biến thể sản phẩm
+                                    </li>
+                                </ul>
+                                <div class="ctrls">
+                                    <button class="btn btn-lg bg-main-red" data-main-btn="submit" title="Thêm sản phẩm mới">
+                                        <i class="material-icons">add_circle_outline</i> <span class="btn-text">Thêm sản phẩm mới</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(window).load(function(){
+            "use strict";
+
+            var P_UPSERT_FM = $("form#product-upsert-form");
+            var P_AI_H = P_UPSERT_FM.find('div#prod-additional-images-holder');
+            eqheight(".eq-height");
+        });
+
+        jQuery(document).ready(function($) {
+            "use strict";
+
+            var PROD_UPSERT_PAGE = $("div#product-upsert-page");
+            var P_UPSERT_FM      = PROD_UPSERT_PAGE.find("form#product-upsert-form");
+
+            P_UPSERT_FM.find('div#select-prod-poster').on('click',function(event) {
+                event.preventDefault();
+                PROD_UPSERT_PAGE.find("form#upload-product-poster").find('input[type="file"]').trigger('click');
+            });
+
+            PROD_UPSERT_PAGE.find("form#upload-product-poster").ajaxForm({
+                url: 'https://localhost/Web-raovat/req/products/upload_poster',
+                type: 'POST',
+                dataType: 'json',
+                data:{prod_id: '19'},
+                beforeSend: function() {
+                    $('div[data-dom-node="long_proc_preloader"]').removeClass('hidden');
+                },
+                success: function(data) {
+                    if (data.status == 200) {
+                        P_UPSERT_FM.find('div#select-prod-poster').html($("<img>",{
+                            src: data.url,
+                            alt: 'Image'
+                        }));
+                    }
+                    else {
+                        if (data.message) {
+                            $.notify({
+                                message: data.message,
+                            },{
+                                allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                                placement: {from: "bottom",align: "left"},
+                                offset: {x: 40,y: 30},
+                                animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                            });
+                        }
+                    }
+                },
+                complete: function() {
+                    delay(function() {
+                        $('div[data-dom-node="long_proc_preloader"]').addClass('hidden');
+                    },300);
+                }
+            });
+
+            P_UPSERT_FM.find('select#select-prod-shipcost').on('change',function(event) {
+                event.preventDefault();
+                var this_el   = $(this);
+                var ship_cost = $(this).val();
+
+                if (hs_in_array(ship_cost,['free','paid'])) {
+                    if (ship_cost == 'paid') {
+                        P_UPSERT_FM.find('input#shipping-fee-amount').removeAttr('disabled');
+                    }
+
+                    else {
+                        P_UPSERT_FM.find('input#shipping-fee-amount').attr('disabled', 'true');
+                        P_UPSERT_FM.find('input#shipping-fee-amount').val('');
+                    }
+                }
+                else{
+                    $(window).reloadPage(100);
+                    return false;
+                }
+            });
+
+            P_UPSERT_FM.find('div#add-gallery-images').on('click',function(event) {
+                event.preventDefault();
+                PROD_UPSERT_PAGE.find("form#upload-gallery-images").find('input[type="file"]').trigger('click');
+            });
+
+            PROD_UPSERT_PAGE.find("form#upload-gallery-images").ajaxForm({
+                url: 'https://localhost/Web-raovat/req/products/additional_image',
+                type: 'POST',
+                dataType: 'json',
+                beforeSend: function() {
+                    P_UPSERT_FM.find('[data-form-field="21"]').find('small.sub-title-error').remove();
+                    $('div[data-dom-node="long_proc_preloader"]').removeClass('hidden');
+                },
+                success: function(data) {
+                    if (data.status == 200) {
+                        var filled_images   = P_UPSERT_FM.find('div.filled.image-preview');
+                        var image_item_temp = P_UPSERT_FM.find('template#product-images-item-temp').html();
+                        var image_item      = $(image_item_temp);
+                        image_item.find('img').attr('src', data.url);
+                        image_item.attr('data-gallery-media-id', data.id);
+                        image_item.find('span').attr('data-delete-data', 'gallery_image');
+                        P_UPSERT_FM.find('div#gallery-images-list').prepend(image_item);
+                    }
+
+                    else {
+                        if (data.message) {
+                            $.notify({
+                                message: data.message,
+                            },{
+                                allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                                placement: {from: "bottom",align: "left"},
+                                offset: {x: 40,y: 30},
+                                animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                            });
+                        }
+                    }
+                },
+                complete: function() {
+                    delay(function() {
+                        $('div[data-dom-node="long_proc_preloader"]').addClass('hidden');
+                    },300);
+                }
+            });
+
+            PROD_UPSERT_PAGE.find('button[data-main-btn="submit"]').on('click', function(event) {
+                event.preventDefault();
+                P_UPSERT_FM.submit();
+            });
+
+            P_UPSERT_FM.ajaxForm({
+                url: 'https://localhost/Web-raovat/req/products/prod_upsert',
+                type: 'POST',
+                dataType: 'json',
+                beforeSend: function() {
+                    P_UPSERT_FM.find('div.filed-box').each(function(index, el) {
+                        $(el).removeClass('error');
+                    }); P_UPSERT_FM.find('small.error-message').remove();
+
+                    PROD_UPSERT_PAGE.find('button[data-main-btn="submit"]').attr('disabled',true);
+                    PROD_UPSERT_PAGE.find('button[data-main-btn="submit"]').find('span').text("Xin vui lòng chờ");
+                },
+                success: function(data) {
+                    if (data.status == 200) {
+                        $.notify({
+                            message: data.message,
+                        },{
+                            allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                            placement: {from: "bottom",align: "left"},
+                            offset: {x: 40,y: 30},
+                            animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                        });
+
+                        delay(function(){
+                            hs_redirect(data.url);
+                        },2000);
+                    }
+
+                    else {
+                        delay(function() {
+                            PROD_UPSERT_PAGE.find('button[data-main-btn="submit"]').removeAttr('disabled');
+                            PROD_UPSERT_PAGE.find('button[data-main-btn="submit"]').find('span').text(
+                                PROD_UPSERT_PAGE.find('button[data-main-btn="submit"]').attr('title')
+                            );
+                        },500);
+
+                        if (data.err_code == 20) {
+                            var invalid_field = P_UPSERT_FM.find('[data-form-field="20"]');
+                            invalid_field.scroll2();
+                            invalid_field.find('div.left-part').addClass('error');
+
+                            if (invalid_field.find('small').length) {
+                                invalid_field.find('small').text(data.message);
+                                invalid_field.find('small').addClass('animated flash');
+                            }
+                            else {
+                                $.notify({
+                                    message:data.message,
+                                },{
+                                    allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                                    placement: {from: "bottom",align: "left"},
+                                    offset: {x: 40,y: 30},
+                                    animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                                });
+                            }
+                        }
+
+                        else if(data.err_code == 21) {
+                            var invalid_field = P_UPSERT_FM.find('[data-form-field="21"]');
+                            invalid_field.scroll2();
+                            $('<small>',{
+                                text: data.message,
+                                class: 'col-red animated flash sub-title-error'
+                            }).insertBefore(invalid_field.find('small.sub-title'));
+                        }
+
+                        else if(data.err_code == 22) {
+                            var invalid_field = P_UPSERT_FM.find('[data-form-field="22"]').scroll2();
+                            $.notify({
+                                message:data.message,
+                            },{
+                                allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                                placement: {from: "bottom",align: "left"},
+                                offset: {x: 40,y: 30},
+                                animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                            });
+                        }
+
+                        else {
+                            var invalid_field = P_UPSERT_FM.find('[data-form-field="{0}"]'.format(data.err_code));
+                            if (invalid_field.length) {
+                                invalid_field.scroll2();
+                                if (invalid_field.find('div.filed-box').length) {
+                                    invalid_field.find('div.filed-box').addClass('error');
+                                    invalid_field.append($("<small>",{
+                                        text: data.message,
+                                        class: 'col-red animated flash error-message'
+                                    }));
+                                }
+                                else {
+                                    $.notify({
+                                        message:data.message,
+                                    },{
+                                        allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                                        placement: {from: "bottom",align: "left"},
+                                        offset: {x: 40,y: 30},
+                                        animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                                    });
+                                }
+                            }
+                            else {
+                                $.notify({
+                                    message:data.message,
+                                },{
+                                    allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                                    placement: {from: "bottom",align: "left"},
+                                    offset: {x: 40,y: 30},
+                                    animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                                });
+                            }
+                        }
+                    }
+                }
+            });
+
+            P_UPSERT_FM.find('select#prodvar-types').on('change',function(event) {
+                event.preventDefault();
+                var var_type = $(this).val();
+                var zis_elem = $(this);
+                $('div[data-dom-node="long_proc_preloader"]').removeClass('hidden');
+                $.ajax({
+                    url: 'https://localhost/Web-raovat/req/products/set_vartype',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {prod_id: '19',var_type:var_type},
+                }).done(function(data) {
+                    if (data.status == 200) {
+                        if(hs_in_array(var_type,['color','size','color_size'])){
+                            P_UPSERT_FM.find('div#add-prodvar').removeClass('hidden');
+
+                            if (hs_in_array(var_type,['size','color_size'])) {
+                                P_UPSERT_FM.find('div#prod-sizing-types').removeClass('hidden');
+                            }
+
+                            else {
+                                P_UPSERT_FM.find('div#prod-sizing-types').addClass('hidden');
+                            }
+                        }
+
+                        else {
+
+                            if (hs_in_array(var_type,['size','color_size']) != true) {
+                                P_UPSERT_FM.find('div#prod-sizing-types').addClass('hidden');
+                            }
+
+                            P_UPSERT_FM.find('div#add-prodvar').addClass('hidden');
+                        }
+                    }
+                    else {
+                        if (data.message) {
+                            zis_elem.val(data.pvt);
+                            zis_elem.selectpicker('refresh');
+                            $.notify({
+                                message: data.message,
+                            },{
+                                allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                                placement: {from: "bottom",align: "left"},
+                                offset: {x: 40,y: 30},
+                                animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                            });
+                        }
+                    }
+                }).always(function() {
+                    delay(function() {
+                        $('div[data-dom-node="long_proc_preloader"]').addClass('hidden');
+                    },300);
+                });
+            });
+
+            P_UPSERT_FM.find('div#prod-sizing-types').find('select').on('change',function(event) {
+                event.preventDefault();
+                var sizing_type = $(this).val();
+                var zis_elem    = $(this);
+
+                $('div[data-dom-node="long_proc_preloader"]').removeClass('hidden');
+                $.ajax({
+                    url: 'https://localhost/Web-raovat/req/products/set_sizing_type',
+                    type: 'POST',
+                    dataType: 'json',
+                    data: {prod_id: '19',type: sizing_type},
+                }).done(function(data) {
+                    if (data.status != 200) {
+                        zis_elem.val(data.pst);
+                        zis_elem.selectpicker('refresh');
+                        $.notify({
+                            message: data.message,
+                        },{
+                            allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                            placement: {from: "bottom",align: "left"},
+                            offset: {x: 40,y: 30},
+                            animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                        });
+                    }
+                }).always(function() {
+                    delay(function(){
+                        $('div[data-dom-node="long_proc_preloader"]').addClass('hidden');
+                    },300);
+                });
+            });
+
+            P_UPSERT_FM.find('button#add-prodvar-btn').on('click',function(event) {
+                event.preventDefault();
+                var var_type = P_UPSERT_FM.find('select#prodvar-types').val();
+                var zis_elem = $(this);
+                if(hs_in_array(var_type,['color','size','color_size'])) {
+                    if (hs_in_array(var_type,['size','color_size'])) {
+                        var prod_sizing_type = P_UPSERT_FM.find('select#sizing-types').val();
+                        if (hs_empty(prod_sizing_type)) {
+                            $.notify({
+                                message: "Vui lòng chọn loại kích cỡ sản phẩm trước khi thêm biến thể sản phẩm!",
+                            },{
+                                allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                                placement: {from: "bottom",align: "left"},
+                                offset: {x: 40,y: 30},
+                                animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                            });
+                            return false;
+                        }
+                    }
+
+                    $.ajax({
+                        url: 'https://localhost/Web-raovat/req/products/lp',
+                        type: 'GET',
+                        dataType: 'json',
+                        data: {
+                            page: 'var_addon_form',
+                            type: var_type,
+                        },
+                        beforeSend: function () {
+                            zis_elem.find('span').text("Xin vui lòng chờ");
+                            zis_elem.attr('disabled',true);
+                        }
+                    }).done(function(data) {
+                        if (data.status == 200) {
+                            $(data.html).appendTo('body');
+                            $('body').find('div.product-upsertvar-modal').modal('show');
+                        }
+
+                        else {
+                            if (data.message) {
+                                $.notify({
+                                    message: data.message,
+                                },{
+                                    allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                                    placement: {from: "bottom",align: "left"},
+                                    offset: {x: 40,y: 30},
+                                    animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                                });
+                            }
+                        }
+                    }).always(function function_name(argument) {
+                        zis_elem.find('span').text(zis_elem.attr('title'));
+                        zis_elem.removeAttr('disabled');
+                    });
+                }
+            });
+
+            P_UPSERT_FM.find('button#show-prodvar-btn').on('click',function(event) {
+                event.preventDefault();
+                var this_el = $(this);
+                $.ajax({
+                    url: 'https://localhost/Web-raovat/req/products/lp',
+                    type: 'GET',
+                    dataType: 'json',
+                    data: {
+                        page: 'product_variations_list',
+                    },
+                    beforeSend: function () {
+                        this_el.find('span').text("Xin vui lòng chờ");
+                        this_el.attr('disabled',true);
+                    }
+                }).done(function(data) {
+                    if (data.status == 200) {
+                        $(data.html).appendTo('body');
+                        $('body').find('div.modal.product-vars-list-modal').modal('show');
+                    }
+                    else {
+                        if (data.error) {
+                            $.notify({
+                                message: data.error,
+                            },{
+                                allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                                placement: {from: "bottom",align: "left"},
+                                offset: {x: 40,y: 30},
+                                animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                            });
+                        }
+                    }
+                }).always(function() {
+                    this_el.find('span').text(this_el.attr('title'));
+                    this_el.removeAttr('disabled');
+                });
+            });
+
+            $(document).on('click', '[data-delete-data]', function(event) {
+                event.preventDefault();
+                var deleted_data = $(this).data('delete-data');
+                var this_el      = $(this);
+
+                if (deleted_data == 'gallery_image') {
+                    if (this_el.hasClass('deleted') != true) {
+                        var id = $(this).closest('div.image-preview').data('gallery-media-id');
+                        this_el.addClass('deleted');
+                        if ($.isNumeric(id)) {
+                            $.ajax({
+                                url: 'https://localhost/Web-raovat/req/products/remove_gallery_image',
+                                type: 'POST',
+                                dataType: 'json',
+                                data: {image_id: id,prod_id:'19'},
+                            }).done(function(data) {
+                                if (data.status == 200) {
+                                    P_UPSERT_FM.find('[data-gallery-media-id="{0}"]'.format(id)).fadeOut(150, function() {
+                                        $(this).remove();
+                                    });
+                                }
+                            });
+                        }
+                    }
+                }
+
+                else if(deleted_data == 'product_variant_item') {
+                    var PD_VARLIST_M = $("div#product-varslist-modal");
+                    var var_id       = this_el.data('id');
+
+                    $.ajax({
+                        url: 'https://localhost/Web-raovat/req/products/delete_prod_var',
+                        type: 'POST',
+                        dataType: 'json',
+                        data: {id: var_id},
+                        beforeSend: function() {
+                            PD_VARLIST_M.find('button').attr('disabled', 'true');
+                        }
+                    }).done(function(data) {
+                        if (data.status == 200) {
+                            PD_VARLIST_M.find('span#vars-total').text(data.total);
+                            P_UPSERT_FM.find('button#show-prodvar-btn').find('b').text(data.total);
+
+                            PD_VARLIST_M.find('tr[data-var-row="{0}"]'.format(var_id)).slideUp(150,function(){
+                                $(this).remove();
+                            });
+
+                            if (hs_empty(data.total)) {
+                                PD_VARLIST_M.modal('hide');
+                                P_UPSERT_FM.find('button#show-prodvar-btn').attr('disabled',true);
+                            }
+                        }
+                        else {
+                            PD_VARLIST_M.modal('hide');
+                            $.notify({
+                                message: data.message,
+                            },{
+                                allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                                placement: {from: "bottom",align: "left"},
+                                offset: {x: 40,y: 30},
+                                animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                            });
+                        }
+                    }).always(function(){
+                        PD_VARLIST_M.find('button').removeAttr('disabled');
+                    });
+                }
+            });
+
+            $(document).on('click', '[data-onclick]', function(event) {
+                event.preventDefault();
+                var this_el       = $(this);
+                var event_trigger = this_el.data('onclick');
+
+                if (event_trigger == 'edit_var_item') {
+                    if (this_el.hasClass('deleted') != true) {
+                        var id = this_el.data('id');
+                        if ($.isNumeric(id)) {
+                            $.ajax({
+                                url: 'https://localhost/Web-raovat/req/products/lp',
+                                type: 'GET',
+                                dataType: 'json',
+                                data: {
+                                    prod_id: '19',
+                                    var_id: id,
+                                    page: 'edit_var_item',
+                                },
+                            }).done(function(data) {
+                                if (data.status == 200) {
+                                    delay(function(){
+                                        $('body').append($(data.html).modal('show')).addClass('modal-open');
+                                    },300);
+                                }
+
+                                else {
+                                    if (data.message) {
+                                        $.notify({
+                                            message: data.message,
+                                        },{
+                                            allow_dismiss: false,icon_type: "class",type: 'default',timer: 500,
+                                            placement: {from: "bottom",align: "left"},
+                                            offset: {x: 40,y: 30},
+                                            animate: {enter: 'animated fadeInUp',exit: 'animated fadeOutDown'}
+                                        });
+                                    }
+                                }
+                            }).always(function() {
+                                $('div#product-varslist-modal').modal('hide');
+                            });
+                        }
+
+                        else {
+                            return false;
+                        }
+                    }
+                }
+            });
+
+            PROD_UPSERT_PAGE.find('div#right-sidepart').stickySidebar({
+                topSpacing: 130,
+                bottomSpacing: 20,
+                stickyClass: 'is-affixed'
+            });
+
+            PROD_UPSERT_PAGE.find('[data-affix-scroll]').on('click', function(event) {
+                event.preventDefault();
+                var this_el = $(this);
+                var label   = this_el.data('affix-scroll');
+                if (label && PROD_UPSERT_PAGE.find('[data-affix-label="{0}"]'.format(label)).length) {
+                    PROD_UPSERT_PAGE.find('[data-affix-label="{0}"]'.format(label)).scroll2(200,125);
+                    this_el.addClass('active');
+                    this_el.siblings('li.list-group-item').removeClass('active');
+                }
+            });
+        });
+    </script><div class="long-process-preloader-wrapper hidden" data-dom-node="long_proc_preloader">
+    <div class="preloader-inner">
+        <div class="data-preloader">
+            <div class="loading">
+                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            </div>
+        </div>	</div>
+</div>
+
+</section>
+<script>
+    jQuery(document).ready(function($) {
+        "use strict";
+
+        var curr_store_page = $("section.content").data('storepage');
+        if ($('li[data-nav-list-item="{0}"]'.format(curr_store_page)).length) {
+
+            if ($('li[data-nav-list-item="{0}"]'.format(curr_store_page)).hasClass('mml')) {
+                $('li[data-nav-list-item="{0}"]'.format(curr_store_page)).addClass('active');
+            }
+
+            else{
+                $('li[data-nav-list-item="{0}"]'.format(curr_store_page)).addClass('active').parents('li.mtl').addClass('active').find('a.menu-toggle').addClass('toggled');
+            }
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+div.help-page-container {
+  width: 100%;
+  overflow: hidden;
+  min-height: calc(100vh - 140px); }
+  div.help-page-container .panel-groupset {
+    width: 70vw;
+    min-width: 320px;
+    margin: 0px auto; }
+    div.help-page-container .panel-groupset .panel-title {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 20px;
+      line-height: 0px; }
+      div.help-page-container .panel-groupset .panel-title h1 {
+        color: #192a32;
+        font-size: 30px;
+        line-height: 36px;
+        padding: 0;
+        margin: 0; }
+    div.help-page-container .panel-groupset .panel-group-title {
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 20px; }
+      div.help-page-container .panel-groupset .panel-group-title h4 {
+        color: #2d2f43;
+        font-size: 22px;
+        line-height: 26px;
+        padding: 0;
+        margin: 0; }
+    div.help-page-container .panel-groupset .panel-group-panelset {
+      width: 100%; }
+      div.help-page-container .panel-groupset .panel-group-panelset .accordion {
+        margin-bottom: 20px; }
+        div.help-page-container .panel-groupset .panel-group-panelset .accordion .card {
+          border: none;
+          border-radius: 5px; }
+          div.help-page-container .panel-groupset .panel-group-panelset .accordion .card:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12); }
+          div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .card-header {
+            background: #fff;
+            border: none;
+            padding: 15px 20px; }
+            div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .card-header h5 {
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              align-items: center; }
+              div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .card-header h5 button {
+                display: block;
+                color: #050708;
+                text-decoration: none;
+                font-size: 17px;
+                text-align: left;
+                padding: 0px;
+                max-width: 80%;
+                font-weight: 400; }
+                div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .card-header h5 button.collapse-toggle {
+                  line-height: 0px;
+                  background: transparent;
+                  border: none;
+                  padding: 0px;
+                  margin: 0 0 0 auto;
+                  box-shadow: none;
+                  outline: 0px; }
+                  div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .card-header h5 button.collapse-toggle span {
+                    line-height: 0;
+                    display: inline-block;
+                    display: none; }
+                    div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .card-header h5 button.collapse-toggle span svg {
+                      width: 40px;
+                      height: 40px;
+                      padding: 0;
+                      margin: 0;
+                      line-height: 0px;
+                      fill: #ccc;
+                      opacity: 0.8; }
+                    div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .card-header h5 button.collapse-toggle span.plus {
+                      display: inline-block; }
+                    div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .card-header h5 button.collapse-toggle span:hover svg, div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .card-header h5 button.collapse-toggle span:active svg {
+                      fill: #9697a1; }
+                  div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .card-header h5 button.collapse-toggle.open span.plus {
+                    display: none !important; }
+                  div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .card-header h5 button.collapse-toggle.open span.minus {
+                    display: inline-block !important; }
+          div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .collapse-content {
+            border-top: 1px solid #eee; }
+            div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .collapse-content .card-body {
+              font-size: 14px;
+              padding: 15px 20px;
+              color: #686868;
+              line-height: 24px; }
+              div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .collapse-content .card-body p.text-block {
+                font-size: 14px;
+                line-height: 24px;
+                padding: 0;
+                margin-bottom: 20px; }
+                div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .collapse-content .card-body p.text-block:last-child, div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .collapse-content .card-body p.text-block.no-mb {
+                  margin-bottom: 0px !important; }
+              div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .collapse-content .card-body ol.action-steps-list {
+                width: 100%;
+                padding: 0px 0px 0px 50px;
+                margin: 0px; }
+                div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .collapse-content .card-body ol.action-steps-list li {
+                  font-size: 13px;
+                  line-height: 24px; }
+                  div.help-page-container .panel-groupset .panel-group-panelset .accordion .card .collapse-content .card-body ol.action-steps-list li a {
+                    text-decoration: underline; }
+
+/*# sourceMappingURL=help.master.style.css.map */

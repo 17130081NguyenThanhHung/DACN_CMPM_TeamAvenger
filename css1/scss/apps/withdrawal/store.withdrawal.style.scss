@@ -1,0 +1,129 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)                                    @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ HighExpress - The Ultimate Modern Marketplace Platform                  @
+// @ Copyright (c) 05.07.19 HighExpress. All rights reserved.                @
+// @*************************************************************************@
+
+$black:#192a32;
+$black2: #2d2f43;
+$main:#1fb4ef;
+$link:#003569;
+$border:#e6e6e6;
+$pl_holder:#72777c;
+$red:#ff7676;
+$red2:#f6546a;
+$green:#00ff7f;
+$btn_shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px;
+
+div.withdrawals-page-container{
+	.withdrawals-page-card{
+		.header{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			a{
+				margin-left: auto;
+				i{
+					font-size: 20px;
+				}
+			}
+		}
+
+		.yearly-stats-chart{
+			width: 100%;
+			overflow: hidden;
+			div.chart-wrapper{
+				width: 100%;
+				height: 400px;
+			}
+		}
+	}
+
+	.withdrawals-table-card{	
+		.header{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			button{
+				margin-left: auto;
+				i{
+					font-size: 16px !important;
+					top: -1px !important;
+				}
+			}
+		}
+	}
+
+	div.info-box{
+		div.box-footer{
+			a{
+				text-decoration: none !important;
+				cursor: default !important;
+			}
+		}
+	}
+}
+
+	
+div.modal.request-withdrawal-modal{	
+	min-width: 320px !important;
+	overflow-x: hidden;
+	.modal-header{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		border-bottom: 1px solid $border;
+		padding: 20px;
+		h4{
+			font-size: 15px;
+			line-height: 20px;
+			text-transform: uppercase;
+		}
+		a{
+			margin-left: auto;
+			i{
+				font-size: 20px;
+			}
+		}
+	}
+
+	.modal-body{
+		.note{
+			border: 1px solid $main;
+			padding: 15px;
+			margin-bottom: 20px;
+			border-radius: 3px;
+
+			p{
+				color: $main;	
+				margin-bottom: 14px;
+				font-size: 12px;
+
+				&:first-child{
+					font-size: 16px;
+					color: $main;
+					font-weight: 600;
+				}
+
+				&:last-child{
+					margin-bottom: 5px;
+				}
+			}
+		}
+
+		small.error-message{
+			color: $red;
+			font-size: 12px;
+			line-height: 18px;
+		}
+
+		a.help-link i{
+			font-size: 16px !important;
+		}
+	}
+}

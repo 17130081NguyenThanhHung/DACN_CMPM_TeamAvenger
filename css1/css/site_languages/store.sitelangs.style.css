@@ -1,0 +1,27 @@
+div.modal.addnew-language-modal div.notes {
+  margin-bottom: 15px;
+  widows: 100%;
+  line-height: 0px;
+  padding: 0; }
+  div.modal.addnew-language-modal div.notes p.info-message.warning {
+    border: 1px solid #ff7676;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: #ff7676; }
+
+div.edit-language-page table tr td p.lang-text-holder {
+  font-size: 13px;
+  line-height: 18px;
+  padding: 0;
+  margin: 0;
+  max-width: 700px;
+  min-width: 300px;
+  max-height: 2em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+
+/*# sourceMappingURL=store.sitelangs.style.css.map */

@@ -1,0 +1,542 @@
+form.product-upsert-form {
+  width: 100%;
+  min-width: 320px;
+  overflow-x: hidden; }
+  form.product-upsert-form .form-group {
+    margin-right: 0px !important;
+    margin-left: 0px !important; }
+  form.product-upsert-form .body.fluid-body {
+    padding-left: 15px;
+    padding-right: 15px; }
+  form.product-upsert-form .body div.form-field-box div.filed-box.error input, form.product-upsert-form .body div.form-field-box div.filed-box.error textarea {
+    border: 1px solid #ff7676 !important;
+    color: #ff7676 !important; }
+    form.product-upsert-form .body div.form-field-box div.filed-box.error input::placeholder, form.product-upsert-form .body div.form-field-box div.filed-box.error textarea::placeholder {
+      color: #ff7676 !important; }
+  form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 15px; }
+    form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part {
+      flex-basis: calc(50% - 10px);
+      height: 250px;
+      border: 2px dashed #616161;
+      cursor: pointer;
+      transition: border 0.30s ease-in-out; }
+      form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part .pick-zone {
+        width: 100%;
+        height: 100%;
+        background: whitesmoke; }
+        form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part .pick-zone .pz-message {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: color 0.30s ease-in-out;
+          padding: 30px;
+          text-align: center; }
+          form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part .pick-zone .pz-message .drag-icon-cph i {
+            font-size: 50px; }
+          form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part .pick-zone .pz-message h3 {
+            font-size: 16px;
+            padding: 0px;
+            margin: 0px;
+            line-height: 22px;
+            font-weight: 500;
+            margin-top: 10px; }
+          form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part .pick-zone .pz-message small {
+            font-size: 10px;
+            line-height: 10px; }
+        form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part .pick-zone img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part:active, form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part:hover {
+        border-color: #ff7676; }
+        form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part:active .pz-message, form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part:hover .pz-message {
+          color: #ff7676; }
+      form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part.error {
+        border-color: #ff7676 !important; }
+        form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part.error i, form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part.error h3, form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .left-part.error small {
+          color: #ff7676 !important; }
+    form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .right-part {
+      flex-basis: calc(50% - 10px);
+      border: none;
+      overflow: hidden; }
+      form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .right-part .image-requirements-list {
+        width: 100%;
+        overflow: hidden; }
+        form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .right-part .image-requirements-list h4 {
+          padding: 0px;
+          margin: 0 0 10px 0;
+          color: #1fb4ef;
+          font-size: 14px;
+          line-height: 18px;
+          font-weight: 500; }
+        form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .right-part .image-requirements-list ul {
+          padding: 0;
+          margin: 0; }
+          form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .right-part .image-requirements-list ul li {
+            font-size: 11px;
+            line-height: 22px; }
+            form.product-upsert-form .body div.form-field-box div.filed-box .prod-pickzone-wrapper .right-part .image-requirements-list ul li a {
+              color: #1fb4ef;
+              text-decoration: none; }
+  form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px;
+    padding-bottom: 5px;
+    display: block;
+    border: 1px solid #eeeeef;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item {
+      flex-basis: calc(20% - 10px);
+      position: relative;
+      margin-bottom: 12px;
+      margin-right: 12px;
+      border: 2px solid #616161; }
+      form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item:nth-child(5n) {
+        margin-right: 0px; }
+      form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item.add-image {
+        border: 2px dashed #616161;
+        transition: border 0.30s ease-in-out; }
+        form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item.add-image .inner-cont {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer; }
+          form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item.add-image .inner-cont i {
+            font-size: 20px;
+            transition: color 0.30s ease-in-out; }
+        form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item.add-image:hover, form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item.add-image:active {
+          border-color: #ff7676; }
+          form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item.add-image:hover i, form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item.add-image:active i {
+            color: #ff7676; }
+      form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item .image {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative; }
+        form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item .image img {
+          width: 100%;
+          object-fit: cover; }
+        form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item .image:hover span.delete-image, form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item .image:active span.delete-image {
+          display: inline-block; }
+        form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item .image span.delete-image {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          background: #00000078;
+          display: none;
+          transition: all 0.27s ease-in-out; }
+          form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item .image span.delete-image.deleted {
+            opacity: 0.5;
+            cursor: not-allowed; }
+          form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone .product-images-item .image span.delete-image svg {
+            cursor: pointer;
+            position: absolute;
+            width: 30%;
+            height: 30%;
+            margin: auto;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            fill: #fff; }
+    form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone + small {
+      margin-top: 10px;
+      display: block; }
+      form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone + small i {
+        font-size: 15px;
+        margin-top: -3px; }
+      form.product-upsert-form .body div.form-field-box div.filed-box .prod-images-dropzone + small.sub-title-error ~ small {
+        display: none;
+        visibility: hidden;
+        opacity: 0; }
+  form.product-upsert-form .body div.form-field-box div.filed-box .prod-colors-dropzone {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px;
+    padding-bottom: 5px;
+    display: block;
+    background: #eeeeef;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    form.product-upsert-form .body div.form-field-box div.filed-box .prod-colors-dropzone .product-images-item {
+      flex-basis: calc(20% - 10px);
+      position: relative;
+      margin-bottom: 12px;
+      margin-right: 12px;
+      border: 2px solid #555; }
+      form.product-upsert-form .body div.form-field-box div.filed-box .prod-colors-dropzone .product-images-item:nth-child(5n) {
+        margin-right: 0px; }
+      form.product-upsert-form .body div.form-field-box div.filed-box .prod-colors-dropzone .product-images-item.add-image .inner-cont {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer; }
+        form.product-upsert-form .body div.form-field-box div.filed-box .prod-colors-dropzone .product-images-item.add-image .inner-cont i {
+          font-size: 30px; }
+    form.product-upsert-form .body div.form-field-box div.filed-box .prod-colors-dropzone + small {
+      display: block;
+      margin-top: 10px; }
+      form.product-upsert-form .body div.form-field-box div.filed-box .prod-colors-dropzone + small i {
+        font-size: 15px;
+        margin-top: -3px; }
+  form.product-upsert-form .body div.form-field-box div.filed-box .sizing-type-units {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px 15px 5px 15px;
+    border-radius: 3px;
+    border: 2px solid #1fb4ef;
+    margin-top: 20px; }
+    form.product-upsert-form .body div.form-field-box div.filed-box .sizing-type-units .size-unit {
+      padding: 5px 8px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      border: 1px solid #1fb4ef;
+      border-radius: 5px; }
+      form.product-upsert-form .body div.form-field-box div.filed-box .sizing-type-units .size-unit label {
+        margin-bottom: 0px;
+        height: 20px; }
+  form.product-upsert-form .body div.form-field-box div.filed-box .add-prodvar {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+    form.product-upsert-form .body div.form-field-box div.filed-box .add-prodvar.hidden {
+      display: none;
+      margin: 0;
+      padding: 0;
+      visibility: hidden; }
+    form.product-upsert-form .body div.form-field-box div.filed-box .add-prodvar div.btn-wrapper:first-child {
+      margin-right: 15px; }
+    form.product-upsert-form .body div.form-field-box div.filed-box .add-prodvar div.btn-wrapper #show-prodvar-btn span {
+      top: 0px !important; }
+  form.product-upsert-form .body div.form-field-box div.filed-box .prod-sizing-types {
+    width: 100%;
+    margin-top: 20px; }
+    form.product-upsert-form .body div.form-field-box div.filed-box .prod-sizing-types .dropdown-menu.inner {
+      max-height: 200px !important;
+      overflow-x: hidden;
+      overflow-y: scroll; }
+  form.product-upsert-form .body .form-control-buttons button {
+    margin-right: 15px;
+    font-size: 13px;
+    margin-bottom: 20px; }
+
+div.modal.product-upsertvar-modal .modal-dialog {
+  max-width: 700px !important;
+  min-width: 320px !important; }
+div.modal.product-upsertvar-modal .modal-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 20px; }
+  div.modal.product-upsertvar-modal .modal-header h4 {
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase; }
+  div.modal.product-upsertvar-modal .modal-header a {
+    margin-left: auto; }
+    div.modal.product-upsertvar-modal .modal-header a i {
+      font-size: 20px; }
+div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.variation-color-image div.image {
+  width: 120px;
+  height: 120px;
+  border: 2px dashed #cfcfcf;
+  cursor: pointer;
+  transition: border 0.27s ease-in-out;
+  background: whitesmoke; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.variation-color-image div.image:hover, div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.variation-color-image div.image:active {
+    border-color: #ff7676; }
+    div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.variation-color-image div.image:hover .flex-cont i, div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.variation-color-image div.image:active .flex-cont i {
+      color: #ff7676; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.variation-color-image div.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.variation-color-image div.image .flex-cont {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.variation-color-image div.image .flex-cont i {
+      transition: color 0.27s ease-in-out;
+      font-size: 25px;
+      color: #b6b6b6; }
+div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box small.error-message {
+  line-height: 26px !important;
+  font-size: 13px !important;
+  display: block;
+  width: 100%; }
+div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.color-info {
+  margin-bottom: 25px; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.color-info select.form-control {
+    max-height: 250px;
+    overflow-y: scroll; }
+div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing {
+  display: block;
+  width: 100%;
+  overflow: hidden; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing div.sizes-defining {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px 15px 0px 15px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing div.sizes-defining .size-unit {
+      margin-bottom: 15px;
+      margin-right: 15px;
+      background: #fff;
+      border: 2px solid #3896f3;
+      border-radius: 4px;
+      padding: 5px 12px; }
+      div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing div.sizes-defining .size-unit label {
+        margin: 0;
+        line-height: 20px;
+        height: 20px;
+        padding-bottom: 0px;
+        vertical-align: top;
+        font-weight: 600; }
+        div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing div.sizes-defining .size-unit label:after {
+          border: 2px solid #3896f3; }
+      div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing div.sizes-defining .size-unit.disabled {
+        opacity: 0.1;
+        cursor: not-allowed; }
+div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing-addon div.btn-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing-addon div.btn-controls div.btn-group {
+    margin-left: auto; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing-addon div.btn-controls button {
+    line-height: 25px !important; }
+    div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing-addon div.btn-controls button span {
+      font-size: 14px !important;
+      line-height: 22px !important;
+      top: 0px !important; }
+    div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing-addon div.btn-controls button i {
+      font-size: 18px;
+      line-height: 22px;
+      top: 0px; }
+div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing-addon.size-var .input-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing-addon.size-var .input-group .input-control {
+    margin-right: 20px;
+    flex: 1;
+    height: 34px; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing-addon.size-var .input-group .button-control button.add-size {
+    line-height: 38px;
+    height: 38px !important;
+    padding: 0px 10px !important; }
+    div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing-addon.size-var .input-group .button-control button.add-size i {
+      font-size: 18px;
+      line-height: 18px;
+      top: 0px; }
+    div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing-addon.size-var .input-group .button-control button.add-size:hover, div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing-addon.size-var .input-group .button-control button.add-size:active, div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing-addon.size-var .input-group .button-control button.add-size:focus {
+      color: #fff !important; }
+div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.sizing-addon.size-var small {
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 400; }
+div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-title-panel {
+  padding-top: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: space-between; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-title-panel .fieldset-title {
+    border-bottom: none;
+    padding-top: 20px;
+    flex-basis: auto;
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+    line-height: 30px;
+    font-size: 16px;
+    font-weight: normal; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-title-panel button.collapse-toggle {
+    line-height: 20px;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    outline: 0;
+    background: transparent; }
+div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body {
+  width: 100%; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+    background: #f9f9f9; }
+    div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item:last-child {
+      margin-bottom: 0px; }
+    div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item .header-part {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 10px 15px;
+      align-items: center; }
+      div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item .header-part span {
+        font-size: 14px;
+        line-height: 18px;
+        margin-right: 15px; }
+        div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item .header-part span.image {
+          width: 35px;
+          height: 35px;
+          border: 1px solid #e6e6e6; }
+          div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item .header-part span.image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item .header-part span.id {
+          color: #192a32; }
+        div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item .header-part span.slide-toggle {
+          margin-left: auto;
+          margin-right: 0px;
+          cursor: pointer; }
+          div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item .header-part span.slide-toggle.closed i {
+            transform: rotate(90deg); }
+        div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item .header-part span i.col, div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item .header-part span i.size {
+          font-size: 14px; }
+    div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item .body-content {
+      width: 100%;
+      border-top: 1px solid #eee;
+      padding: 15px 15px 0px 15px; }
+      div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item .body-content.hidden {
+        display: none; }
+      div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .var-list-item .body-content .form-group label.form-label {
+        padding-top: 0px !important;
+        margin-bottom: 5px !important;
+        font-size: 12px !important;
+        line-height: 12px !important; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .no-vars {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    padding: 70px 50px;
+    text-align: center;
+    background: #f9f9f9; }
+    div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .no-vars.hidden {
+      display: none;
+      opacity: 0;
+      visibility: hidden; }
+    div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .no-vars h5 {
+      color: #2d2f43; }
+    div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.variations-list .fieldset-body .no-vars p {
+      font-size: 13px;
+      padding: 0;
+      margin: 0; }
+div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.btns {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.btns button.m-l-15 {
+    margin-left: 15px !important; }
+  div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.btns button:hover, div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.btns button:focus, div.modal.product-upsertvar-modal .modal-body div.data-management-page div.form-field-box div.filed-box div.btns button:active {
+    color: #fff !important; }
+
+div.edit-prodvar-modal div.form-group.form-field-box div.btns button.m-l-15 {
+  margin-left: 15px !important; }
+
+div.modal.confirm-var-removal .modal-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 20px; }
+  div.modal.confirm-var-removal .modal-header h4 {
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase; }
+  div.modal.confirm-var-removal .modal-header a {
+    margin-left: auto; }
+    div.modal.confirm-var-removal .modal-header a i {
+      font-size: 20px; }
+
+div.modal.product-vars-list-modal .modal-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 20px; }
+  div.modal.product-vars-list-modal .modal-header h4 {
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase; }
+  div.modal.product-vars-list-modal .modal-header a {
+    margin-left: auto; }
+    div.modal.product-vars-list-modal .modal-header a i {
+      font-size: 20px; }
+div.modal.product-vars-list-modal table.table tr th {
+  text-transform: uppercase; }
+div.modal.product-vars-list-modal table.table tr td {
+  vertical-align: middle; }
+  div.modal.product-vars-list-modal table.table tr td.img img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover; }
+  div.modal.product-vars-list-modal table.table tr td button {
+    text-transform: uppercase; }
+    div.modal.product-vars-list-modal table.table tr td button i {
+      vertical-align: middle;
+      top: -1px;
+      font-size: 15px; }
+    div.modal.product-vars-list-modal table.table tr td button span {
+      top: 0; }
+div.modal.product-vars-list-modal table.table tr.no-vars td {
+  padding: 50px;
+  text-align: center;
+  font-size: 15px;
+  color: #192a32;
+  text-transform: capitalize; }
+
+/*# sourceMappingURL=store.upsertprod.style.css.map */

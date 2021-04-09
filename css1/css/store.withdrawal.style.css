@@ -1,0 +1,68 @@
+div.withdrawals-page-container .withdrawals-page-card .header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  div.withdrawals-page-container .withdrawals-page-card .header a {
+    margin-left: auto; }
+    div.withdrawals-page-container .withdrawals-page-card .header a i {
+      font-size: 20px; }
+div.withdrawals-page-container .withdrawals-page-card .yearly-stats-chart {
+  width: 100%;
+  overflow: hidden; }
+  div.withdrawals-page-container .withdrawals-page-card .yearly-stats-chart div.chart-wrapper {
+    width: 100%;
+    height: 400px; }
+div.withdrawals-page-container .withdrawals-table-card .header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center; }
+  div.withdrawals-page-container .withdrawals-table-card .header button {
+    margin-left: auto; }
+    div.withdrawals-page-container .withdrawals-table-card .header button i {
+      font-size: 16px !important;
+      top: -1px !important; }
+div.withdrawals-page-container div.info-box div.box-footer a {
+  text-decoration: none !important;
+  cursor: default !important; }
+
+div.modal.request-withdrawal-modal {
+  min-width: 320px !important;
+  overflow-x: hidden; }
+  div.modal.request-withdrawal-modal .modal-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px; }
+    div.modal.request-withdrawal-modal .modal-header h4 {
+      font-size: 15px;
+      line-height: 20px;
+      text-transform: uppercase; }
+    div.modal.request-withdrawal-modal .modal-header a {
+      margin-left: auto; }
+      div.modal.request-withdrawal-modal .modal-header a i {
+        font-size: 20px; }
+  div.modal.request-withdrawal-modal .modal-body .note {
+    border: 1px solid #1fb4ef;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 3px; }
+    div.modal.request-withdrawal-modal .modal-body .note p {
+      color: #1fb4ef;
+      margin-bottom: 14px;
+      font-size: 12px; }
+      div.modal.request-withdrawal-modal .modal-body .note p:first-child {
+        font-size: 16px;
+        color: #1fb4ef;
+        font-weight: 600; }
+      div.modal.request-withdrawal-modal .modal-body .note p:last-child {
+        margin-bottom: 5px; }
+  div.modal.request-withdrawal-modal .modal-body small.error-message {
+    color: #ff7676;
+    font-size: 12px;
+    line-height: 18px; }
+  div.modal.request-withdrawal-modal .modal-body a.help-link i {
+    font-size: 16px !important; }
+
+/*# sourceMappingURL=store.withdrawal.style.css.map */

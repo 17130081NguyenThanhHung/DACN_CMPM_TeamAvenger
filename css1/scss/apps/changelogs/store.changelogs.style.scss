@@ -1,0 +1,67 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)                                    @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ HighExpress - The Ultimate Modern Marketplace Platform                  @
+// @ Copyright (c) 05.07.19 HighExpress. All rights reserved.                @
+// @*************************************************************************@
+
+$black:#192a32;
+$black2: #2d2f43;
+$main:#1fb4ef;
+$link:#003569;
+$border:#e6e6e6;
+$pl_holder:#72777c;
+$red:#ff7676;
+$red2:#f6546a;
+$green:#00ff7f;
+$btn_shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px;
+
+div.changelogs-timeline-page {
+	width: 100%;
+
+	div.card{
+		div.header h2{
+			small{
+				display: inline-block;
+				i{
+					font-size: 16px;
+					line-height: 16px;
+					vertical-align: middle;
+					top: 0px;
+				}
+			}
+		}
+
+		div.body ul{
+			width: 100%;
+			margin-bottom: 0px;
+			padding: 0px;
+
+			li{
+				width: 100%;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				margin-bottom: 10px;
+				align-items: flex-start;
+
+				span.changelog-message{
+					font-size: 13px;
+					color: $main;
+				}
+
+				span.badge{
+					margin-right: 10px;
+				}
+
+				&:last-child{
+					margin-bottom: 0px !important;
+				}
+			}
+		}
+	}
+}

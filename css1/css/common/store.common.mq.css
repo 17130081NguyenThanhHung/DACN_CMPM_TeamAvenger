@@ -1,0 +1,318 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  header.main-sp-header div.navbar-body {
+    padding: 0px 15px 0px 0px !important; }
+    header.main-sp-header div.navbar-body div.flex-ci.left {
+      display: none !important; }
+    header.main-sp-header div.navbar-body div.navbar-body-inner.ts-header div.flex-ci.left {
+      display: inherit !important; }
+  header.main-sp-header div.navbar-header {
+    width: 60px !important;
+    flex-basis: 60px !important;
+    border-right: none !important;
+    background: #fff !important; }
+    header.main-sp-header div.navbar-header a.bars {
+      color: #e0e0e0 !important; }
+    header.main-sp-header div.navbar-header a.navbar-brand, header.main-sp-header div.navbar-header b.navbar-name {
+      display: none !important; }
+  header.main-sp-header div.navbar-flex-inner-bottom-line {
+    display: none !important; }
+  header.main-sp-header div.navbar-flex-inner-top-line {
+    border-bottom: none !important; }
+
+  section.content {
+    margin-top: 70px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important; } }
+@media (max-width: 1024px) {
+  header.main-sp-header div.navbar-flex-inner-bottom-line {
+    display: none !important; }
+  header.main-sp-header div.navbar-flex-inner-top-line {
+    border-bottom: none !important;
+    padding: 0px 15px !important; }
+    header.main-sp-header div.navbar-flex-inner-top-line div.navbar-body {
+      padding: 0px !important; }
+
+  section.content {
+    margin-top: 65px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+
+  aside.hs-store-main-sidebar {
+    top: 55px !important;
+    background: #fff !important;
+    height: calc(100vh - 55px) !important; }
+    aside.hs-store-main-sidebar div.user-info {
+      background: #fff !important;
+      padding: 15px 30px 15px 30px !important; }
+    aside.hs-store-main-sidebar div.menu ul.list {
+      background: #fff !important; }
+      aside.hs-store-main-sidebar div.menu ul.list li {
+        background: #fff !important; }
+        aside.hs-store-main-sidebar div.menu ul.list li.header {
+          padding: 10px 30px 10px 30px !important; }
+        aside.hs-store-main-sidebar div.menu ul.list li a {
+          padding: 8px 30px 8px 30px !important; }
+        aside.hs-store-main-sidebar div.menu ul.list li ul.ml-menu li a {
+          padding-left: 65px !important; }
+    aside.hs-store-main-sidebar div.menu div.slimScrollBar {
+      display: none !important; } }
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 780px) {
+  header.main-sp-header {
+    padding: 0px !important; }
+    header.main-sp-header div.navbar-body {
+      padding: 0px 15px 0px 0px !important; }
+      header.main-sp-header div.navbar-body div.flex-ci.left {
+        display: none !important; }
+      header.main-sp-header div.navbar-body div.flex-ci.right ul li.nav-item.profile-nav-dd span.user-name {
+        display: none !important; }
+      header.main-sp-header div.navbar-body div.flex-ci.right ul li.nav-item.user-notifications-dd div.dropdown-menu {
+        right: -40px !important; }
+      header.main-sp-header div.navbar-body div.navbar-body-inner.ts-header div.flex-ci.left {
+        display: inherit !important; }
+    header.main-sp-header div.navbar-header {
+      width: 60px !important;
+      flex-basis: 60px !important;
+      border-right: none !important;
+      background: #fff !important; }
+      header.main-sp-header div.navbar-header a.bars {
+        color: #e0e0e0 !important; }
+      header.main-sp-header div.navbar-header a.navbar-brand, header.main-sp-header div.navbar-header b.navbar-name {
+        display: none !important; }
+
+  section.content {
+    margin-top: 70px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+
+  div.popup-ticket-modal {
+    padding-left: 40px !important;
+    padding-right: 40px !important; }
+    div.popup-ticket-modal div.modal-dialog {
+      width: 100% !important; }
+      div.popup-ticket-modal div.modal-dialog div.table-info tr td {
+        padding: 10px 0px;
+        font-size: 12px !important;
+        line-height: 12px !important; }
+      div.popup-ticket-modal div.modal-dialog div.attached-media div.img-holder {
+        width: 50px !important;
+        height: 50px !important;
+        margin-right: 5px; }
+
+  div.table-filter-modal div.col-sm-6 {
+    padding: 0px 15px !important; }
+
+  div.data-management-page div.affixed-page-section div.affixed-page-part-1 {
+    flex-basis: 100% !important;
+    width: 100% !important; }
+  div.data-management-page div.affixed-page-section div.affixed-page-part-2 {
+    flex-basis: 100% !important;
+    width: 100% !important; }
+    div.data-management-page div.affixed-page-section div.affixed-page-part-2.is-affixed {
+      position: static !important;
+      height: auto !important; }
+      div.data-management-page div.affixed-page-section div.affixed-page-part-2.is-affixed div.inner-wrapper-sticky {
+        position: static !important;
+        width: 100% !important; }
+  div.data-management-page div.form-group.form-field-box div.col-sm-6 {
+    padding: 0px 15px !important;
+    width: 100% !important; }
+  div.data-management-page div.data-management-area {
+    padding: 0px !important; } }
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  header.main-sp-header {
+    padding: 0px !important; }
+    header.main-sp-header div.navbar-body {
+      padding: 0px 15px 0px 0px !important; }
+      header.main-sp-header div.navbar-body div.flex-ci.left {
+        display: none !important; }
+      header.main-sp-header div.navbar-body div.flex-ci.right ul li.nav-item.profile-nav-dd img {
+        width: 25px !important;
+        height: 25px !important; }
+      header.main-sp-header div.navbar-body div.flex-ci.right ul li.nav-item.profile-nav-dd span.user-name {
+        display: none !important; }
+      header.main-sp-header div.navbar-body div.flex-ci.right ul li.nav-item.user-notifications-dd div.dropdown-menu {
+        right: -130px !important; }
+      header.main-sp-header div.navbar-body div.navbar-body-inner.ts-header div.flex-ci.left {
+        display: inherit !important; }
+        header.main-sp-header div.navbar-body div.navbar-body-inner.ts-header div.flex-ci.left div.uname-holder {
+          display: none !important; }
+    header.main-sp-header div.navbar-header {
+      background: #fff !important;
+      width: 60px !important;
+      flex-basis: 60px !important;
+      border-right: none !important; }
+      header.main-sp-header div.navbar-header a.bars {
+        color: #e0e0e0 !important; }
+      header.main-sp-header div.navbar-header a.navbar-brand, header.main-sp-header div.navbar-header b.navbar-name {
+        display: none !important; }
+
+  section.content {
+    margin-top: 70px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+
+  div.card.ajax-ctrl-table div.header:not(.un-filterable) {
+    align-items: center !important;
+    justify-content: center !important; }
+    div.card.ajax-ctrl-table div.header:not(.un-filterable) h2 {
+      display: none !important; }
+    div.card.ajax-ctrl-table div.header:not(.un-filterable) div.rows-filter {
+      width: 100%;
+      margin-left: 0px !important;
+      max-width: 100% !important;
+      flex-basis: 100% !important; }
+
+  div.popup-ticket-modal {
+    padding-left: 20px !important;
+    padding-right: 20px !important; }
+    div.popup-ticket-modal div.modal-dialog {
+      width: 100% !important; }
+      div.popup-ticket-modal div.modal-dialog div.ticket-content div.user-info div.avatar {
+        width: 30px !important;
+        height: 30px !important; }
+      div.popup-ticket-modal div.modal-dialog div.ticket-content div.user-info div.uname h6 {
+        font-size: 12px !important; }
+      div.popup-ticket-modal div.modal-dialog div.ticket-content div.user-info div.uname p span {
+        font-size: 10px !important; }
+      div.popup-ticket-modal div.modal-dialog div.ticket-content div.table-info tr td {
+        padding: 10px 0px;
+        font-size: 12px !important;
+        line-height: 12px !important; }
+      div.popup-ticket-modal div.modal-dialog div.attached-media div.img-holder {
+        width: 35px !important;
+        height: 35px !important;
+        margin-right: 5px; }
+
+  div.table-filter-modal div.col-sm-6 {
+    padding: 0px 15px !important; }
+
+  div.data-management-page div.affixed-page-section div.affixed-page-part-1 {
+    flex-basis: 100% !important;
+    width: 100% !important; }
+  div.data-management-page div.affixed-page-section div.affixed-page-part-2 {
+    flex-basis: 100% !important;
+    width: 100% !important; }
+    div.data-management-page div.affixed-page-section div.affixed-page-part-2.is-affixed {
+      position: static !important;
+      height: auto !important; }
+      div.data-management-page div.affixed-page-section div.affixed-page-part-2.is-affixed div.inner-wrapper-sticky {
+        position: static !important;
+        width: 100% !important; }
+  div.data-management-page div.form-group.form-field-box div.col-sm-6 {
+    padding: 0px 15px !important;
+    width: 100% !important; }
+  div.data-management-page div.data-management-area {
+    padding: 0px !important; } }
+@media (min-width: 240px) and (max-width: 320px) {
+  header.main-sp-header {
+    padding: 0px !important; }
+    header.main-sp-header div.navbar-body {
+      padding: 0px 15px 0px 0px !important; }
+      header.main-sp-header div.navbar-body div.flex-ci.left {
+        display: none !important; }
+      header.main-sp-header div.navbar-body div.flex-ci.right ul li.nav-item.profile-nav-dd span.user-name {
+        display: none !important; }
+      header.main-sp-header div.navbar-body div.flex-ci.right ul li.nav-item.user-notifications-dd div.dropdown-menu {
+        right: -130px !important; }
+      header.main-sp-header div.navbar-body div.navbar-body-inner.ts-header div.flex-ci.left {
+        display: inherit !important; }
+        header.main-sp-header div.navbar-body div.navbar-body-inner.ts-header div.flex-ci.left div.uname-holder {
+          display: none !important; }
+    header.main-sp-header div.navbar-header {
+      width: 60px !important;
+      flex-basis: 60px !important;
+      border-right: none !important;
+      background: #fff !important; }
+      header.main-sp-header div.navbar-header a.bars {
+        color: #e0e0e0 !important; }
+      header.main-sp-header div.navbar-header a.navbar-brand, header.main-sp-header div.navbar-header b.navbar-name {
+        display: none !important; }
+
+  section.content {
+    margin-top: 70px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important; }
+
+  div.popup-ticket-modal {
+    padding-left: 20px !important;
+    padding-right: 20px !important; }
+    div.popup-ticket-modal div.modal-dialog {
+      width: 100% !important; }
+      div.popup-ticket-modal div.modal-dialog div.ticket-content div.user-info div.avatar {
+        width: 30px !important;
+        height: 30px !important; }
+      div.popup-ticket-modal div.modal-dialog div.ticket-content div.user-info div.uname h6 {
+        font-size: 12px !important; }
+      div.popup-ticket-modal div.modal-dialog div.ticket-content div.user-info div.uname p span {
+        font-size: 10px !important; }
+      div.popup-ticket-modal div.modal-dialog div.ticket-content div.ticket-message h5 {
+        font-size: 10px !important;
+        font-weight: normal !important; }
+      div.popup-ticket-modal div.modal-dialog div.ticket-content div.ticket-message article {
+        font-size: 11px !important;
+        line-height: 14px !important; }
+      div.popup-ticket-modal div.modal-dialog div.ticket-content div.table-info tr td {
+        padding: 10px 0px;
+        font-size: 12px !important;
+        line-height: 12px !important; }
+      div.popup-ticket-modal div.modal-dialog div.attached-media div.img-holder {
+        width: 25px !important;
+        height: 25px !important;
+        margin-right: 5px; }
+
+  div.card.ajax-ctrl-table div.header:not(.un-filterable) {
+    align-items: center !important;
+    justify-content: center !important; }
+    div.card.ajax-ctrl-table div.header:not(.un-filterable) h2 {
+      display: none !important; }
+    div.card.ajax-ctrl-table div.header:not(.un-filterable) div.rows-filter {
+      width: 100%;
+      margin-left: 0px !important;
+      max-width: 100% !important;
+      flex-basis: 100% !important; }
+
+  div.table-filter-modal div.col-sm-6 {
+    padding: 0px 15px !important; }
+
+  div.data-management-page div.affixed-page-section div.affixed-page-part-1 {
+    flex-basis: 100% !important;
+    width: 100% !important; }
+  div.data-management-page div.affixed-page-section div.affixed-page-part-2 {
+    flex-basis: 100% !important;
+    width: 100% !important; }
+    div.data-management-page div.affixed-page-section div.affixed-page-part-2.is-affixed {
+      position: static !important;
+      height: auto !important; }
+      div.data-management-page div.affixed-page-section div.affixed-page-part-2.is-affixed div.inner-wrapper-sticky {
+        position: static !important;
+        width: 100% !important; }
+  div.data-management-page div.form-group.form-field-box div.col-sm-6 {
+    padding: 0px 15px !important;
+    width: 100% !important; }
+  div.data-management-page div.data-management-area {
+    padding: 0px !important; } }
+@media (min-width: 10px) and (max-width: 240px) {
+  body {
+    display: none !important; } }
+
+/*# sourceMappingURL=store.common.mq.css.map */

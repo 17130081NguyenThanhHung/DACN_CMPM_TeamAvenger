@@ -1,0 +1,742 @@
+div.messages-content-container div.messages-page-container {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  height: calc(100vh - 140px);
+  background: #fff;
+  min-height: 70vh;
+  position: relative;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px; }
+  div.messages-content-container div.messages-page-container div.left-part {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-right: 1px solid #eee;
+    width: 370px; }
+    div.messages-content-container div.messages-page-container div.left-part .navbar {
+      width: 100%;
+      padding: 15px;
+      margin: 0;
+      border-bottom: 1px solid #eee;
+      height: 66px; }
+      div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav {
+        width: 100%; }
+        div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item {
+          flex: 1; }
+          div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts {
+            width: 100%;
+            overflow: hidden; }
+            div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper {
+              width: 100%;
+              overflow: hidden;
+              position: relative;
+              height: 35px; }
+              div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper input {
+                height: 35px;
+                border: 1px solid #f5f5f5;
+                outline: 0;
+                box-shadow: none;
+                background: #f5f5f5;
+                border-radius: 10em;
+                padding: 10px 50px 12px 15px;
+                transition: all .27s ease-in-out; }
+                div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper input::placeholder {
+                  font-size: 13px;
+                  line-height: 13px;
+                  color: #72777c;
+                  transition: all .27s ease-in-out; }
+                div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper input:hover, div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper input:active, div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper input:focus {
+                  outline: 0;
+                  box-shadow: none;
+                  border: 2px solid #ff7676; }
+                  div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper input:hover::placeholder, div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper input:active::placeholder, div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper input:focus::placeholder {
+                    color: #ff7676; }
+                  div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper input:hover + button svg, div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper input:active + button svg, div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper input:focus + button svg {
+                    fill: #ff7676; }
+              div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper button {
+                width: 30px;
+                position: absolute;
+                right: 10px;
+                top: 0px;
+                height: 34px;
+                color: #72777c;
+                background: transparent;
+                border: none; }
+                div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper button:hover, div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper button:active, div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper button:focus {
+                  outline: 0;
+                  box-shadow: none;
+                  border: none; }
+                div.messages-content-container div.messages-page-container div.left-part .navbar ul.navbar-nav .nav-item form.search-contacts div.input-wrapper button svg {
+                  transition: all .27s ease-in-out; }
+    div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper {
+      width: 100%;
+      position: absolute;
+      top: 66px;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+      div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list {
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 100%;
+        list-style-type: none;
+        padding: 0;
+        margin: 0; }
+        div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item {
+          width: 100%;
+          overflow: hidden;
+          padding: 0;
+          margin: 0;
+          transition: all 0.25s ease-in-out;
+          cursor: pointer; }
+          div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item a {
+            text-decoration: none; }
+          div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact {
+            display: flex;
+            overflow: hidden;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            padding: 0 15px; }
+            div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact .avatar {
+              width: 45px;
+              margin: 10px 0px;
+              height: 45px;
+              overflow: hidden;
+              border-radius: 10em;
+              overflow: hidden;
+              margin-right: 10px; }
+              div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact .avatar img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10em; }
+            div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact .contact-body {
+              flex: 1;
+              overflow: hidden;
+              padding: 10px 0px;
+              border-bottom: 1px solid #e9ebeb; }
+              div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact .contact-body h6 {
+                padding: 0;
+                overflow: hidden;
+                margin: 0;
+                font-weight: 400;
+                line-height: 0px; }
+                div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact .contact-body h6 span {
+                  line-height: 25px;
+                  font-size: 14px;
+                  color: #192a32;
+                  max-width: 60%;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  display: inline-block; }
+                  div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact .contact-body h6 span span.verified {
+                    vertical-align: middle;
+                    margin-top: -3px; }
+                    div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact .contact-body h6 span span.verified svg {
+                      width: 15px;
+                      height: 15px;
+                      fill: #1fb4ef; }
+                      div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact .contact-body h6 span span.verified svg path {
+                        fill: #1fb4ef; }
+                div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact .contact-body h6 time {
+                  font-weight: 400;
+                  float: right;
+                  font-size: 12px;
+                  line-height: 25px;
+                  color: #adadad;
+                  display: inline-block; }
+              div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact .contact-body div.message {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center; }
+                div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact .contact-body div.message span.last {
+                  padding: 0;
+                  margin: 0;
+                  font-size: 13px;
+                  line-height: 18px;
+                  color: #616161;
+                  font-weight: normal;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis; }
+                div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact .contact-body div.message span.new {
+                  font-size: 11px;
+                  background: #ff7676;
+                  color: #fff;
+                  border-radius: 20px;
+                  line-height: 18px;
+                  padding: 0px 10px; }
+                  div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item .contact .contact-body div.message span.new:empty {
+                    display: none;
+                    opacity: 0;
+                    visibility: hidden; }
+          div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item:hover, div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item:active, div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item:focus, div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item.active {
+            background: #e9ebeb; }
+          div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.contacts-list-item:last-child div.contact-body {
+            border-bottom: none; }
+        div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.no-contacts-found {
+          width: 100%;
+          overflow: hidden;
+          padding: 20px 0px;
+          text-align: center;
+          font-size: 16px;
+          color: #192a32;
+          background: #eee;
+          position: relative;
+          z-index: 1000;
+          margin-right: -10px; }
+          div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list li.no-contacts-found.hidden {
+            display: none;
+            visibility: hidden;
+            opacity: 0; }
+        div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list::-webkit-scrollbar-track {
+          background-color: #fff; }
+        div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list::-webkit-scrollbar {
+          width: 5px;
+          background-color: #fff; }
+        div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper ul.contacts-list::-webkit-scrollbar-thumb {
+          background-color: #d1d1d1;
+          border: 2px solid #d1d1d1; }
+      div.messages-content-container div.messages-page-container div.left-part .contacts-list-wrapper div.no-contacts-found {
+        width: 100%;
+        overflow: hidden;
+        text-align: center;
+        line-height: 150px;
+        font-weight: 600;
+        color: #72777c; }
+    div.messages-content-container div.messages-page-container div.left-part.open-fluid {
+      width: 100% !important;
+      right: 0px !important;
+      z-index: 100;
+      background: #fff; }
+  div.messages-content-container div.messages-page-container div.right-part {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 370px;
+    overflow: hidden; }
+    div.messages-content-container div.messages-page-container div.right-part div.right-part-content {
+      width: 100%;
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap; }
+      div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar {
+        flex-basis: 66px;
+        width: 100%;
+        margin: 0;
+        padding: 0; }
+        div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          width: 100%;
+          height: 100%;
+          align-items: center;
+          padding: 0px 15px; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item div.avatar {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item div.avatar img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 10em; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.go-back {
+            margin-right: 15px;
+            display: none; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.go-back a {
+              text-decoration: none; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.go-back a svg {
+                width: 20px;
+                height: 20px;
+                fill: #192a32; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item div.user-info h6 {
+            padding: 0;
+            margin: 0;
+            font-weight: normal;
+            color: #2d2f43;
+            font-size: 14px;
+            line-height: 22px;
+            max-width: 180px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item div.user-info h6 span.verified {
+              line-height: 0px;
+              vertical-align: middle;
+              display: inline-block;
+              width: 15px;
+              height: 15px;
+              margin-top: -2px; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item div.user-info h6 span.verified svg {
+                fill: #1fb4ef;
+                width: 15px;
+                height: 15px;
+                vertical-align: middle; }
+                div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item div.user-info h6 span.verified svg path {
+                  fill: #1fb4ef; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item div.user-info p {
+            padding: 0;
+            margin: 0;
+            color: #9697a1;
+            font-size: 12px;
+            line-height: 16px;
+            max-width: 180px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont {
+            align-self: center; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont .dropdown {
+              height: 35px; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont a.dropdown-toggle {
+              width: 35px;
+              height: 35px;
+              display: inline-block;
+              border-radius: 10em;
+              transition: all 0.27s ease-in-out;
+              cursor: pointer;
+              position: relative; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont a.dropdown-toggle:after, div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont a.dropdown-toggle:before {
+                display: none; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont a.dropdown-toggle:hover, div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont a.dropdown-toggle:active, div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont a.dropdown-toggle:focus {
+                background: #f5f3f5; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont a.dropdown-toggle svg {
+                width: 24px;
+                height: 25px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto;
+                fill: #72777c; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont .dropdown-menu {
+              top: 40px;
+              position: absolute;
+              right: 0px;
+              transition: all 0.27s ease-in-out;
+              border-radius: 5px;
+              border: none;
+              box-shadow: 0 -0.6rem 1.33rem rgba(0, 0, 0, 0.1), 0 0.6rem 1.33rem rgba(0, 0, 0, 0.1);
+              padding: 8px 0px; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont .dropdown-menu a.dropdown-item {
+                padding: 12px 20px;
+                font-size: 13px;
+                line-height: 13px;
+                color: #192a32; }
+                div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont .dropdown-menu a.dropdown-item:active, div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont .dropdown-menu a.dropdown-item:focus, div.messages-content-container div.messages-page-container div.right-part div.right-part-content .navbar ul.navbar-nav .nav-item.dropdown-menu-cont .dropdown-menu a.dropdown-item:hover {
+                  background-color: #f8f9fa; }
+      div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container {
+        width: 100%;
+        height: calc(100% - 131px);
+        background-color: #fff;
+        box-shadow: inset 1px 0px 18px 2px rgba(68, 68, 68, 0.03);
+        background-size: contain;
+        background-repeat: repeat; }
+        div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list {
+          width: 100%;
+          overflow-x: hidden;
+          overflow-y: auto;
+          height: 100%;
+          list-style-type: none;
+          margin: 0px;
+          padding: 0px; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item {
+            width: 100%;
+            overflow: hidden;
+            padding: 15px 50px;
+            background: transparent; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message {
+              width: 100%;
+              display: flex;
+              padding: 0px;
+              flex-direction: row;
+              flex-wrap: nowrap;
+              align-items: flex-start; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.input-checkbox {
+                line-height: 0px;
+                padding: 0px 10px 0px 0px;
+                align-self: center;
+                position: relative; }
+                div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.input-checkbox.hidden {
+                  opacity: 0;
+                  visibility: hidden;
+                  display: none; }
+                div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.input-checkbox label {
+                  margin-bottom: 0px;
+                  padding-bottom: 0px;
+                  width: 20px;
+                  height: 20px;
+                  line-height: 20px;
+                  padding-left: 0; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-header {
+                flex-basis: auto; }
+                div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-header div.flex-cont {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: row;
+                  flex-wrap: nowrap;
+                  align-items: flex-start; }
+                  div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-header div.flex-cont div.avatar {
+                    min-width: 45px;
+                    min-height: 45px;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 10em;
+                    overflow: hidden;
+                    border: 3px solid #fff; }
+                    div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-header div.flex-cont div.avatar img {
+                      width: 100%;
+                      height: 100%;
+                      border-radius: 10em;
+                      object-fit: cover; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-body {
+                padding: 0 20px 0 5px;
+                height: auto;
+                border-radius: 0px 10px 10px 10px;
+                flex: 1; }
+                div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-body div.message-content {
+                  width: 100%;
+                  display: flex;
+                  flex-direction: row;
+                  flex-wrap: wrap; }
+                  div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-body div.message-content div.message-text {
+                    max-width: 75%;
+                    line-height: 0px;
+                    color: #fff;
+                    padding: 7px 10px; }
+                    div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-body div.message-content div.message-text p {
+                      font-size: 13px;
+                      padding: 0;
+                      margin: 0;
+                      line-height: 18px; }
+                    div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-body div.message-content div.message-text div.message-time {
+                      width: 100%;
+                      overflow: hidden;
+                      text-align: right;
+                      line-height: 12px; }
+                      div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-body div.message-content div.message-text div.message-time time {
+                        font-size: 9px;
+                        line-height: 9px;
+                        color: #fff;
+                        text-transform: uppercase; }
+                  div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-body div.message-content div.message-image {
+                    width: 300px;
+                    height: 200px;
+                    overflow: hidden;
+                    border-radius: 5px;
+                    border: 3px solid #eee;
+                    cursor: pointer;
+                    position: relative; }
+                    div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-body div.message-content div.message-image img {
+                      width: 100%;
+                      height: 100%;
+                      object-fit: cover; }
+                    div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-body div.message-content div.message-image div.message-time {
+                      width: 100%;
+                      overflow: hidden;
+                      text-align: right;
+                      line-height: 12px;
+                      position: absolute;
+                      padding: 5px 10px;
+                      left: 0;
+                      right: 0;
+                      bottom: 0px;
+                      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), transparent); }
+                      div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item div.message div.message-body div.message-content div.message-image div.message-time time {
+                        font-size: 9px;
+                        line-height: 9px;
+                        color: #fff;
+                        text-transform: uppercase; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item:hover div.message div.message-body div.uname span.delmessage {
+              width: 15px; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item.selected {
+              background: #f2f6fa; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item.right div.message div.message-body div.message-content {
+              justify-content: flex-end; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item.right div.message div.message-body div.message-content div.message-text {
+                border-radius: 15px 0px 15px 15px;
+                border: 1px solid #dcf8c6;
+                background: #dcf8c6;
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+                div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item.right div.message div.message-body div.message-content div.message-text p {
+                  color: #192a32; }
+                div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item.right div.message div.message-body div.message-content div.message-text div.message-time time {
+                  color: #72777c; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item.left div.message div.message-body div.message-content {
+              justify-content: flex-start; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item.left div.message div.message-body div.message-content div.message-text {
+                border-radius: 0px 15px 15px 15px;
+                border: 1px solid #e5e5ea;
+                background: #e5e5ea;
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+                div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item.left div.message div.message-body div.message-content div.message-text p {
+                  color: #192a32; }
+                div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-list-item.left div.message div.message-body div.message-content div.message-text div.message-time time {
+                  color: #72777c; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-preloader {
+            width: 100%;
+            overflow: hidden;
+            padding: 20px 0;
+            text-align: center; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list li.messages-preloader.hidden {
+              display: none;
+              visibility: hidden;
+              opacity: 0; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list::-webkit-scrollbar-track {
+            background-color: #fff; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list::-webkit-scrollbar {
+            width: 5px;
+            background-color: #fff; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container .messages-list::-webkit-scrollbar-thumb {
+            background-color: #d1d1d1;
+            border: 2px solid #d1d1d1; }
+      div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container.home {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-size: contain;
+        background-repeat: repeat; }
+        div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container.home div.icon {
+          overflow: hidden;
+          width: 50px;
+          height: 50px;
+          margin-bottom: 20px; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container.home div.icon svg {
+            fill: #ff7676; }
+        div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container.home h5 {
+          padding: 0;
+          margin: 0;
+          font-size: 14px;
+          line-height: 20px;
+          color: #ff7676;
+          font-weight: normal;
+          text-align: center; }
+        div.messages-content-container div.messages-page-container div.right-part div.right-part-content .messages-container.home button.select-chat {
+          border-radius: 5px;
+          outline: 0px;
+          border: 1px solid #ff7676;
+          font-size: 10px;
+          line-height: 10px;
+          padding: 10px 25px;
+          background: transparent;
+          color: #ff7676;
+          margin-top: 15px;
+          text-transform: uppercase;
+          display: none; }
+      div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper {
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        height: 65px; }
+        div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          display: block;
+          position: relative; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper {
+            padding: 15px 80px;
+            position: relative;
+            height: 100%; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper input {
+              height: 35px;
+              box-shadow: none;
+              border: 2px solid #f5f5f5;
+              background: #f5f5f5;
+              border-radius: 10em;
+              outline: 0;
+              padding: 10px 20px 14px 20px;
+              transition: all 0.50s ease-in-out; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper input::placeholder {
+                font-size: 13px;
+                color: #72777c;
+                transition: all 0.50s ease-in-out; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper input:hover, div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper input:active, div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper input:focus {
+                border: 2px solid #ff7676; }
+                div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper input:hover::placeholder, div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper input:active::placeholder, div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper input:focus::placeholder {
+                  color: #ff7676; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper button.attach-file {
+              transition: all 0.27s ease-in-out;
+              position: absolute;
+              left: 20px;
+              top: 15px;
+              border: none;
+              background: transparent;
+              color: #72777c;
+              width: 35px;
+              height: 34px;
+              border-radius: 10em; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper button.attach-file:active, div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper button.attach-file:focus {
+                outline: 0;
+                border: none;
+                background: none;
+                box-shadow: none; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper button.attach-file:hover {
+                color: #ff7676; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper button.submit-message {
+              transition: all 0.27s ease-in-out;
+              position: absolute;
+              right: 20px;
+              top: 15px;
+              border: none;
+              background: transparent;
+              color: #72777c;
+              width: 35px;
+              height: 34px;
+              border-radius: 10em; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper button.submit-message:active, div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper button.submit-message:focus {
+                outline: 0;
+                border: none;
+                background: none;
+                box-shadow: none; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.inputs-wrapper button.submit-message:hover {
+                color: #ff7676; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.selected-message-control {
+            position: absolute;
+            padding: 0px 20px;
+            left: 0;
+            top: 0px;
+            bottom: 0px;
+            right: 0;
+            background: #fff;
+            z-index: 20;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.selected-message-control.hidden {
+              display: none;
+              visibility: hidden;
+              outline: 0; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.selected-message-control div.selected-messages {
+              cursor: pointer;
+              line-height: 18px;
+              color: #ff7676;
+              padding: 5px 0px;
+              border-radius: 2px; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.selected-message-control div.selected-messages span {
+                font-size: 13px;
+                line-height: 18px;
+                display: inline-block;
+                text-transform: uppercase;
+                color: #ff7676; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.selected-message-control div.selected-messages svg {
+                width: 18px;
+                height: 18px;
+                fill: #ff7676; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.selected-message-control div.delete-selected {
+              margin-left: auto;
+              cursor: pointer;
+              line-height: 18px;
+              margin-right: 10px; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.selected-message-control div.delete-selected svg {
+                transition: all 0.30s ease-in-out;
+                width: 19px;
+                height: 19px;
+                fill: #72777c; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.selected-message-control div.delete-selected:hover svg, div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.selected-message-control div.delete-selected:active svg {
+                fill: #ff7676; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.selected-message-control div.cancel {
+              cursor: pointer;
+              line-height: 18px; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.selected-message-control div.cancel:hover svg, div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.selected-message-control div.cancel:active svg {
+                fill: #ff7676; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.selected-message-control div.cancel svg {
+                transition: all 0.30s ease-in-out;
+                width: 22px;
+                height: 22px;
+                fill: #72777c; }
+          div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.message-send-preloader {
+            position: absolute;
+            left: 0;
+            top: 0px;
+            bottom: 0px;
+            right: 0;
+            background: #ffffffb3;
+            z-index: 15;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.message-send-preloader.hidden {
+              display: none;
+              opacity: 0;
+              visibility: hidden; }
+            div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.message-send-preloader div.loading {
+              padding: 7px 30px;
+              flex-basis: auto;
+              background: none;
+              border-radius: 10em;
+              text-align: center;
+              line-height: 0px;
+              box-shadow: none; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.message-send-preloader div.loading .lds-ellipsis {
+                display: inline-block;
+                position: relative;
+                line-height: 14px;
+                width: 62px;
+                height: 14px; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.message-send-preloader div.loading .lds-ellipsis div {
+                position: absolute;
+                top: calc(50% - 6px);
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background: #ff7676;
+                animation-timing-function: cubic-bezier(0, 1, 1, 0); }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.message-send-preloader div.loading .lds-ellipsis div:nth-child(1) {
+                left: 6px;
+                animation: lds-ellipsis1 0.6s infinite; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.message-send-preloader div.loading .lds-ellipsis div:nth-child(2) {
+                left: 6px;
+                animation: lds-ellipsis2 0.6s infinite; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.message-send-preloader div.loading .lds-ellipsis div:nth-child(3) {
+                left: 26px;
+                animation: lds-ellipsis2 0.6s infinite; }
+              div.messages-content-container div.messages-page-container div.right-part div.right-part-content .message-form-wrapper div.message-form-wrapper-inner div.message-send-preloader div.loading .lds-ellipsis div:nth-child(4) {
+                left: 45px;
+                animation: lds-ellipsis3 0.6s infinite; }
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0); } }
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(19px, 0); } }
+div.popup-image-modal-container div.modal-content {
+  border: none; }
+  div.popup-image-modal-container div.modal-content div.image-cont {
+    width: 100%;
+    height: 100%;
+    max-height: 400px;
+    overflow: hidden; }
+    div.popup-image-modal-container div.modal-content div.image-cont img {
+      width: 100%;
+      object-fit: cover; }
+
+/*# sourceMappingURL=messages.master.style.css.map */

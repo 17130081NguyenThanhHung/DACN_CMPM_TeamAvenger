@@ -1,0 +1,900 @@
+div.user-auth-modal-container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  background-color: rgba(0, 0, 0, 0.4); }
+  div.user-auth-modal-container .user-auth-modal-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 100px 0px; }
+    div.user-auth-modal-container .user-auth-modal-wrapper::-webkit-scrollbar {
+      display: none !important; }
+    div.user-auth-modal-container .user-auth-modal-wrapper::scrollbar {
+      display: none !important; }
+    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal {
+      width: auto;
+      overflow: hidden;
+      position: relative;
+      z-index: 10; }
+      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal div.block-titling {
+        width: 100%;
+        overflow: hidden;
+        line-height: 0; }
+        div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal div.block-titling h1.header {
+          color: #fff;
+          font-size: 23px;
+          line-height: 23px;
+          padding: 0;
+          margin: 0 0 5px 0;
+          font-weight: 500;
+          text-align: center;
+          opacity: 0.9; }
+        div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal div.block-titling p.text {
+          color: #fff;
+          font-size: 14px;
+          line-height: 14px;
+          padding: 0;
+          margin: 0 0 15px 0;
+          font-weight: 400;
+          text-align: center;
+          opacity: 0.9; }
+      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal div.market-copyright {
+        width: 100%;
+        line-height: 0px;
+        text-align: center; }
+        div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal div.market-copyright span {
+          font-size: 13px;
+          line-height: 20px;
+          color: #fff;
+          opacity: 0.9; }
+      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 50px 0px 40px 0px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+        div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .left-part {
+          width: 370px;
+          position: relative; }
+          div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .left-part .carousel {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            line-height: 0; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .left-part .carousel .carousel-inner {
+              height: 100%; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .left-part .carousel .carousel-inner div.carousel-item {
+                width: 100%;
+                height: 100%;
+                overflow: hidden; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .left-part .carousel .carousel-inner div.carousel-item div.carousel-item-data {
+                  width: 100%;
+                  height: 100%;
+                  overflow: hidden;
+                  position: relative; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .left-part .carousel .carousel-inner div.carousel-item div.carousel-item-data img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover; }
+          div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .left-part div.prod-price {
+            position: absolute;
+            z-index: 10;
+            left: 0;
+            top: -25px;
+            background: #ff7676;
+            color: #fff;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .left-part div.prod-price .prod-info {
+              padding: 0px 20px; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .left-part div.prod-price .prod-info span.price {
+                line-height: 50px;
+                font-size: 24px;
+                margin: 0px 5px;
+                font-weight: bold; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .left-part div.prod-price .prod-info span.old-price {
+                line-height: 50px;
+                font-size: 20px;
+                text-decoration: line-through;
+                margin: 0px 5px;
+                opacity: 0.7;
+                color: #fff; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .left-part div.prod-price div.corner {
+              margin-right: -30px;
+              width: 0px;
+              height: 0px;
+              display: inline-block;
+              vertical-align: top;
+              border-style: solid;
+              border-width: 50px 30px 0px 0px;
+              border-color: #ff7676 transparent transparent; }
+        div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part {
+          width: 350px;
+          position: relative; }
+          div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part span.ad-dismiss {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 25px;
+            height: 25px;
+            cursor: pointer; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part span.ad-dismiss svg {
+              width: 25px;
+              height: 25px;
+              fill: #72777c; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part span.ad-dismiss:hover svg {
+              fill: #ff7676; }
+          div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container {
+            width: 100%;
+            height: 100%;
+            padding: 0px 30px; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .header {
+              width: 100%;
+              overflow: hidden;
+              margin: 0px; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .header h2 {
+                padding: 0;
+                margin: 0;
+                font-size: 22px;
+                line-height: 30px;
+                color: #212121;
+                font-weight: 600;
+                text-align: center; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .header h2 a {
+                  font-size: inherit;
+                  line-height: inherit;
+                  color: inherit;
+                  padding: 0;
+                  margin: 0;
+                  text-decoration: none; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body {
+              width: 100%;
+              overflow: hidden; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body article {
+                font-size: 13px;
+                line-height: 1.6;
+                color: #7e9aa6;
+                margin-bottom: 20px;
+                text-align: center;
+                opacity: 0.9; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body {
+                width: 100%;
+                overflow: hidden;
+                padding: 0;
+                margin: 0; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form {
+                  width: 100%;
+                  overflow: hidden; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form div.form-group small.error-message {
+                    display: block;
+                    width: 100%;
+                    margin-top: 3px; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control {
+                    border-radius: 10em;
+                    border: 1px solid #e6e6e6;
+                    outline: 0;
+                    padding-left: 25px;
+                    padding-right: 25px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control::placeholder {
+                      color: #72777c;
+                      font-size: 14px;
+                      line-height: 16px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control:active, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control:focus {
+                      box-shadow: none;
+                      border: 2px solid #ff7676; }
+                      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control:active::placeholder, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control:focus::placeholder {
+                        color: #ff7676; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form button.btn-submit-form {
+                    width: 100%;
+                    background: #ff7676;
+                    border: 1px solid #ff7676;
+                    color: #fff;
+                    padding: 0px 0px;
+                    line-height: 38px;
+                    border-radius: 10em;
+                    font-size: 16px;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px;
+                    outline: 0; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form button.btn-submit-form:hover, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form button.btn-submit-form:active {
+                      background: #f6546a;
+                      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form button.btn-submit-form.success {
+                      background: #35c85f;
+                      border: 1px solid #35c85f;
+                      cursor: wait; }
+                      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form button.btn-submit-form.success:hover, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form button.btn-submit-form.success:active {
+                        background: #35c85f;
+                        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form .forgot-pass {
+                    width: 100%;
+                    text-align: center;
+                    padding: 0px;
+                    margin: 15px 0px;
+                    line-height: 0; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .body div.auth-form-body form .forgot-pass span {
+                      cursor: pointer;
+                      font-size: 12px;
+                      margin: 0px 3px;
+                      color: #ff7676;
+                      line-height: 16px;
+                      text-decoration: underline; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .footer {
+              width: 100%;
+              margin-bottom: 15px;
+              line-height: 0px; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .footer .social-btns {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 15px; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .footer .social-btns div.oauth-login {
+                  width: 40px;
+                  height: 40px;
+                  position: relative;
+                  border-radius: 10em;
+                  border: 1px solid #e6e6e6;
+                  margin-left: 10px;
+                  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .footer .social-btns div.oauth-login svg {
+                    position: absolute;
+                    margin: auto;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 20px;
+                    height: 20px;
+                    fill: #fff; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .footer .social-btns div.oauth-login.facebook {
+                    background: #3b5998; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .footer .social-btns div.oauth-login.google-plus {
+                    background: #df4a32; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .footer .social-btns div.oauth-login.twitter {
+                    background: #1ca1f4; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .footer .join-us {
+                width: 100%;
+                overflow: hidden;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .footer .join-us span {
+                  font-size: 12px;
+                  line-height: 16px;
+                  color: #7e9aa6;
+                  margin: 0px 3px;
+                  opacity: 0.9; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-auth-modal-inner .right-part .auth-form-container .footer .join-us span a {
+                    color: #ff7676;
+                    text-decoration: none; }
+      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+        div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .left-part {
+          width: 300px;
+          position: relative;
+          background: #ff7676;
+          padding: 40px 30px; }
+          div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .left-part .member-icon {
+            width: 100%;
+            overflow: hidden;
+            text-align: center;
+            margin-bottom: 30px; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .left-part .member-icon svg {
+              width: 120px;
+              height: 120px; }
+          div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .left-part p.login-with {
+            color: #fff;
+            font-size: 14px;
+            line-height: 16px;
+            padding: 0;
+            margin: 0 0 20px 0;
+            text-align: center; }
+          div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .left-part article {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .left-part article h5 {
+              padding: 0;
+              margin: 0 0 10px 0;
+              font-size: 24px;
+              line-height: 34px;
+              font-weight: 600; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .left-part article small {
+              display: block;
+              font-size: 12px;
+              line-height: 14px; }
+          div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .left-part .social-btns {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 15px; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .left-part .social-btns div.oauth-login {
+              width: 40px;
+              height: 40px;
+              position: relative;
+              border-radius: 10em;
+              border: 1px solid #f6546a;
+              margin-left: 10px;
+              box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .left-part .social-btns div.oauth-login svg {
+                position: absolute;
+                margin: auto;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                width: 20px;
+                height: 20px;
+                fill: #fff; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .left-part .social-btns div.oauth-login.facebook {
+                background: #3b5998; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .left-part .social-btns div.oauth-login.google-plus {
+                background: #df4a32; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .left-part .social-btns div.oauth-login.twitter {
+                background: #1ca1f4; }
+        div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part {
+          width: 400px;
+          position: relative;
+          padding: 40px 0px; }
+          div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part span.ad-dismiss {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            width: 25px;
+            height: 25px;
+            cursor: pointer; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part span.ad-dismiss svg {
+              width: 25px;
+              height: 25px;
+              fill: #72777c; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part span.ad-dismiss:hover svg {
+              fill: #ff7676; }
+          div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container {
+            width: 100%;
+            height: 100%;
+            padding: 0px 30px; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .header {
+              width: 100%;
+              overflow: hidden;
+              margin-bottom: 20px; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .header h2 {
+                padding: 0;
+                margin: 0;
+                font-size: 25px;
+                line-height: 32px;
+                color: #192a32;
+                font-weight: 600;
+                text-align: center; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .header h2 a {
+                  font-size: inherit;
+                  line-height: inherit;
+                  color: inherit;
+                  padding: 0;
+                  margin: 0;
+                  text-decoration: none; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body {
+              width: 100%;
+              overflow: hidden; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body article {
+                font-size: 14px;
+                line-height: 1.6;
+                color: #67919c;
+                margin-bottom: 20px;
+                text-align: center; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body {
+                width: 100%;
+                overflow: hidden;
+                padding: 0;
+                margin: 0; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form {
+                  width: 100%;
+                  overflow: hidden; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form div.form-group small.error-message {
+                    display: block;
+                    width: 100%;
+                    margin-top: 3px; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control {
+                    border-radius: 10em;
+                    border: 1px solid #eee;
+                    outline: 0;
+                    padding-left: 25px;
+                    padding-right: 25px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control.v-error {
+                      border: 2px solid #ff7676 !important;
+                      color: #ff7676 !important; }
+                      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control.v-error::placeholder {
+                        color: #ff7676 !important; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control::placeholder {
+                      color: #72777c;
+                      font-size: 14px;
+                      line-height: 16px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control:active, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control:focus {
+                      box-shadow: none;
+                      border: 2px solid #ff7676; }
+                      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control:active::placeholder, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form input.form-control:focus::placeholder {
+                        color: #ff7676; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form button.btn-submit-form {
+                    width: 100%;
+                    background: #ff7676;
+                    border: 1px solid #ff7676;
+                    color: #fff;
+                    padding: 0px 0px;
+                    line-height: 38px;
+                    border-radius: 10em;
+                    font-size: 16px;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px;
+                    outline: 0; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form button.btn-submit-form:hover, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form button.btn-submit-form:active {
+                      background: #f6546a;
+                      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form button.btn-submit-form.success {
+                      background: #35c85f;
+                      border: 1px solid #35c85f;
+                      cursor: wait; }
+                      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form button.btn-submit-form.success:hover, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form button.btn-submit-form.success:active {
+                        background: #35c85f;
+                        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form .login {
+                    width: 100%;
+                    text-align: center;
+                    padding: 5px 0px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form .login span {
+                      cursor: pointer;
+                      font-size: 12px;
+                      margin: 0px 3px;
+                      line-height: 16px;
+                      color: #192a32; }
+                      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .body div.auth-form-body form .login span a {
+                        color: #ff7676;
+                        text-decoration: underline; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .footer {
+              width: 100%;
+              margin-bottom: 20px; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .footer .social-btns {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 15px; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .footer .social-btns div.oauth-login {
+                  width: 40px;
+                  height: 40px;
+                  position: relative;
+                  border-radius: 10em;
+                  border: 1px solid #e6e6e6;
+                  margin-left: 10px;
+                  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .footer .social-btns div.oauth-login svg {
+                    position: absolute;
+                    margin: auto;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 20px;
+                    height: 20px;
+                    fill: #fff; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .footer .social-btns div.oauth-login.facebook {
+                    background: #3b5998; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .footer .social-btns div.oauth-login.google-plus {
+                    background: #df4a32; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-join-modal-inner .right-part .auth-form-container .footer .social-btns div.oauth-login.twitter {
+                    background: #1ca1f4; }
+      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+        div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part {
+          width: 400px;
+          position: relative;
+          padding: 40px 0px; }
+          div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container {
+            width: 100%;
+            height: 100%;
+            padding: 0px 30px; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .header {
+              width: 100%;
+              overflow: hidden;
+              margin-bottom: 20px; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .header h2 {
+                padding: 0;
+                margin: 0;
+                font-size: 25px;
+                line-height: 32px;
+                color: #192a32;
+                font-weight: 600;
+                text-align: center; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .header h2 a {
+                  font-size: inherit;
+                  line-height: inherit;
+                  color: inherit;
+                  padding: 0;
+                  margin: 0;
+                  text-decoration: none; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .header div.icon {
+                width: 100%;
+                overflow: hidden;
+                text-align: center;
+                padding: 10px 0; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .header div.icon svg {
+                  width: 100px;
+                  height: 100px; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .header div.sub-title {
+                width: 100%;
+                text-align: center; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .header div.sub-title small {
+                  display: block;
+                  width: 100%;
+                  font-size: 13px;
+                  line-height: 20px;
+                  color: #192a32; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .header div.sub-title small.error-message {
+                    color: #ff7676; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body {
+              width: 100%;
+              overflow: hidden; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body article {
+                font-size: 14px;
+                line-height: 1.6;
+                color: #67919c;
+                margin-bottom: 20px;
+                text-align: center; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body {
+                width: 100%;
+                overflow: hidden;
+                padding: 0;
+                margin: 0; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form {
+                  width: 100%;
+                  overflow: hidden; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form div.form-group small.error-message {
+                    display: block;
+                    width: 100%;
+                    margin-top: 3px; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control {
+                    border-radius: 10em;
+                    border: 1px solid #e6e6e6;
+                    outline: 0;
+                    padding-left: 25px;
+                    padding-right: 25px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control::placeholder {
+                      color: #72777c;
+                      font-size: 14px;
+                      line-height: 16px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control:active, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control:focus {
+                      box-shadow: none;
+                      border: 2px solid #ff7676; }
+                      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control:active::placeholder, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control:focus::placeholder {
+                        color: #ff7676; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control.v-error {
+                      border: 2px solid #ff7676;
+                      color: #ff7676; }
+                      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control.v-error::placeholder {
+                        color: #ff7676; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form button.btn-submit-form {
+                    width: 100%;
+                    background: #ff7676;
+                    border: 1px solid #ff7676;
+                    color: #fff;
+                    padding: 0px 0px;
+                    line-height: 38px;
+                    border-radius: 10em;
+                    font-size: 16px;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px;
+                    outline: 0; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form button.btn-submit-form:hover, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form button.btn-submit-form:active {
+                      background: #f6546a;
+                      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form button.btn-submit-form.success {
+                      border: 1px solid #35c85f;
+                      background: #35c85f; }
+                      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form button.btn-submit-form.success:hover, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form button.btn-submit-form.success:active {
+                        background: #35c85f;
+                        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form .login {
+                    width: 100%;
+                    text-align: center;
+                    padding: 5px 0px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form .login span {
+                      cursor: pointer;
+                      font-size: 12px;
+                      margin: 0px 3px;
+                      line-height: 16px;
+                      color: #192a32; }
+                      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .body div.auth-form-body form .login span a {
+                        color: #ff7676;
+                        text-decoration: underline; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .footer {
+              width: 100%;
+              margin-bottom: 20px; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .footer .social-btns {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 15px; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .footer .social-btns div.oauth-login {
+                  width: 40px;
+                  height: 40px;
+                  position: relative;
+                  border-radius: 10em;
+                  border: 1px solid #e6e6e6;
+                  margin-left: 10px;
+                  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .footer .social-btns div.oauth-login svg {
+                    position: absolute;
+                    margin: auto;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 20px;
+                    height: 20px;
+                    fill: #fff; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .footer .social-btns div.oauth-login.facebook {
+                    background: #3b5998; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .footer .social-btns div.oauth-login.google-plus {
+                    background: #df4a32; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .footer .social-btns div.oauth-login.twitter {
+                    background: #1ca1f4; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .footer .join-us {
+                width: 100%;
+                overflow: hidden;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .footer .join-us span {
+                  font-size: 12px;
+                  line-height: 16px;
+                  color: #192a32;
+                  margin: 0px 3px; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-passwd-modal-inner .main-part .auth-form-container .footer .join-us span a {
+                    color: #ff7676;
+                    text-decoration: none; }
+      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+        div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part {
+          width: 400px;
+          position: relative;
+          padding: 40px 0px; }
+          div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container {
+            width: 100%;
+            height: 100%;
+            padding: 0px 30px; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .header {
+              width: 100%;
+              overflow: hidden;
+              margin-bottom: 20px; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .header h2 {
+                padding: 0;
+                margin: 0;
+                font-size: 25px;
+                line-height: 32px;
+                color: #192a32;
+                font-weight: 600;
+                text-align: center; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .header h2 a {
+                  font-size: inherit;
+                  line-height: inherit;
+                  color: inherit;
+                  padding: 0;
+                  margin: 0;
+                  text-decoration: none; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .header div.icon {
+                width: 100%;
+                overflow: hidden;
+                text-align: center;
+                padding: 10px 0; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .header div.icon svg {
+                  width: 100px;
+                  height: 100px;
+                  fill: #27c277; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .header div.icon.error svg {
+                  fill: #ff7676; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .header div.sub-title {
+                width: 100%;
+                text-align: center; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .header div.sub-title p {
+                  padding: 0;
+                  margin: 0 0 10px 0;
+                  font-size: 18px;
+                  line-height: 20px;
+                  color: #192a32;
+                  font-weight: 600; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .header div.sub-title small {
+                  display: block;
+                  width: 100%;
+                  font-size: 13px;
+                  line-height: 20px;
+                  color: #192a32; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body {
+              width: 100%;
+              overflow: hidden; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body article {
+                font-size: 14px;
+                line-height: 1.6;
+                color: #67919c;
+                margin-bottom: 20px;
+                text-align: center; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body {
+                width: 100%;
+                overflow: hidden;
+                padding: 0;
+                margin: 0; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body form {
+                  width: 100%;
+                  overflow: hidden; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control {
+                    border-radius: 10em;
+                    border: 1px solid #e6e6e6;
+                    outline: 0;
+                    padding-left: 25px;
+                    padding-right: 25px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control::placeholder {
+                      color: #72777c;
+                      font-size: 14px;
+                      line-height: 16px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control:active, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control:focus {
+                      box-shadow: none;
+                      border: 2px solid #ff7676; }
+                      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control:active::placeholder, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body form input.form-control:focus::placeholder {
+                        color: #ff7676; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body form button.btn-submit-form {
+                    width: 100%;
+                    background: #ff7676;
+                    border: 1px solid #ff7676;
+                    color: #fff;
+                    padding: 0px 0px;
+                    line-height: 38px;
+                    border-radius: 10em;
+                    font-size: 16px;
+                    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px;
+                    outline: 0; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body form button.btn-submit-form:hover, div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body form button.btn-submit-form:active {
+                      background: #f6546a;
+                      box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body form .login {
+                    width: 100%;
+                    text-align: center;
+                    padding: 5px 0px; }
+                    div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body form .login span {
+                      cursor: pointer;
+                      font-size: 12px;
+                      margin: 0px 3px;
+                      line-height: 16px;
+                      color: #192a32; }
+                      div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .body div.auth-form-body form .login span a {
+                        color: #ff7676;
+                        text-decoration: underline; }
+            div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .footer {
+              width: 100%;
+              margin-bottom: 20px; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .footer .social-btns {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 15px; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .footer .social-btns div.oauth-login {
+                  width: 40px;
+                  height: 40px;
+                  position: relative;
+                  border-radius: 10em;
+                  border: 1px solid #e6e6e6;
+                  margin-left: 10px;
+                  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .footer .social-btns div.oauth-login svg {
+                    position: absolute;
+                    margin: auto;
+                    left: 0;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 20px;
+                    height: 20px;
+                    fill: #fff; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .footer .social-btns div.oauth-login.facebook {
+                    background: #3b5998; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .footer .social-btns div.oauth-login.google-plus {
+                    background: #df4a32; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .footer .social-btns div.oauth-login.twitter {
+                    background: #1ca1f4; }
+              div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .footer .join-us {
+                width: 100%;
+                overflow: hidden;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center; }
+                div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .footer .join-us span {
+                  font-size: 12px;
+                  line-height: 16px;
+                  color: #192a32;
+                  margin: 0px 3px; }
+                  div.user-auth-modal-container .user-auth-modal-wrapper .user-auth-modal .user-reset-alert-modal-inner .main-part .auth-form-container .footer .join-us span a {
+                    color: #ff7676;
+                    text-decoration: none; }
+  div.user-auth-modal-container div.prods-items-container.auth-page {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 30px 50px 10px 50px;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0px -5px; }
+    div.user-auth-modal-container div.prods-items-container.auth-page:after {
+      position: fixed;
+      content: "";
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(25, 42, 50, 0.7); }
+    div.user-auth-modal-container div.prods-items-container.auth-page div.galcolumn {
+      padding-right: 7px !important;
+      padding-left: 7px !important;
+      margin: 0px !important; }
+      div.user-auth-modal-container div.prods-items-container.auth-page div.galcolumn div.prod-item {
+        width: 100% !important;
+        overflow: hidden;
+        border-radius: 5px !important; }
+
+/*# sourceMappingURL=auth.master.style.css.map */

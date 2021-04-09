@@ -1,0 +1,64 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 780px) {
+  div.payment-settings-page div.form-fieldset-title div.row {
+    margin: 0px !important; }
+  div.payment-settings-page div.form-group.form-field-box div.row {
+    margin: 0px !important; }
+    div.payment-settings-page div.form-group.form-field-box div.row div.text-right {
+      text-align: left !important;
+      padding: 0 !important; }
+      div.payment-settings-page div.form-group.form-field-box div.row div.text-right label {
+        padding-top: 0px !important;
+        margin-bottom: 10px !important; }
+    div.payment-settings-page div.form-group.form-field-box div.row div.paypal-mode-info {
+      padding: 0 !important; } }
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  div.payment-settings-page div.form-fieldset-title div.row {
+    margin: 0px !important; }
+  div.payment-settings-page div.form-group.form-field-box div.row {
+    margin: 0px !important; }
+    div.payment-settings-page div.form-group.form-field-box div.row div.text-right {
+      text-align: left !important;
+      padding: 0 !important; }
+      div.payment-settings-page div.form-group.form-field-box div.row div.text-right label {
+        padding-top: 0px !important;
+        margin-bottom: 10px !important; }
+    div.payment-settings-page div.form-group.form-field-box div.row div.paypal-mode-info {
+      padding: 0 !important; } }
+@media (min-width: 240px) and (max-width: 320px) {
+  div.payment-settings-page div.form-fieldset-title div.row {
+    margin: 0px !important; }
+  div.payment-settings-page div.form-group.form-field-box div.row {
+    margin: 0px !important; }
+    div.payment-settings-page div.form-group.form-field-box div.row div.text-right {
+      text-align: left !important;
+      padding: 0 !important; }
+      div.payment-settings-page div.form-group.form-field-box div.row div.text-right label {
+        padding-top: 0px !important;
+        margin-bottom: 10px !important; }
+    div.payment-settings-page div.form-group.form-field-box div.row div.paypal-mode-info {
+      padding: 0 !important; } }
+@media (min-width: 10px) and (max-width: 240px) {
+  body {
+    display: none; } }
+
+/*# sourceMappingURL=store.paymsettings.mq.css.map */

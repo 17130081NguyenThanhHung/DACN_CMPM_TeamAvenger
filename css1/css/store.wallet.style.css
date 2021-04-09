@@ -1,0 +1,49 @@
+div.wallet-management-page-container {
+  width: 100%;
+  display: block; }
+  div.wallet-management-page-container div.block-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center; }
+    div.wallet-management-page-container div.block-header button {
+      text-transform: uppercase; }
+      div.wallet-management-page-container div.block-header button i {
+        vertical-align: middle;
+        font-size: 1.2em !important;
+        top: 0px !important; }
+
+div.wallet-page-card div.body h6.stats-chart-title {
+  padding: 0;
+  margin: 0 0 20px 0;
+  color: #2d2f43;
+  font-size: 16px;
+  font-weight: 500; }
+div.wallet-page-card div.body div.weekly-stat-chart-wrapper {
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  height: 400px; }
+
+div.topup-balance-modal .modal-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 20px; }
+  div.topup-balance-modal .modal-header h4 {
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase; }
+  div.topup-balance-modal .modal-header a {
+    margin-left: auto; }
+    div.topup-balance-modal .modal-header a i {
+      font-size: 20px; }
+div.topup-balance-modal .modal-body label.form-label {
+  padding-top: 0px !important;
+  margin-bottom: 5px !important; }
+div.topup-balance-modal .modal-body small.error-message {
+  color: #ff7676; }
+
+/*# sourceMappingURL=store.wallet.style.css.map */

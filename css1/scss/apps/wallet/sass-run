@@ -1,0 +1,1 @@
+scss --watch store.wallet.style.scss:../../../css/apps/wallet/store.wallet.style.css

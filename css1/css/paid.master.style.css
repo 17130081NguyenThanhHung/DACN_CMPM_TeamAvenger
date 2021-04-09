@@ -1,0 +1,110 @@
+div.payment-paid-page-container {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px; }
+  div.payment-paid-page-container .success {
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin-bottom: 25px;
+    padding: 20px 0px; }
+    div.payment-paid-page-container .success div.icon {
+      width: 150px;
+      height: 150px;
+      overflow: hidden; }
+      div.payment-paid-page-container .success div.icon svg {
+        width: 100%;
+        height: 100%; }
+      div.payment-paid-page-container .success div.icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    div.payment-paid-page-container .success h5 {
+      font-size: 22px;
+      line-height: 35px;
+      color: #192a32;
+      padding: 0;
+      margin: 0;
+      text-align: center; }
+    div.payment-paid-page-container .success p {
+      padding: 0;
+      margin: 0 0 20px 0;
+      font-size: 14px;
+      line-height: 16px;
+      color: #2d2f43;
+      text-align: center; }
+    div.payment-paid-page-container .success button {
+      border: 1px solid #ff7676;
+      outline: 0;
+      padding: 12px 25px;
+      box-shadow: none;
+      background: #ff7676;
+      color: #fff;
+      font-size: 16px;
+      line-height: 16px;
+      text-decoration: none;
+      border-radius: 3px; }
+      div.payment-paid-page-container .success button:active, div.payment-paid-page-container .success button:hover, div.payment-paid-page-container .success button:focus {
+        background: #ff7676;
+        border-color: #ff7676;
+        outline: 0;
+        box-shadow: none; }
+  div.payment-paid-page-container .error {
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    margin-bottom: 25px;
+    padding: 20px 0px; }
+    div.payment-paid-page-container .error div.icon {
+      width: 150px;
+      height: 150px;
+      overflow: hidden; }
+      div.payment-paid-page-container .error div.icon svg {
+        width: 100%;
+        height: 100%; }
+      div.payment-paid-page-container .error div.icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    div.payment-paid-page-container .error h5 {
+      font-size: 22px;
+      line-height: 35px;
+      color: #192a32;
+      padding: 0;
+      margin: 0;
+      text-align: center; }
+    div.payment-paid-page-container .error p {
+      padding: 0;
+      margin: 0 0 20px 0;
+      font-size: 14px;
+      line-height: 16px;
+      color: #2d2f43;
+      text-align: center; }
+    div.payment-paid-page-container .error button {
+      border: 1px solid #ff7676;
+      outline: 0;
+      padding: 12px 25px;
+      box-shadow: none;
+      background: #ff7676;
+      color: #fff;
+      font-size: 16px;
+      line-height: 16px;
+      text-decoration: none;
+      border-radius: 3px; }
+      div.payment-paid-page-container .error button:active, div.payment-paid-page-container .error button:hover, div.payment-paid-page-container .error button:focus {
+        background: #ff7676;
+        border-color: #ff7676;
+        outline: 0;
+        box-shadow: none; }
+
+/*# sourceMappingURL=paid.master.style.css.map */

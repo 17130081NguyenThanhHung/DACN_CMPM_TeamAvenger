@@ -1,0 +1,39 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  div.site-settings-page div.form-group.form-field-box div.files-attach-area div.file-filed-box {
+    height: 80px !important; }
+    div.site-settings-page div.form-group.form-field-box div.files-attach-area div.file-filed-box div.filed-box-inner span.icon i {
+      font-size: 18px !important; }
+    div.site-settings-page div.form-group.form-field-box div.files-attach-area div.file-filed-box div.filed-box-inner span.c2a {
+      font-size: 12px !important; } }
+@media (min-width: 240px) and (max-width: 320px) {
+  div.site-settings-page div.form-group.form-field-box div.files-attach-area div.file-filed-box {
+    height: 80px !important; }
+    div.site-settings-page div.form-group.form-field-box div.files-attach-area div.file-filed-box div.filed-box-inner span.icon i {
+      font-size: 18px !important; }
+    div.site-settings-page div.form-group.form-field-box div.files-attach-area div.file-filed-box div.filed-box-inner span.c2a {
+      font-size: 12px !important; } }
+@media (min-width: 10px) and (max-width: 240px) {
+  body {
+    display: none; } }
+
+/*# sourceMappingURL=store.sitesettings.mq.css.map */
