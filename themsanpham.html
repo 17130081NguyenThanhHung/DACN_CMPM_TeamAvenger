@@ -51,20 +51,15 @@
     <script src="css1/js/bootstrap-select.js"></script>
     <script src="css1/js/bootstrap-notify.js"></script>
     <script src="css1/js/jquery.sticky-sidebar.js"></script>
-
-
     <script src="css1/js/tinymce.min.js"></script>
-
 
 
 
     <script>
         "use strict";
-
         function hs_format_currency(money = "0.00") {
             var curr_symbol_position = $.trim('before');
             var curr_symbol_char     = $.trim('đ');
-
             if (curr_symbol_position == 'before') {
                 return "{0}{1}".format(curr_symbol_char,money);
             }
@@ -73,8 +68,7 @@
             }
         }
     </script></head>
-
-<body class="theme-red">
+<!-- <body class="theme-red">
 <input type="hidden" class="hidden d-none csrf-token" value="1606360196:f148ceee33a52e839b0dfea3393bf0a507d46855">
 <div class="main-preloader-holder" id="main-preloader-holder">
     <div class="main-preloader">
@@ -82,7 +76,7 @@
             <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
         </div>
     </div>
-</div>
+</div> -->
 
 <header class="navbar main-sp-header" id="main-header-container">
     <div class="navbar-flex-inner-top-line">
@@ -104,7 +98,8 @@
                                 <div class="search-input">
                                     <input type="text" class="form-control" id="search-keyword" placeholder="Tìm kiếm sản phẩm">
                                     <button>
-                                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M337.509 305.372h-17.501l-6.571-5.486c20.791-25.232 33.922-57.054 33.922-93.257C347.358 127.632 283.896 64 205.135 64 127.452 64 64 127.632 64 206.629s63.452 142.628 142.225 142.628c35.011 0 67.831-13.167 92.991-34.008l6.561 5.487v17.551L415.18 448 448 415.086 337.509 305.372zm-131.284 0c-54.702 0-98.463-43.887-98.463-98.743 0-54.858 43.761-98.742 98.463-98.742 54.7 0 98.462 43.884 98.462 98.742 0 54.856-43.762 98.743-98.462 98.743z"/></svg>                                    </button>
+                                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M337.509 305.372h-17.501l-6.571-5.486c20.791-25.232 33.922-57.054 33.922-93.257C347.358 127.632 283.896 64 205.135 64 127.452 64 64 127.632 64 206.629s63.452 142.628 142.225 142.628c35.011 0 67.831-13.167 92.991-34.008l6.561 5.487v17.551L415.18 448 448 415.086 337.509 305.372zm-131.284 0c-54.702 0-98.463-43.887-98.463-98.743 0-54.858 43.761-98.742 98.463-98.742 54.7 0 98.462 43.884 98.462 98.742 0 54.856-43.762 98.743-98.462 98.743z"/></svg>                                   
+                                     </button>
                                 </div>
                                 <div class="dropdown" id="search-result">
                                     <div class="dropdown-menu" id="result"></div>
@@ -117,12 +112,14 @@
                             <li class="nav-item user-wishlist">
                                 <a class="nav-link" href="wishlist.html">
                                     <span class="new-messages"></span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M256 448l-30.164-27.211C118.718 322.442 48 258.61 48 179.095 48 114.221 97.918 64 162.4 64c36.399 0 70.717 16.742 93.6 43.947C278.882 80.742 313.199 64 349.6 64 414.082 64 464 114.221 464 179.095c0 79.516-70.719 143.348-177.836 241.694L256 448z"/></svg>                                </a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M256 448l-30.164-27.211C118.718 322.442 48 258.61 48 179.095 48 114.221 97.918 64 162.4 64c36.399 0 70.717 16.742 93.6 43.947C278.882 80.742 313.199 64 349.6 64 414.082 64 464 114.221 464 179.095c0 79.516-70.719 143.348-177.836 241.694L256 448z"/></svg> 
+                                </a>
                             </li>
                             <li class="nav-item user-messages" id="rt-messages">
                                 <a class="nav-link" href="mess.html">
                                     <span class="new-messages"></span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M132.8 368c-20.2 0-44.8-24.6-44.8-44.8V160h-9.6C61.7 160 48 173.7 48 190.4V464l58.5-58h215.1c16.7 0 30.4-14.1 30.4-30.9V368H132.8z"/><path d="M429.1 48H149.9C130.7 48 115 63.7 115 82.9V309c0 19.2 15.7 35 34.9 35h238.2l75.9 53V82.9c0-19.2-15.7-34.9-34.9-34.9z"/></svg>                                </a>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M132.8 368c-20.2 0-44.8-24.6-44.8-44.8V160h-9.6C61.7 160 48 173.7 48 190.4V464l58.5-58h215.1c16.7 0 30.4-14.1 30.4-30.9V368H132.8z"/><path d="M429.1 48H149.9C130.7 48 115 63.7 115 82.9V309c0 19.2 15.7 35 34.9 35h238.2l75.9 53V82.9c0-19.2-15.7-34.9-34.9-34.9z"/></svg>             
+                                </a>
                             </li>
                             <li class="nav-item user-notifications-dd" id="rt-notifications">
                                 <a class="nav-link dropdown-toggle"  id="load-notifications" data-toggle="dropdown">
@@ -261,8 +258,9 @@
                                 <span class="all--catgs">Tất cả danh mục</span>
                                 <span class="arrow-down">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="451.847px" height="451.847px" viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve">
-	<path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
-</svg>                                </span>
+	                                 <path d="M225.923,354.706c-8.098,0-16.195-3.092-22.369-9.263L9.27,151.157c-12.359-12.359-12.359-32.397,0-44.751   c12.354-12.354,32.388-12.354,44.748,0l171.905,171.915l171.906-171.909c12.359-12.354,32.391-12.354,44.744,0   c12.365,12.354,12.365,32.392,0,44.751L248.292,345.449C242.115,351.621,234.018,354.706,225.923,354.706z"/>
+                                    </svg>                              
+                                  </span>
                             </a>
                             <div class="dropdown-menu rs-dropdmenu" aria-labelledby="cat-dd-menu">
                                 <a class="dropdown-item" href='ListProduct.html'>
@@ -278,34 +276,19 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href='ListProduct.html'>
-                                        <span>
-                                            IPhone                                        </span>
-                            </a>
+                            <a class="nav-link" href='ListProduct.html'><span>IPhone</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href='producttrong.html'>
-                                        <span>
-                                            SamSung                                        </span>
-                            </a>
+                            <a class="nav-link" href='ListProduct.html'><span>IPhone</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href='producttrong.html'>
-                                        <span>
-                                            Oppo                                        </span>
-                            </a>
+                            <a class="nav-link" href='ListProduct.html'><span>IPhone</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href='producttrong.html'>
-                                        <span>
-                                            Xiaomi                                        </span>
-                            </a>
+                            <a class="nav-link" href='ListProduct.html'><span>IPhone</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href='producttrong.html'>
-                                        <span>
-                                            Khác                                        </span>
-                            </a>
+                            <a class="nav-link" href='ListProduct.html'><span>Lung tung</span></a>
                         </li>
                     </ul>
                 </nav>
@@ -313,299 +296,9 @@
         </div>
     </div>
 </header>
-<script>
-    jQuery(document).ready(function($) {
-        "use strict";
-        var MAIN_HEADER    = $("header#main-header-container");
-        var MAIN_HEADER_SF = MAIN_HEADER.find('form#search-form');
-        var MAIN_HEADER_SR = MAIN_HEADER_SF.find('div#search-result');
-
-        MAIN_HEADER_SF.find('input').keyup(function(event) {
-            delay(function() {
-                MAIN_HEADER_SR.removeClass('show');
-                MAIN_HEADER_SR.find('div#result').removeClass('show');
-                MAIN_HEADER_SR.find('div#result').empty();
-                if ($.trim(MAIN_HEADER_SF.find('input#search-keyword').val())) {
-                    $.ajax({
-                        url: 'https://localhost/Web-raovat/req/products/search_prods',
-                        type: 'GET',
-                        dataType: 'json',
-                        data: {keyword: $.trim(MAIN_HEADER_SF.find('input#search-keyword').val())},
-                    }).done(function(data) {
-                        MAIN_HEADER_SR.addClass('show');
-                        MAIN_HEADER_SR.find('div#result').addClass('show');
-                        if (data.status == 200) {
-                            $(data.result).each(function(index, el) {
-                                MAIN_HEADER_SR.find('div#result').append($('<a>',{
-                                    href: el.url,
-                                    text: el.query,
-                                }));
-                            });
-                        }
-                        else{
-                            MAIN_HEADER_SR.find('div#result').html($('<span>',{
-                                class:'no-result',
-                                text: "không tìm thấy kết quả nào",
-                            }));
-                        }
-                    });
-                }
-                else {
-                    MAIN_HEADER_SF.find('div#result').empty().removeClass('show');
-                }
-            },600);
-        });
-    });
-</script><script>
-    jQuery(document).ready(function($) {
-        "use strict";
-        var MAIN_HEADER       = $("header#main-header-container");
-        var RT_NOTIFICATIONS  = MAIN_HEADER.find("li#rt-notifications");
-        var RT_NOTIFS_HANDLER = Object({
-            state: 0,
-            interval: (1000 * 60),
-            get_unseen_notifs: function() {
-                $.ajax({
-                    url: "https://localhost/Web-raovat/req/notifications/get_unseen",
-                    type: 'GET',
-                    dataType: 'json',
-                }).done(function(data) {
-                    if (data.status == 200) {
-                        RT_NOTIFICATIONS.find('span.new-messages').text(data.count);
-                    }
-                    else {
-                        RT_NOTIFICATIONS.find('span.new-messages').text('');
-                    }
-                });
-            },
-            empty: function() {
-                RT_NOTIFICATIONS.find('ul#notifications-list').empty();
-                return this;
-            },
-            preloader: function(a = null) {
-                var not_preloader = RT_NOTIFICATIONS.find('div#notif-preloader');
-                if (a == 's') {
-                    not_preloader.removeClass('hidden');
-                }
-
-                else if(a == 'e') {
-                    not_preloader.addClass('hidden');
-                }
-
-                return this;
-            },
-            load_notifications: function() {
-                $.ajax({
-                    url: "https://localhost/Web-raovat/req/notifications/get_notifications",
-                    type: 'GET',
-                    dataType: 'json',
-                }).done(function(data) {
-                    if (data.status == 200) {
-                        RT_NOTIFICATIONS.find('div#view-all-notifications').removeClass('hidden');
-                    }
-                    else {
-                        RT_NOTIFICATIONS.find('div#view-all-notifications').addClass('hidden');
-                    }
-
-                    RT_NOTIFICATIONS.find('ul#notifications-list').html(data.html);
-                }).always(function(){
-                    RT_NOTIFS_HANDLER.preloader('e');
-                });
-            }
-        });
-
-
-        setInterval(function(){
-            RT_NOTIFS_HANDLER.get_unseen_notifs();
-        },RT_NOTIFS_HANDLER.interval);
-
-        RT_NOTIFICATIONS.find('a#load-notifications').on('click',function(event) {
-            if (RT_NOTIFS_HANDLER.state == 0) {
-                RT_NOTIFS_HANDLER.state = 1;
-                RT_NOTIFS_HANDLER.empty().preloader('s').load_notifications();
-            }
-            else {
-                RT_NOTIFS_HANDLER.state = 0;
-            }
-        });
-    });
-</script><script>
-    jQuery(document).ready(function($) {
-        "use strict";
-        var MAIN_HEADER       = $("header#main-header-container");
-        var RT_MESSAGES       = MAIN_HEADER.find("li#rt-messages");
-        var RT_MSGS_HANDLER   = Object({
-            interval: (1000 * 60),
-            get_unseen_messages: function() {
-                $.ajax({
-                    url: "https://localhost/Web-raovat/req/messages/get_unseen",
-                    type: 'GET',
-                    dataType: 'json',
-                }).done(function(data) {
-                    if (data.status == 200) {
-                        RT_MESSAGES.find('span.new-messages').text(data.count);
-                    }
-                    else {
-                        RT_MESSAGES.find('span.new-messages').text('');
-                    }
-                });
-            }
-        });
-
-        setInterval(function(){
-            RT_MSGS_HANDLER.get_unseen_messages();
-        },RT_MSGS_HANDLER.interval);
-    });
-</script>
-<aside id="leftsidebar" class="sidebar hs-store-main-sidebar">
-    <div class="user-info">
-        <div class="image">
-            <img src="images/user-avatar.png" alt="Avatar" data-user-avatar-image="4">
-        </div>
-        <div class="info-container">
-            <div class="name">Minh Chau 1 Trieu</div>
-            <div class="email">17130015@st.hcmuaf.edu.vn</div>
-        </div>
-    </div>
-    <div class="menu">
-        <ul class="list" data-snode="main-sidebarmenu">
-            <li class="header">Điều hướng chính</li>
-            <li class="mml" data-nav-list-item="dashboard">
-                <a href="bangquanly.html">
-                    <i class="material-icons">home</i>
-                    <span>Bảng điều khiển</span>
-                </a>
-            </li>
-            <li class="mtl">
-                <a href="javascript:void(0);" class="menu-toggle">
-                    <i class="material-icons">shopping_basket</i>
-                    <span>Đơn đặt hàng</span>
-                </a>
-                <ul class="ml-menu">
-                    <li data-nav-list-item="customer_orders">
-                        <a href=donhangcuakhachhang.html>Đơn hàng của khách hàng</a>
-                    </li>
-                    <li data-nav-list-item="account_reviews">
-                        <a href="danhgiacuakhachhang.html">Đánh giá của khách hàng</a>
-                    </li>
-                    <li data-nav-list-item="my_orders">
-                        <a href="donhangcuatoi.html">Đơn hàng của tôi</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="mtl">
-                <a href="javascript:void(0);" class="menu-toggle">
-                    <i class="material-icons">assignment</i>
-                    <span>Mặt hàng đăng bán</span>
-                </a>
-                <ul class="ml-menu">
-                    <li data-nav-list-item="my_products">
-                        <a href="tatcasanpham.html">Tất cả sản phẩm</a>
-                    </li>
-                    <li data-nav-list-item="products_draft">
-                        <a href="sanphamnhap.html">Bản nháp</a>
-                    </li>
-                    <li data-nav-list-item="add_product">
-                        <a href="themsanpham.html">Thêm sản phẩm mới</a>
-                    </li>
-                </ul>
-            </li>
-            <li class="mml" data-nav-list-item="customers">
-                <a href="khachhang.html">
-                    <i class="material-icons">group</i>
-                    <span>Khách hàng</span>
-                </a>
-            </li>
-            <li class="mml" data-nav-list-item="wallet">
-                <a href="vitien.html">
-                    <i class="material-icons">account_balance_wallet</i>
-                    <span>Ví tiền</span>
-                </a>
-            </li>
-
-            <li class="mml" data-nav-list-item="withdrawals">
-                <a href="ruttien.html">
-                    <i class="material-icons">account_balance</i>
-                    <span>Rút tiền</span>
-                </a>
-            </li>
-            <li class="mtl">
-                <a href="javascript:void(0);" class="menu-toggle">
-                    <i class="material-icons">account_circle</i>
-                    <span>Tài khoản</span>
-                </a>
-                <ul class="ml-menu">
-                    <li data-nav-list-item="main_settings">
-                        <a href="caidattaikhoan.html">
-                            Cài đặt tài khoản
-                        </a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="mml" data-nav-list-item="help">
-                <a href="Help.html">
-                    <i class="material-icons">help</i>
-                    <span>Trợ giúp</span>
-                </a>
-            </li>
-
-        </ul>
-    </div>
-    <div class="legal">
-        <div class="footer-content-container">
-            <div class="top-line">
-                <ul>
-                    <li>
-                        <a href="#">
-                            Chính sách bảo mật
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Điều khoản sử dụng
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Về chúng tôi
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Liên hệ chúng tôi
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Điều khoản gian hàng
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Help.html">
-                            F.A.Q
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="bottom-line">
-                <ul>
-                    <li>
-                        <a href="#">
-                            &copy; Nhóm 4
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>        </div>
-</aside>
 
 <section class="content" data-storepage="add_product">
-
-
-
     <div class="clearfix data-management-page" id="product-upsert-page">
-        <div class="block-header">
             <nav class="breadcrumbs-cust" aria-label="breadcrumb breadcrumb-cust">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
@@ -621,7 +314,7 @@
                     </li>
                 </ol>
             </nav>
-        </div>
+        </div> -->
         <div class="clearfix">
             <div class="affixed-page-section">
                 <div class="affixed-page-part-1">
@@ -629,27 +322,24 @@
                         <input type="hidden" class="hidden d-none" name="hash" value="1606360196:f148ceee33a52e839b0dfea3393bf0a507d46855">
                         <div class="card">
                             <div class="header">
-                                <h2>Thêm một sản phẩm mới</h2>
+                                <!-- <h2>Thêm một sản phẩm mới</h2> -->
+                                <h2>Thêm sách</h2>
                             </div>
                             <div class="body">
                                 <div class="data-management-area">
                                     <div class="form-fieldset-title clearfix" data-affix-label="prod_basic_info">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <p>
-                                                    Thông tin cơ bản về sản phẩm
-                                                </p>
+                                                <p>Vui lòng điền thông tin chi tiết về sách</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="form-group form-field-box">
                                         <div class="row clearfix">
                                             <div class="col-sm-12" data-form-field="3">
-                                                <label class="form-label">
-                                                    Tên
-                                                </label>
+                                                <label class="form-label">Tên sách</label>
                                                 <div class="filed-box">
-                                                    <input name="name" type="text" class="form-control" placeholder="Tên sản phẩm. Ví dụ. Iphone 11 Pro Max v.v...">
+                                                    <input name="name" type="text" class="form-control" placeholder="Tên sách. Ví dụ. Nhà giả kim v.v...">
                                                 </div>
                                             </div>
                                         </div>
@@ -657,33 +347,27 @@
                                     <div class="form-group form-field-box">
                                         <div class="row clearfix">
                                             <div class="col-sm-6 p-r-10" data-form-field="4">
-                                                <label class="form-label">
-                                                    Tình trạng
-                                                </label>
+                                                <label class="form-label">Tình trạng sách</label>
                                                 <div class="filed-box">
                                                     <select name="condition" class="form-control">
-                                                        <option value="1">Mới</option>
-                                                        <option value="2">Đã sử dụng</option>
-                                                        <option value="3">Đã sửa chữa</option>
+                                                        <option value="1">Sách mới</option>
+                                                        <option value="2">Sách cũ</option>
+                                                        <option value="3">Sách cũ như mới</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6 p-l-10" data-form-field="5">
-                                                <label class="form-label">
-                                                    Thể loại
-                                                </label>
+                                                <label class="form-label">Thể loại sách</label>
                                                 <div class="filed-box">
                                                     <select data-size="5" name="category" class="form-control">
-                                                        <option value="iphone">
-                                                            IPhone                                                        </option>
-                                                        <option value="samsung">
-                                                            SamSung                                                        </option>
-                                                        <option value="oppo">
-                                                            Oppo                                                        </option>
-                                                        <option value="xiaomi">
-                                                            Xiaomi                                                        </option>
-                                                        <option value="other">
-                                                            Khác                                                        </option>
+                                                        <option value="tieuthuyet">Tiểu thuyết</option>
+                                                        <option value="khoahoc">Khoa học</option>
+                                                        <option value="triethoc">Triết học</option>
+                                                        <option value="tieuthuyet">Tiểu thuyết</option>
+                                                        <option value="tieuthuyet">Tiểu thuyết</option>
+                                                        <option value="tieuthuyet">Tiểu thuyết</option>
+                                                        <option value="tieuthuyet">Tiểu thuyết</option>
+                                                        <option value="tieuthuyet">Tiểu thuyết</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -692,11 +376,9 @@
                                     <div class="form-group form-field-box">
                                         <div class="row clearfix">
                                             <div class="col-sm-12 no-mb" data-form-field="6">
-                                                <label class="form-label">
-                                                    Miêu tả
-                                                </label>
+                                                <label class="form-label">Mô tả chi tiết về sách</label>
                                                 <div class="filed-box">
-                                                    <textarea name="description" rows="5" class="form-control" id="product-description" placeholder="Nhập mô tả sản phẩm..."></textarea>
+                                                    <textarea name="description" rows="5" class="form-control" id="product-description" placeholder="Nhập mô tả chi tiết về tình trạng sách hoặc giới thiệu sơ về nội dung..."></textarea>
                                                 </div>
                                             </div>
                                         </div>
