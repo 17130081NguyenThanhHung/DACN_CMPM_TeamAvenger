@@ -460,7 +460,7 @@ header.main-sp-header {
                 margin-left: 15px; }
                 header.main-sp-header div.navbar-flex-inner-top-line div.navbar-flex-inner div.navbar-body div.navbar-body-inner .flex-ci.right ul.right-side li.user-messages a.nav-link {
                   cursor: pointer;
-                  background: #ff;
+                  background: #fff;
                   color: #72777c;
                   text-decoration: none;
                   vertical-align: middle; }
@@ -505,7 +505,7 @@ header.main-sp-header {
                 margin-left: auto; }
                 header.main-sp-header div.navbar-flex-inner-top-line div.navbar-flex-inner div.navbar-body div.navbar-body-inner .flex-ci.right ul.right-side li.user-wishlist a.nav-link {
                   cursor: pointer;
-                  background: #ff;
+                  background: #fff;
                   color: #72777c;
                   display: inline-block;
                   vertical-align: middle; }
@@ -1193,7 +1193,7 @@ div.announcements-list-cont {
       white-space: nowrap;
       word-wrap: normal;
       direction: ltr;
-      -webkit-font-feature-settings: 'liga';
+      -webkit-font-feature-setting: 'liga';
       -webkit-font-smoothing: antialiased;
       right: 20px;
       color: #5a5a5a; }
@@ -2267,7 +2267,7 @@ div.form-line.error input::placeholder {
   color: #f44336 !important; }
 
 .bg-main-red {
-  background: #ff7676;
+  background: #ff7676; 
   color: #fff; }
   .bg-main-red:active, .bg-main-red:hover, .bg-main-red:focus {
     background: #f6546a;

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Thêm sách</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+    <link href="css1/css/material_icon_fonts/material_icon.css" rel="stylesheet" type="text/css"/>
+    <link href="css1/css/bootstrap.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css1/css/preloader.min.css"/>
+    <link href="css1/css/waves.css" rel="stylesheet" />
+    <link href="css1/css/animate.css" rel="stylesheet" />
+    <link href="css1/css/style.css" rel="stylesheet"/>
+    <!-- ADP Default css styles END-->
+    <!-- ADP Custom common css styles -->
+    <link href="css1/css/store.common.style.css" rel="stylesheet"/>
+    <link href="css1/css/store.common.mq.css" rel="stylesheet"/>
+    <!-- ADP Custom common css styles END -->
+    <link href="css1/css/all-themes.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css1/css/store.upsertprod.mq.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/store.upsertprod.style.css">
+    <link rel="stylesheet" type="text/css" href="css1/ss/bootstrap.notify.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/bootstrap-select.min.css">
+ 
+    <!-- Jquery Core Js -->
+    <script src="css1/js/jquery.min.js"></script>
+    <script src="css1/js/jquery.slimscroll.js"></script>
+    <!-- Bootstrap Core Js -->
+    <script src="css1/js/bootstrap.js"></script>
+    <script src="css1/js/jquery.equalheights.min.js"></script>
+    <!-- Waves Effect Plugin Js -->
+    <script src="css1/js/waves.js"></script>
+    <script src="css1/js/admin.js"></script>
+    <script src="css1/js/master.tools.js"></script>
+    <script src="css1/js/master.script.js"></script>
+    <script src="css1/js/jquery.form.min.js"></script>
+    <script src="css1/js/bootstrap-select.js"></script>
+    <script src="css1/js/bootstrap-notify.js"></script>
+    <script src="css1/js/jquery.sticky-sidebar.js"></script>
+    <script src="css1/js/tinymce.min.js"></script>
+   </head>
+<!-- <header class="navbar main-sp-header" id="main-header-container">
+    <div class="navbar-flex-inner-top-line">
+        <div class="navbar-flex-inner">
+            <div class="navbar-header">
+                <div class="navbar-header-inner">
+                    <a href="javascript:void(0);" class="bars" onclick="$('body').toggleClass('overlay-open');"></a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <div class="navbar-body">
+                <div class="navbar-body-inner">
+                    <div class="flex-ci left">
+                        <div class="search-form-wrapper">
+                            <form action="#" class="form search-form" id="search-form">
+                                <input type="hidden" class="hidden d-none" name="hash" value="1606360196:f148ceee33a52e839b0dfea3393bf0a507d46855">
+                                <div class="search-input">
+                                    <input type="text" class="form-control" id="search-keyword" placeholder="Tìm kiếm sản phẩm">
+                                    <button>
+                                        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M337.509 305.372h-17.501l-6.571-5.486c20.791-25.232 33.922-57.054 33.922-93.257C347.358 127.632 283.896 64 205.135 64 127.452 64 64 127.632 64 206.629s63.452 142.628 142.225 142.628c35.011 0 67.831-13.167 92.991-34.008l6.561 5.487v17.551L415.18 448 448 415.086 337.509 305.372zm-131.284 0c-54.702 0-98.463-43.887-98.463-98.743 0-54.858 43.761-98.742 98.463-98.742 54.7 0 98.462 43.884 98.462 98.742 0 54.856-43.762 98.743-98.462 98.743z"/></svg>                                   
+                                     </button>
+                                </div>
+                                <div class="dropdown" id="search-result">
+                                    <div class="dropdown-menu" id="result"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="flex-ci right">
+                        <ul class="right-side">
+                            <li class="nav-item user-wishlist">
+                                <a class="nav-link" href="wishlist.html">
+                                    <span class="new-messages"></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512"><path d="M256 448l-30.164-27.211C118.718 322.442 48 258.61 48 179.095 48 114.221 97.918 64 162.4 64c36.399 0 70.717 16.742 93.6 43.947C278.882 80.742 313.199 64 349.6 64 414.082 64 464 114.221 464 179.095c0 79.516-70.719 143.348-177.836 241.694L256 448z"/></svg> 
+                                </a>
+                            </li>
+                            <li class="nav-item user-messages" id="rt-messages">
+                                <a class="nav-link" href="mess.html">
+                                    <span class="new-messages"></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M132.8 368c-20.2 0-44.8-24.6-44.8-44.8V160h-9.6C61.7 160 48 173.7 48 190.4V464l58.5-58h215.1c16.7 0 30.4-14.1 30.4-30.9V368H132.8z"/><path d="M429.1 48H149.9C130.7 48 115 63.7 115 82.9V309c0 19.2 15.7 35 34.9 35h238.2l75.9 53V82.9c0-19.2-15.7-34.9-34.9-34.9z"/></svg>             
+                                </a>
+                            </li>
+                            <li class="nav-item user-notifications-dd" id="rt-notifications">
+                                <a class="nav-link dropdown-toggle"  id="load-notifications" data-toggle="dropdown">
+                                    <span class="new-messages"></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 512 512"><path d="M257 120.471c7.083 0 23.911 4.479 23.911 4.479 45.589 10.447 77.678 52.439 77.678 99.85V352.412l9.321 9.364 7.788 7.823H136.302l7.788-7.823 9.321-9.364V224.8c0-47.41 32.089-89.403 77.678-99.85 0 0 18.043-4.479 23.911-4.479M256 48c-17.602 0-31.059 13.518-31.059 31.2v14.559c-59.015 13.523-103.53 67.601-103.53 131.041v114.4L80 380.8v20.8h352v-20.8l-41.411-41.6V224.8c0-63.44-44.516-117.518-103.53-131.041V79.2c0-17.682-13.457-31.2-31.059-31.2zm41.411 374.4h-82.823c0 22.881 18.633 41.6 41.412 41.6s41.411-18.719 41.411-41.6z"/></svg>
+                                </a>
+                                <div class="dropdown-menu anim scale-up-tr">
+                                    <div class="header">
+                                        <span class="text-left">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512"><path d="M257 120.471c7.083 0 23.911 4.479 23.911 4.479 45.589 10.447 77.678 52.439 77.678 99.85V352.412l9.321 9.364 7.788 7.823H136.302l7.788-7.823 9.321-9.364V224.8c0-47.41 32.089-89.403 77.678-99.85 0 0 18.043-4.479 23.911-4.479M256 48c-17.602 0-31.059 13.518-31.059 31.2v14.559c-59.015 13.523-103.53 67.601-103.53 131.041v114.4L80 380.8v20.8h352v-20.8l-41.411-41.6V224.8c0-63.44-44.516-117.518-103.53-131.041V79.2c0-17.682-13.457-31.2-31.059-31.2zm41.411 374.4h-82.823c0 22.881 18.633 41.6 41.412 41.6s41.411-18.719 41.411-41.6z"/></svg>
+                                        </span>
+                                        <span class="notifs">
+                                            Thông báo
+                                        </span>
+                                    </div>
+                                    <div class="body">
+                                        <div class="notifs-preloader hidden" id="notif-preloader">
+                                            <div class="loader">
+                                                <svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='40px' height='40px' viewBox='0 0 40 40' enable-background='new 0 0 40 40' xml:space='preserve'><path opacity='0.4' fill='#72777c' d='M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z'></path><path fill='#72777c' d='M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0 C22.32,8.481,24.301,9.057,26.013,10.047z' transform='rotate(323.368 20 20)'><animateTransform attributeType='xml' attributeName='transform' type='rotate' from='0 20 20' to='360 20 20' dur='0.7s' repeatCount='indefinite'></animateTransform></path></svg>                                            </div>
+                                        </div>
+                                        <ul class="notifs-list" id="notifications-list"></ul>
+                                    </div>
+                                    <div class="footer hidden" id="view-all-notifications">
+                                        <p>
+                                            <a href="https://localhost/Web-raovat/notifications">Hiển thị tất cả</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item profile-nav-dd">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <img src="images/user-avatar.png" alt="User avatar" data-user-avatar-image="4">
+                                    <span class="user-name">Người dùng</span>
+                                </a>
+                                <div class="dropdown-menu scale-up-tr">
+                                    <a class="dropdown-item" href="index.html">
+                                        <span>Trang chủ</span>
+                                    </a>
+                                    <a class="dropdown-item" href="HoSo.html">
+                                        <span>Hồ sơ</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <span>Sản phẩm của tôi</span>
+                                    </a>
+                                    <hr>
+                                    <a class="dropdown-item" href="caidattaikhoan.html">
+                                        <span>Tài khoản của tôi</span>
+                                    </a>
+                                    <hr>
+                                    <a class="dropdown-item" href="dangnhap.html">
+                                        <span>Đổi mật khẩu</span>
+                                    </a>
+                                    <a class="dropdown-item" href="dangnhap.html">
+                                        <span>Đăng xuất</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="nav-item user-basket">
+                                <a class="nav-link" href="checkout.html">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M169.6 377.6c-22.882 0-41.6 18.718-41.6 41.601 0 22.882 18.718 41.6 41.6 41.6s41.601-18.718 41.601-41.6c-.001-22.884-18.72-41.601-41.601-41.601zM48 51.2v41.6h41.6l74.883 151.682-31.308 50.954c-3.118 5.2-5.2 12.482-5.2 19.765 0 27.85 19.025 41.6 44.825 41.6H416v-40H177.893c-3.118 0-5.2-2.082-5.2-5.2 0-1.036 2.207-5.2 2.207-5.2l20.782-32.8h154.954c15.601 0 29.128-8.317 36.4-21.836l74.882-128.8c1.237-2.461 2.082-6.246 2.082-10.399 0-11.446-9.364-19.765-20.8-19.765H135.364L115.6 51.2H48zm326.399 326.4c-22.882 0-41.6 18.718-41.6 41.601 0 22.882 18.718 41.6 41.6 41.6S416 442.082 416 419.2c0-22.883-18.719-41.6-41.601-41.6z"/></svg>                                    <span class="total-items"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item user-language-dd">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48C141.124 48 48 141.125 48 256s93.124 208 208 208c114.875 0 208-93.125 208-208S370.875 48 256 48zm-21.549 384.999c-39.464-4.726-75.978-22.392-104.519-50.932C96.258 348.393 77.714 303.622 77.714 256c0-42.87 15.036-83.424 42.601-115.659.71 8.517 2.463 17.648 2.014 24.175-1.64 23.795-3.988 38.687 9.94 58.762 5.426 7.819 6.759 19.028 9.4 28.078 2.583 8.854 12.902 13.498 20.019 18.953 14.359 11.009 28.096 23.805 43.322 33.494 10.049 6.395 16.326 9.576 13.383 21.839-2.367 9.862-3.028 15.937-8.13 24.723-1.557 2.681 5.877 19.918 8.351 22.392 7.498 7.497 14.938 14.375 23.111 21.125 12.671 10.469-1.231 24.072-7.274 39.117zm147.616-50.932c-25.633 25.633-57.699 42.486-92.556 49.081 4.94-12.216 13.736-23.07 21.895-29.362 7.097-5.476 15.986-16.009 19.693-24.352 3.704-8.332 8.611-15.555 13.577-23.217 7.065-10.899-17.419-27.336-25.353-30.781-17.854-7.751-31.294-18.21-47.161-29.375-11.305-7.954-34.257 4.154-47.02-1.417-17.481-7.633-31.883-20.896-47.078-32.339-15.68-11.809-14.922-25.576-14.922-42.997 12.282.453 29.754-3.399 37.908 6.478 2.573 3.117 11.42 17.042 17.342 12.094 4.838-4.043-3.585-20.249-5.212-24.059-5.005-11.715 11.404-16.284 19.803-24.228 10.96-10.364 34.47-26.618 32.612-34.047s-23.524-28.477-36.249-25.193c-1.907.492-18.697 18.097-21.941 20.859.086-5.746.172-11.491.26-17.237.055-3.628-6.768-7.352-6.451-9.692.8-5.914 17.262-16.647 21.357-21.357-2.869-1.793-12.659-10.202-15.622-8.968-7.174 2.99-15.276 5.05-22.45 8.039 0-2.488-.302-4.825-.662-7.133a176.585 176.585 0 0 1 45.31-13.152l14.084 5.66 9.944 11.801 9.924 10.233 8.675 2.795 13.779-12.995L282 87.929V79.59c27.25 3.958 52.984 14.124 75.522 29.8-4.032.361-8.463.954-13.462 1.59-2.065-1.22-4.714-1.774-6.965-2.623 6.531 14.042 13.343 27.89 20.264 41.746 7.393 14.801 23.793 30.677 26.673 46.301 3.394 18.416 1.039 35.144 2.896 56.811 1.788 20.865 23.524 44.572 23.524 44.572s10.037 3.419 18.384 2.228c-7.781 30.783-23.733 59.014-46.769 82.052z"/></svg>                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="javascript:void(0);">
+                                        <span class="selected">Tiếng Việt</span>
+                                        <span class="lang-banner ml-auto">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-vn" viewBox="0 0 640 480">
+  <defs>
+    <clipPath id="a">
+      <path fill-opacity=".7" d="M-85.3 0h682.6v512H-85.3z"/>
+    </clipPath>
+  </defs>
+  <g fill-rule="evenodd" clip-path="url(#a)" transform="translate(80) scale(.9375)">
+    <path fill="#ec0015" d="M-128 0h768v512h-768z"/>
+    <path fill="#ff0" d="M349.6 381L260 314.3l-89 67.3L204 272l-89-67.7 110.1-1 34.2-109.4L294 203l110.1.1-88.5 68.4 33.9 109.6z"/>
+  </g>
+</svg>
+                                                    </span>
+                                    </a>
+                                    <a class="dropdown-item" href="https://localhost/Web-raovat/language/english">
+                                        <span>Tiếng Anh</span>
+                                        <span class="lang-banner ml-auto">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-gb" viewBox="0 0 640 480">
+  <defs>
+    <clipPath id="a">
+      <path fill-opacity=".7" d="M-85.3 0h682.6v512H-85.3z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#a)" transform="translate(80) scale(.94)">
+    <g stroke-width="1pt">
+      <path fill="#012169" d="M-256 0H768v512H-256z"/>
+      <path fill="#fff" d="M-256 0v57.2L653.5 512H768v-57.2L-141.5 0H-256zM768 0v57.2L-141.5 512H-256v-57.2L653.5 0H768z"/>
+      <path fill="#fff" d="M170.7 0v512h170.6V0H170.7zM-256 170.7v170.6H768V170.7H-256z"/>
+      <path fill="#c8102e" d="M-256 204.8v102.4H768V204.8H-256zM204.8 0v512h102.4V0H204.8zM-256 512L85.3 341.3h76.4L-179.7 512H-256zm0-512L85.3 170.7H9L-256 38.2V0zm606.4 170.7L691.7 0H768L426.7 170.7h-76.3zM768 512L426.7 341.3H503l265 132.5V512z"/>
+    </g>
+  </g>
+</svg>
+                                                    </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header> -->
+
+<!-- form thêm sách -->
+<section class="content" data-storepage="add_product">
+    <div class="clearfix data-management-page" id="product-upsert-page">
+        <div class="clearfix">
+            <div class="affixed-page-section">
+                <div class="affixed-page-part-1">
+                    <form data-prod-id="19" class="clearfix form-horizontal product-upsert-form" id="product-upsert-form">
+                        <input type="hidden" class="hidden d-none" name="hash" value="1606360196:f148ceee33a52e839b0dfea3393bf0a507d46855">
+                        <div class="card">
+                            <div class="header">
+                                <h2>Thêm sách</h2>
+                            </div>
+                            <div class="body">
+                                <div class="data-management-area">
+                                    <div class="form-fieldset-title clearfix" data-affix-label="prod_basic_info">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <p>Vui lòng điền thông tin chi tiết về sách</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Tên sách -->
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12" data-form-field="3">
+                                                <label class="form-label">Tên sách</label>
+                                                <div class="filed-box">
+                                                    <input name="name" type="text" class="form-control" placeholder="Tên sách. Ví dụ. Nhà giả kim v.v...">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Tình trạng sách -->
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12" data-form-field="5">
+                                                <label class="form-label">Thể loại sách</label>
+                                                <div class="filed-box">
+                                                    <select name="condition" class="form-control">
+                                                        <option value="tieuthuyet">Tiểu thuyết</option>
+                                                        <option value="khoahoc">Khoa học</option>
+                                                        <option value="triethoc">Triết học</option>
+                                                        <option value="tieuthuyet">Tiểu thuyết</option>
+                                                        <option value="tieuthuyet">Tiểu thuyết</option>
+                                                        <option value="tieuthuyet">Tiểu thuyết</option>
+                                                        <option value="tieuthuyet">Tiểu thuyết</option>
+                                                        <option value="tieuthuyet">Tiểu thuyết</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                           <div class="form-group form-field-box">
+                                            <div class="row clearfix">
+                                                <div class="col-sm-6 p-r-10" data-form-field="13">
+                                                    <label class="form-label">
+                                                        Tên tác giả
+                                                    </label>
+                                                    <div class="filed-box">
+                                                        <input name="origin" type="text" class="form-control" placeholder="Nhập tên tác giả">
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 p-l-10" data-form-field="14">
+                                                    <label class="form-label">
+                                                        Tái bản
+                                                    </label>
+                                                    <div class="filed-box">
+                                                        <input name="brand" type="text" class="form-control" placeholder="Tái bản lần thứ n">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <!-- Mô tả chi tiết về sách -->
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12 no-mb" data-form-field="6">
+                                                <label class="form-label">Mô tả chi tiết về sách</label>
+                                                <div class="filed-box">
+                                                    <textarea name="description" rows="5" class="form-control" id="product-description" placeholder="Nhập mô tả chi tiết về tình trạng sách hoặc giới thiệu sơ về nội dung..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-fieldset-title clearfix" data-affix-label="prod_images">
+                                        <div class="row">
+                                            <div class="col-sm-12"><p>Hình ảnh</p></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-field-box">
+                                        <div class="row clearfix">
+                                            <div class="col-sm-12" data-form-field="20">
+                                                <div class="filed-box">
+                                                    <div class="prod-pickzone-wrapper">
+                                                        <div class="left-part">
+                                                            <div class="pick-zone" id="select-prod-poster">
+                                                                <div class="pz-message">
+                                                                    <div class="drag-icon-cph">
+                                                                        <i class="material-icons">touch_app</i>
+                                                                    </div>
+                                                                    <h3>Nhấn vào đây để tải lên</h3>
+                                                                    <small>Select poster image</small>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="affixed-page-part-2" id="right-sidepart">
+                                        <div class="sidebar__inner">
+                                            <div class="card">
+                                                <div class="body">
+                                                    <div class="ctrls">
+                                                        <button class="btn btn-lg bg-main-red" data-main-btn="submit" title="Thêm sách"style="color: #ffffff;background:#004a99">
+                                                            <i class="material-icons">add_circle_outline</i> <span class="btn-text">Thêm sách</span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end form thêm sách -->
+</body>
+</html>
