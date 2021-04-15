@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Book Exchange - Quên mật khẩu </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="title" content="Book Exchange">
+    <meta name="description" content="Book Exchange">
+    <meta name="keywords"
+          content="marketplace,ecommerce,shopping,ebusiness,ecom,store,online store,online business,ecommerce website,shopping cart,ecommunity,ecommerce platform">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+    <link rel="stylesheet" href="css1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css1/css/preloader.min.css">
+    <link rel="stylesheet" href="css1/css/anim.master.css">
+
+    <!-- Common media queries & styles -->
+    <link rel="stylesheet" type="text/css" href="css1/css/common.master.style.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/media.queries.css">
+    <!-- Common media queries END -->
+
+
+    <link rel="stylesheet" type="text/css" href="css1/css/auth.master.style.css">
+    <link rel="stylesheet" type="text/css" href="css1/css//media.queries.css">
+
+    <link rel="stylesheet" type="text/css" href="css1/css/bootstrap-select.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/circle.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/md-checkbox.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/bootstrap.notify.css">
+
+    <script src="css1/js/jquery-v3-3-1.js"></script>
+    <script src="css1/js/popper.min.js"></script>
+    <script src="css1/js/bootstrap.min.js"></script>
+    <script src="css1/js/jquery.form.min.js"></script>
+    <script src="css1/js/xzoom.min.js"></script>
+    <script src="css1/js/jquery.grid-a-licious.js"></script>
+    <script src="css1/js/bootstrap-select.min.js"></script>
+    <script src="css1/js/jquery.sticky-sidebar.js"></script>
+    <script src="css1/js/txt.autoresize.min.js"></script>
+    <script src="css1/js/jquery.fancybox.min.js"></script>
+    <script src="css1/js/jquery.equalheights.min.js"></script>
+
+    <script src="css1/js/slick.min.js"></script>
+    <script src="css1/js/master.script.js"></script>
+    <script src="css1/js/master.tools.js"></script>
+    <script src="css1/js/bootstrap-notify.js"></script>
+
+
+
+    <script>
+        "use strict";
+
+        function hs_format_currency(money = "0.00") {
+            var curr_symbol_position = $.trim('before');
+            var curr_symbol_char = $.trim('đ');
+
+            if (curr_symbol_position == 'before') {
+                return "{0}{1}".format(curr_symbol_char, money);
+            } else {
+                return "{0}{1}".format(money, curr_symbol_char);
+            }
+        }
+    </script>
+
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            margin-left: 13% /* width: 100%;
+            height: 100%; */
+        }
+    </style>
+</head>
+<body>
+<input type="hidden" class="hidden d-none csrf-token" value="1606307009:36c48a4786eafadfbd56ad840ec7cba38d1e4367">
+<div class="main-preloader-holder" style="display: none;">
+    <div class="main-preloader">
+        <div class="loading">
+
+
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="main-container main-cont-page-auth">
+    <div id="auth-page-main-container">
+        <div class="user-auth-modal-container" id="user-passwordreset-modal">
+            <div class="user-auth-modal-wrapper">
+                <div class="user-auth-modal animated fadeIn" id="user-auth-modal">
+                    <div class="user-reset-passwd-modal-inner">
+                        <div class="main-part">
+                            <div class="auth-form-container">
+                                <div class="header">
+                                    <h2>
+                                        <a href="#">
+                                            Khôi phục mật khẩu
+                                        </a>
+                                    </h2>
+                                    <div class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
+                                            <g id="surface1">
+                                                <path d="M 512 256 C 512 397.386719 397.386719 512 256 512 C 114.617188 512 0 397.386719 0 256 C 0 114.613281 114.617188 0 256 0 C 397.386719 0 512 114.613281 512 256 Z M 512 256 "
+                                                      style=" stroke:none;fill-rule:nonzero;fill:rgb(3.529412%,80.784314%,40.392157%);fill-opacity:1;"></path>
+                                                <path d="M 510.957031 279.054688 L 331.0625 99.15625 L 195.046875 93.402344 L 135 415.414062 L 230.308594 510.722656 C 238.757812 511.5625 247.328125 512 256 512 C 389.613281 512 499.296875 409.632812 510.957031 279.054688 Z M 510.957031 279.054688 "
+                                                      style=" stroke:none;fill-rule:nonzero;fill:rgb(10.196078%,67.843137%,36.078431%);fill-opacity:1;"></path>
+                                                <path d="M 355.773438 330.855469 L 321.292969 330.855469 L 321.292969 164.808594 C 321.292969 128.808594 292.003906 99.519531 256 99.519531 C 220 99.519531 190.710938 128.808594 190.710938 164.808594 L 190.710938 330.855469 L 156.230469 330.855469 L 156.230469 164.808594 C 156.230469 109.796875 200.988281 65.039062 256 65.039062 C 311.015625 65.039062 355.773438 109.796875 355.773438 164.808594 Z M 355.773438 330.855469 "
+                                                      style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"></path>
+                                                <path d="M 256 65.039062 C 255.921875 65.039062 255.839844 65.042969 255.761719 65.042969 L 255.761719 99.523438 C 255.84375 99.523438 255.921875 99.519531 256 99.519531 C 292 99.519531 321.292969 128.808594 321.292969 164.808594 L 321.292969 330.851562 L 355.773438 330.851562 L 355.773438 164.808594 C 355.773438 109.796875 311.015625 65.039062 256 65.039062 Z M 256 65.039062 "
+                                                      style=" stroke:none;fill-rule:nonzero;fill:rgb(91.372549%,92.941176%,96.078431%);fill-opacity:1;"></path>
+                                                <path d="M 135 213.011719 L 377 213.011719 L 377 415.410156 L 135 415.410156 Z M 135 213.011719 "
+                                                      style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,83.137255%,0%);fill-opacity:1;"></path>
+                                                <path d="M 255.761719 213.011719 L 377 213.011719 L 377 415.410156 L 255.761719 415.410156 Z M 255.761719 213.011719 "
+                                                      style=" stroke:none;fill-rule:nonzero;fill:rgb(99.215686%,72.941176%,7.058824%);fill-opacity:1;"></path>
+                                                <path d="M 320 238.210938 L 398 238.210938 L 398 277.207031 L 320 277.207031 Z M 320 238.210938 "
+                                                      style=" stroke:none;fill-rule:nonzero;fill:#ff7676;fill-opacity:1;"></path>
+                                                <path d="M 320 294.714844 L 398 294.714844 L 398 333.710938 L 320 333.710938 Z M 320 294.714844 "
+                                                      style=" stroke:none;fill-rule:nonzero;fill:#ff7676;fill-opacity:1;"></path>
+                                                <path d="M 320 351.21875 L 398 351.21875 L 398 390.214844 L 320 390.214844 Z M 320 351.21875 "
+                                                      style=" stroke:none;fill-rule:nonzero;fill:#ff7676;fill-opacity:1;"></path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <div class="sub-title">
+                                        <small>
+                                            Quên mật khẩu? Hãy điền địa chỉ email của bạn. Bạn sẽ nhận được một liên kết
+                                            để tạo một mật khẩu mới qua email
+                                        </small>
+                                    </div>
+                                </div>
+                                <div class="body">
+                                    <div class="auth-form-body">
+                                        <form class="form" id="reset-password-form">
+                                            <input type="hidden" class="hidden d-none" name="hash"
+                                                   value="1606307009:36c48a4786eafadfbd56ad840ec7cba38d1e4367">
+                                            <div class="form-group" data-form-field="email">
+                                                <input name="email" type="email" class="form-control"
+                                                       placeholder="E-mail">
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn fluid btn-submit-form" type="submit">
+                                                    khôi phục mật khẩu
+                                                </button>
+                                                <div class="form-group">
+                                                    <div class="login">
+                                                        <span>Nhớ mật khẩu của bạn?</span>
+                                                        <span data-anchor="dangnhap.html">
+													<a href="dangnhap.html">Đăng nhập tại đây</a>
+												</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="footer">
+                                    <div class="join-us">
+								<span>
+									Chưa có tài khoản?
+								</span>
+                                        <span data-anchor="http://127.0.0.1:5500/dangki.html">
+									<a href="dangki.html">Đăng ký</a>
+								</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="market-copyright">
+				<span>
+					Book Exchange © 2020			</span>
+                    </div>
+                </div>
+            </div>
+            <div class="prods-items-container auth-page gridalicious" id="prods-items-container">
+   
+            </div>
+
+            <div id="clear9ex8v" style="clear: both; height: 0px; width: 0px; display: block;"></div>
+        </div>
+    </div>
+    <script>
+        jQuery(document).ready(function ($) {
+            "use strict";
+            var AUTH_PAGE_CONTAINER = $("div#auth-page-main-container");
+            var AUTH_PAGE_PASSWD_FORM = AUTH_PAGE_CONTAINER.find("form#reset-password-form");
+            var AUTH_PAGE_ITEMS_FLW = AUTH_PAGE_CONTAINER.find("div#prods-items-container");
+            var GRID_BLOCK_WIDTH = (AUTH_PAGE_ITEMS_FLW.width() / 5);
+
+            if (AUTH_PAGE_ITEMS_FLW.width() >= 768 && AUTH_PAGE_ITEMS_FLW.width() <= 1024) {
+                GRID_BLOCK_WIDTH = (AUTH_PAGE_ITEMS_FLW.width() / 4);
+            } else if (AUTH_PAGE_ITEMS_FLW.width() >= 481 && AUTH_PAGE_ITEMS_FLW.width() <= 820) {
+                GRID_BLOCK_WIDTH = (AUTH_PAGE_ITEMS_FLW.width() / 3);
+            } else if (AUTH_PAGE_ITEMS_FLW.width() >= 320 && AUTH_PAGE_ITEMS_FLW.width() <= 480) {
+                GRID_BLOCK_WIDTH = (AUTH_PAGE_ITEMS_FLW.width() / 2);
+            } else if (AUTH_PAGE_ITEMS_FLW.width() <= 320) {
+                GRID_BLOCK_WIDTH = AUTH_PAGE_ITEMS_FLW.width();
+            }
+
+            var AUTH_PAGE_GRID_CTRL = {
+                infinity_scroll: function (object = null) {
+                    if (hs_empty(object)) {
+                        return false;
+                    } else {
+                        var scrolled = 20;
+                        var inter = setInterval(function () {
+                            if (object.scrollTop() + object.innerHeight() >= object.get(0).scrollHeight) {
+                                if (AUTH_PAGE_GRID_CTRL.getoffset()) {
+                                    $.ajax({
+                                        url: 'http://localhost/project//req/auth/get_prods',
+                                        type: 'GET',
+                                        dataType: 'json',
+                                        data: {offset: AUTH_PAGE_GRID_CTRL.getoffset()},
+                                    }).done(function (data) {
+                                        if (data.status == 200) {
+                                            AUTH_PAGE_ITEMS_FLW.gridalicious('append', $(data.html));
+                                            scrolled += 20;
+                                            object.animate({scrollTop: scrolled}, (1000));
+                                        } else {
+                                            clearInterval(inter);
+                                        }
+                                    }).fail(function () {
+                                        clearInterval(inter);
+                                    });
+                                } else {
+                                    clearInterval(inter);
+                                }
+                            } else {
+                                scrolled += 20;
+                                object.animate({scrollTop: scrolled}, (1000));
+                                if (scrolled > (1000 * 1000)) {
+                                    scrolled = 20;
+                                }
+                            }
+
+                        }, 1100);
+                    }
+                },
+                getoffset: function () {
+                    var items_list = [];
+                    AUTH_PAGE_ITEMS_FLW.find('div.prod-item').each(function (index, el) {
+                        items_list.push(Number($(el).attr('data-product-li')));
+                    });
+
+                    var last_item = Math.min.apply(Math, items_list);
+
+                    if (last_item && $.isNumeric(last_item)) {
+                        return last_item;
+                    } else {
+                        return 0;
+                    }
+                },
+                ga_conf: {
+                    selector: 'div.prod-item',
+                    gutter: 0,
+                    width: (GRID_BLOCK_WIDTH),
+                    animate: true,
+                    animationOptions: {
+                        speed: 100,
+                        duration: 200
+                    }
+                }
+            };
+            AUTH_PAGE_ITEMS_FLW.gridalicious(AUTH_PAGE_GRID_CTRL.ga_conf);
+
+            AUTH_PAGE_PASSWD_FORM.ajaxForm({
+                url: 'http://localhost/project//req/auth/reset_password',
+                type: 'POST',
+                dataType: 'json',
+                beforeSend: function () {
+                    AUTH_PAGE_PASSWD_FORM.find('button[type="submit"]').attr('disabled', 'true');
+                    AUTH_PAGE_PASSWD_FORM.find('div[data-form-field]').each(function (index, el) {
+                        $(this).find('input').removeClass('animated');
+                        $(this).find('input').removeClass('flash');
+                        $(this).find('input').removeClass('v-error');
+                        $(this).find('small.error-message').remove();
+                    });
+                },
+                success: function (data) {
+                    if (data.status == 200) {
+                        AUTH_PAGE_PASSWD_FORM.find('button[type="submit"]').addClass('success');
+                        AUTH_PAGE_PASSWD_FORM.find('button[type="submit"]').text("E-mail đã gửi!");
+
+                        delay(function () {
+                            AUTH_PAGE_CONTAINER.find('div#user-auth-modal').fadeOut(300, function () {
+                                $(this).replaceWith($(data.html));
+                            });
+                        }, 1500);
+                    } else if (data.status == 400) {
+                        AUTH_PAGE_PASSWD_FORM.find('button[type="submit"]').removeAttr('disabled');
+                        AUTH_PAGE_PASSWD_FORM.find('[data-form-field="email"]').append($("<small>", {
+                            class: 'animated flash error-message',
+                            text: data.message
+                        }));
+                    } else if (data.status == 500) {
+                        AUTH_PAGE_PASSWD_FORM.find('button[type="submit"]').text("Đối thủ ..");
+                        delay(function () {
+                            AUTH_PAGE_CONTAINER.find('div#user-auth-modal').fadeOut(300, function () {
+                                $(this).replaceWith($(data.html));
+                            });
+                        }, 1500);
+                    }
+                }
+            });
+
+            AUTH_PAGE_GRID_CTRL.infinity_scroll(AUTH_PAGE_ITEMS_FLW);
+        });
+    </script>
+</div>
+
+</div>
+
+<div class="scrollpage2-top">
+    <button data-dom-node="scroll_page_to_top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"></path>
+        </svg>
+    </button>
+</div>
+
+
+</body>
+</html>

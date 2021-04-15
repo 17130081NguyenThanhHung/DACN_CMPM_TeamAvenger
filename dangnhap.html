@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Book Exchange - Đăng nhập </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="title" content="Book Exchange">
+    <meta name="description" content="Book Exchange">
+    <meta name="keywords"
+          content="marketplace,ecommerce,shopping,ebusiness,ecom,store,online store,online business,ecommerce website,shopping cart,ecommunity,ecommerce platform">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+    <link rel="stylesheet" href="css1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css1/css/preloader.min.css">
+    <link rel="stylesheet" href="css1/css/anim.master.css">
+
+    <!-- Common media queries & styles -->
+    <link rel="stylesheet" type="text/css" href="css1/css/common.master.style.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/media.queries.css">
+    <!-- Common media queries END -->
+
+
+    <link rel="stylesheet" type="text/css" href="css1/css/auth.master.style.css">
+    <link rel="stylesheet" type="text/css" href="css1/css//media.queries.css">
+
+    <link rel="stylesheet" type="text/css" href="css1/css/bootstrap-select.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/circle.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/md-checkbox.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css1/css/bootstrap.notify.css">
+
+    <script src="css1/js/jquery-v3-3-1.js"></script>
+    <script src="css1/js/popper.min.js"></script>
+    <script src="css1/js/bootstrap.min.js"></script>
+    <script src="css1/js/jquery.form.min.js"></script>
+    <script src="css1/js/xzoom.min.js"></script>
+    <script src="css1/js/jquery.grid-a-licious.js"></script>
+    <script src="css1/js/bootstrap-select.min.js"></script>
+    <script src="css1/js/jquery.sticky-sidebar.js"></script>
+    <script src="css1/js/txt.autoresize.min.js"></script>
+    <script src="css1/js/jquery.fancybox.min.js"></script>
+    <script src="css1/js/jquery.equalheights.min.js"></script>
+
+    <script src="css1/js/slick.min.js"></script>
+    <script src="css1/js/master.script.js"></script>
+    <script src="css1/js/master.tools.js"></script>
+    <script src="css1/js/bootstrap-notify.js"></script>
+
+
+    <script>
+        "use strict";
+
+        function hs_format_currency(money = "0.00") {
+            var curr_symbol_position = $.trim('before');
+            var curr_symbol_char = $.trim('đ');
+
+            if (curr_symbol_position == 'before') {
+                return "{0}{1}".format(curr_symbol_char, money);
+            } else {
+                return "{0}{1}".format(money, curr_symbol_char);
+            }
+        }
+    </script>
+
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            margin-left: 13% /* width: 100%;
+            height: 100%; */
+        }
+    </style>
+</head>
+
+
+<body>
+
+<input type="hidden" class="hidden d-none csrf-token" value="1606251475:0cb2f0b84f4bcd86153103754c547c5e2cd883f3">
+<div class="main-preloader-holder" style="display: none;">
+    <div class="main-preloader">
+        <div class="loading">
+
+
+            <div class="lds-ellipsis">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div class="main-container main-cont-page-auth">
+    <div id="auth-page-main-container">
+        <div class="user-auth-modal-container" id="user-login-modal">
+            <div class="user-auth-modal-wrapper">
+                <div class="user-auth-modal animated fadeIn login">
+                    <div class="block-titling">
+                        <h1 class="header">
+                            Book Exchange
+                        </h1>
+                    </div>
+                    <div class="user-auth-modal-inner">
+                        <div class="right-part">
+                            <div class="auth-form-container">
+                                <div class="header">
+                                    <h2>
+                                        <a href="#">
+                                            Đăng nhập
+                                        </a>
+                                    </h2>
+                                </div>
+                                <div class="body">
+                                    <article>
+                                        Đăng nhập để vào Book Exchange!
+                                    </article>
+                                    <div class="auth-form-body">
+                                        <form class="form" id="user-login-form">
+                                            <input type="hidden" class="hidden d-none" name="hash"
+                                                   value="1606251475:0cb2f0b84f4bcd86153103754c547c5e2cd883f3">
+                                            <div class="form-group" data-form-field="email">
+                                                <input name="email" type="email" class="form-control"
+                                                       placeholder="E-mail" title="E-mail">
+                                            </div>
+                                            <div class="form-group" data-form-field="password">
+                                                <input name="password" type="password" class="form-control"
+                                                       placeholder="Mật khẩu" title="Mật khẩu">
+                                            </div>
+                                            <div class="form-group">
+                                                <button class="btn fluid btn-submit-form" type="submit">
+                                                    Đăng nhập
+                                                </button>
+                                                <div class="form-group">
+                                                    <div class="forgot-pass">
+                                                        <span data-anchor="http://127.0.0.1:5500/quenmk.html">Quên mật khẩu?</span>
+                                                        <span data-anchor="http://127.0.0.1:5500/dangki.html">Đăng ký</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="market-copyright">
+				<span>
+					Book Exchange © 2020				</span>
+                    </div>
+                </div>
+            </div>
+           
+
+        <script>
+            jQuery(document).ready(function ($) {
+                "use strict";
+                var AUTH_PAGE_CONTAINER = $("div#auth-page-main-container");
+                var AUTH_PAGE_LOGIN_FORM = AUTH_PAGE_CONTAINER.find("form#user-login-form");
+                var AUTH_PAGE_ITEMS_FLW = AUTH_PAGE_CONTAINER.find("div#prods-items-container");
+                var GRID_BLOCK_WIDTH = (AUTH_PAGE_ITEMS_FLW.width() / 5);
+
+                if (AUTH_PAGE_ITEMS_FLW.width() >= 768 && AUTH_PAGE_ITEMS_FLW.width() <= 1024) {
+                    GRID_BLOCK_WIDTH = (AUTH_PAGE_ITEMS_FLW.width() / 4);
+                } else if (AUTH_PAGE_ITEMS_FLW.width() >= 481 && AUTH_PAGE_ITEMS_FLW.width() <= 820) {
+                    GRID_BLOCK_WIDTH = (AUTH_PAGE_ITEMS_FLW.width() / 3);
+                } else if (AUTH_PAGE_ITEMS_FLW.width() >= 320 && AUTH_PAGE_ITEMS_FLW.width() <= 480) {
+                    GRID_BLOCK_WIDTH = (AUTH_PAGE_ITEMS_FLW.width() / 2);
+                } else if (AUTH_PAGE_ITEMS_FLW.width() <= 320) {
+                    GRID_BLOCK_WIDTH = AUTH_PAGE_ITEMS_FLW.width();
+                }
+
+                var AUTH_PAGE_GRID_CTRL = {
+                    infinity_scroll: function (object = null) {
+                        if (hs_empty(object)) {
+                            return false;
+                        } else {
+                            var scrolled = 20;
+                            var inter = setInterval(function () {
+                                if (object.scrollTop() + object.innerHeight() >= object.get(0).scrollHeight) {
+                                    if (AUTH_PAGE_GRID_CTRL.getoffset()) {
+                                        $.ajax({
+                                            url: 'http://localhost/project//req/auth/get_prods',
+                                            type: 'GET',
+                                            dataType: 'json',
+                                            data: {offset: AUTH_PAGE_GRID_CTRL.getoffset()},
+                                        }).done(function (data) {
+                                            if (data.status == 200) {
+                                                AUTH_PAGE_ITEMS_FLW.gridalicious('append', $(data.html));
+                                                scrolled += 20;
+                                                object.animate({scrollTop: scrolled}, (1000));
+                                            } else {
+                                                clearInterval(inter);
+                                            }
+                                        }).fail(function () {
+                                            clearInterval(inter);
+                                        });
+                                    } else {
+                                        clearInterval(inter);
+                                    }
+                                } else {
+                                    scrolled += 20;
+                                    object.animate({scrollTop: scrolled}, (1000));
+                                    if (scrolled > (1000 * 1000)) {
+                                        scrolled = 20;
+                                    }
+                                }
+
+                            }, 1100);
+                        }
+                    },
+                    getoffset: function () {
+                        var items_list = [];
+                        AUTH_PAGE_ITEMS_FLW.find('div.prod-item').each(function (index, el) {
+                            items_list.push(Number($(el).attr('data-product-li')));
+                        });
+
+                        var last_item = Math.min.apply(Math, items_list);
+
+                        if (last_item && $.isNumeric(last_item)) {
+                            return last_item;
+                        } else {
+                            return 0;
+                        }
+                    },
+                    ga_conf: {
+                        selector: 'div.prod-item',
+                        gutter: 0,
+                        width: (GRID_BLOCK_WIDTH),
+                        animate: true,
+                        animationOptions: {
+                            speed: 100,
+                            duration: 200
+                        }
+                    }
+                };
+                AUTH_PAGE_ITEMS_FLW.gridalicious(AUTH_PAGE_GRID_CTRL.ga_conf);
+
+                AUTH_PAGE_LOGIN_FORM.ajaxForm({
+                    url: 'http://localhost/project//req/auth/login',
+                    type: 'POST',
+                    dataType: 'json',
+                    beforeSend: function () {
+                        AUTH_PAGE_LOGIN_FORM.find('button[type="submit"]').attr('disabled', 'true');
+                        AUTH_PAGE_LOGIN_FORM.find('div[data-form-field]').each(function (index, el) {
+                            $(this).find('input').removeClass('animated');
+                            $(this).find('input').removeClass('flash');
+                            $(this).find('input').removeClass('v-error');
+                            $(this).find('small.error-message').remove();
+                        });
+                    },
+                    success: function (data) {
+                        if (data.status == 200) {
+                            AUTH_PAGE_LOGIN_FORM.find('button[type="submit"]').addClass('success');
+                            AUTH_PAGE_LOGIN_FORM.find('button[type="submit"]').text("Chào mừng trở lại!");
+
+                            delay(function () {
+                                hs_redirect('http://localhost/project/');
+                            }, 1500);
+                        } else {
+                            if (data.message) {
+                                AUTH_PAGE_LOGIN_FORM.find('button[type="submit"]').removeAttr('disabled');
+                                AUTH_PAGE_LOGIN_FORM.find('div[data-form-field="{0}"]'.format(data.err_field)).find('input').addClass('v-error');
+                                AUTH_PAGE_LOGIN_FORM.find('div[data-form-field="{0}"]'.format(data.err_field)).append($('<small>', {
+                                    class: 'animated flash error-message',
+                                    text: data.message
+                                }));
+                            }
+                        }
+                    }
+                });
+
+                AUTH_PAGE_GRID_CTRL.infinity_scroll(AUTH_PAGE_ITEMS_FLW);
+
+                AUTH_PAGE_CONTAINER.find('div#featured-items-cr').on('slid.bs.carousel', function (e) {
+                    var this_el = AUTH_PAGE_CONTAINER.find('div#featured-items-cr').find('div.carousel-item.active');
+                    var price_lb = AUTH_PAGE_CONTAINER.find("div#featured-items-price");
+                    price_lb.find('span#sp').text(this_el.data('sp'));
+                    price_lb.find('span#rp').text(this_el.data('rp'));
+                });
+            });
+        </script>
+    </div>
+
+</div> -->
+
+<div class="scrollpage2-top">
+    <button data-dom-node="scroll_page_to_top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"></path>
+        </svg>
+    </button>
+</div>
+
+
+</body>
+</html>

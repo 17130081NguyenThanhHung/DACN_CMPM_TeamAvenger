@@ -119,5 +119,23 @@
     items: 1
   });
 
+  
+  //châu chỉnh
+  $('a.registration_a').on('click', function(){
+    $('#user-registration-modal').addClass('user-registration-modal-active');
+    $('#user-login-modal').removeClass('user-login-modal-active');
+
+  });
+  $('a.login_a').on('click', function(){
+    $('#user-registration-modal').removeClass('user-registration-modal-active');
+    $('#user-login-modal').addClass('user-login-modal-active');
+    
+  });
+
+  $('i.fa-times').on('click', function(){
+    $('#user-registration-modal').removeClass('user-registration-modal-active');
+    $('#user-login-modal').removeClass('user-login-modal-active');
+  });
 })(jQuery);
+
 

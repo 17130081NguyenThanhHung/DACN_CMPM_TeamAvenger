@@ -1879,6 +1879,10 @@ div.data-management-page {
     div.data-management-page div.affixed-page-section div.affixed-page-part-1 {
       width: calc(65% - 10px);
       min-width: calc(65% - 10px); }
+    div.data-management-page div.affixed-page-section div#affixed-page-part{
+      width: 100vw;
+      min-width: calc(65% - 10px); 
+      }
     div.data-management-page div.affixed-page-section div.affixed-page-part-2 {
       width: calc(35% - 10px);
       min-width: calc(35% - 10px); }

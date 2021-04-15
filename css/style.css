@@ -4,9 +4,64 @@ body {
   color: #444;
   font-family: "Open Sans", sans-serif;
 }
+/* nơi châu chỉnh css */
+.container{
+/* display: flex; */
+align-items: center;
+}
+.float-left{
+margin-right: 25px;
+}
+.search-bar{
+  width: 355px;
+  position: relative;
+  margin-bottom: 0;
+}
+.main-nav{
+  flex-grow: 2;
+  float: right;
+}
+.search-bar input{
+  padding: 4px 0 4px 35px;
 
+}
+.login{
+  border: 1px solid #e1e8ea;
+  transition: 0.5s;
+}
+.signup{
+  border: 1px solid #e1e8ea;
+  transition: 0.5s;
+}
+.login:hover{
+  
+  background: #e1e8ea;
+}
+.signup:hover{
+  background: #e1e8ea;
+}
+i.cancel:hover{
+    
+   
+    background-color: #004a99;
+    border: hidden;
+}
+i.cancel{
+position: absolute;
+top: 0;
+right: 15px;
+font-size: 40px;
+color: #fff;
+padding: 5px 20px;
+border: 1px solid #fff;
+transition: 0.5s;
+}
+li.user-contact-item{
+  font-size: 1.4rem;
+}
+/* --- */
 a {
-  color: #007bff;
+  /* color: #007bff; */
   transition: 0.5s;
 }
 
@@ -16,6 +71,9 @@ a:focus {
   color: #0b6bd3;
   outline: none;
   text-decoration: none;
+}
+a.nav-link:hover{
+  color: #f2f2f2 !important;
 }
 
 p {
@@ -119,7 +177,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  padding: 20px 0;
+  padding: 17px 0;
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
 }
@@ -178,7 +236,7 @@ h6 {
   display: block;
   position: relative;
   color: #004289;
-  padding: 10px 15px;
+  padding: 10px 30px;
   transition: 0.3s;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
@@ -188,7 +246,7 @@ h6 {
 .main-nav a:hover,
 .main-nav .active > a,
 .main-nav li:hover > a {
-  color: #007bff;
+  /* color: #007bff; */
   text-decoration: none;
 }
 
@@ -551,7 +609,7 @@ h6 {
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   background: url("../img/thu-vien.jpg");
 }
-
+/* châu sửa */
 #clients .clients-wrap {
   border-top: 1px solid #d6eaff;
   border-left: 1px solid #d6eaff;
@@ -820,4 +878,19 @@ h6 {
   #intro {
     padding: 100px 0 20px 0;
   }
+}
+.specifications button.btn-primary {
+  cursor: pointer;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-size: 13px;
+  color: #337ab7;
+  border-radius: 2px;
+  background-color: #fff;
+  border: solid 1px #337ab7;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }

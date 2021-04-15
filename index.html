@@ -4,13 +4,6 @@
   <meta charset="utf-8">
   <title>Trang chủ</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-  <!-- Favicons -->
-  <link href="" rel="icon">
-  
-
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
@@ -32,48 +25,163 @@
   <link href="css/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="css/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="css/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
+  
+  <link href="css2/bootstrap.scss.css" rel="stylesheet">
+  <link href="css2/style.css" rel="stylesheet">
+  <link href="css2/base.scss.css" rel="stylesheet">
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link rel="stylesheet" href="css/assets/css/style.css">
+  <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css" />
 
+  <script src="css2/js/jquery.min.js" type="text/javascript"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js" type="text/javascript"></script>
 </head>
 
 <body>
-
   <!--==========================
   Header
   ============================-->
   <header id="header" class="fixed-top">
     <div class="container">
-
       <div class="logo float-left">
         <a href="#intro" class="scrollto"><img src="img/portfolio/logobookexchange.png" alt="" class="img-fluid"></a>
       </div>
-
+      <div class="col-lg-3 col-md-3 add-arrow">
+        <form class="search-bar has-validation-callback" action="/search" method="get" role="search">
+            <input type="search" name="query" value="" placeholder="Tìm kiếm..." class="input-group-field search-text" autocomplete="off">
+            <button class="btn icon-fallback-text" style="position: absolute; top: -6px; left: 0px; padding: 0; margin-left: 2px;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 451 451" style="enable-background:new 0 0 451 451;" xml:space="preserve" width="20px" height="20px">
+                   <g>
+                      <g>
+                         <path d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3   s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4   C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3   s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z" data-original="#000000" class="active-path" data-old_color="#ff3300" fill="#ff3300"/>
+                      </g>
+                   </g>
+                </svg>
+            </button>
+        </form>
+    </div>
       <nav class="main-nav float-right d-none d-lg-block">
-        <ul>
+        <ul style="float: right;">
           <li class="active"><a href="#clients">Home</a></li>
-          <li><a href="#">Demo</a></li>
-          <li><a href="#">Demo</a></li>
-          <li><a href="#">Demo</a></li>
+          <li class="nav-item profile-nav-dd">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                <span class="user-name">Người dùng</span>
+            </a>
+            <div class="dropdown-menu scale-up-tr" style="display: none;">
+                <a class="dropdown-item" href="index.html">
+                    <span>Trang chủ</span>
+                </a>
+                <a class="dropdown-item" href="hoSo.html">
+                    <span>Hồ sơ của tôi</span>
+                </a>
+                <a class="dropdown-item" href="#" class="btn btn-primary" data-toggle="modal" data-target="#specifications">
+                    <span>Sách của tôi</span>
+                </a>
+                <a class="dropdown-item" href="#">
+                    <span>Thêm sách mới</span>
+                </a>
+                <hr>
+                <a class="dropdown-item" href="caidattaikhoan.html">
+                    <span>Cài đặt tài khoản</span>
+                </a>
+                <a class="dropdown-item" href="Help.html">
+                    <span>Trợ giúp</span>
+                </a>
+                <hr>
+                <a class="dropdown-item" href="index(chua dang nhap).html">
+                    <span>Đăng xuất</span>
+                </a>
+            </div>
+        </li>
         </ul>
       </nav><!-- .main-nav -->
-      
     </div>
   </header><!-- #header -->
-
   <!--==========================
       Clients Section
     ============================-->
     <section id="clients" class="section-bg">
+      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#specifications">
+        Xem cấu hình chi tiết
+    </button> -->
+    <div class="modal fade" id="specifications" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Thông số kỹ thuật chi tiết Apple Macbook Air 2019 i5 1.6GHz/8GB/128GB (MVFM2SA/A)</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <p><img alt="Màn hình Galaxy S10+" data-src="https://cdn.tgdd.vn/Products/Images/44/207682/Kit/apple-macbook-air-2019-i5-16ghz-8gb-128gb-mvfm2sa-note.jpg" src="https://cdn.tgdd.vn/Products/Images/44/207682/Kit/apple-macbook-air-2019-i5-16ghz-8gb-128gb-mvfm2sa-note.jpg" title="Màn hình Galaxy S10+" /></p>
 
+                        <li style="color: #ff3300">Bộ xử lý</li>
+
+                        <li><label data-id="204">Công nghệ CPU :</label>Intel Core i5 Coffee Lake</li>
+                        <li><label data-id="10">Loại CPU :</label>Hãng không công bố</li>
+                        <li><label data-id="534">Tốc độ CPU :</label>1.60 GHz</li>
+                        <li><label data-id="12">Tốc độ tối đa :</label>Turbo Boost 3.6 GHz</li>
+                        <li><label data-id="1160">Tốc độ Bus :</label></li>
+                        <li><label data-id="1246">RAM :</label>8 GB</li>
+
+                        <li style="color: #ff3300">Bộ nhớ, RAM, Ổ cứng</li>
+
+                        <li><label data-id="1332">RAM :</label>8 GB</li>
+                        <li><label data-id="1334">Loại RAM :</label>DDR3</li>
+                        <li><label data-id="1328">Tốc độ Bus RAM :</label>2133 MHz</li>
+                        <li><label data-id="1329">Hỗ trợ RAM tối đa :</label>Không hỗ trợ nâng cấp</li>
+                        <li><label data-id="1330">Ổ cứng :</label>SSD: 128 GB</li>
+
+                        <li style="color: #ff3300">Màn hình</li>
+
+                        <li><label data-id="1331">Kích thước màn hình :</label>13.3 inch</li>
+                        <li><label data-id="649">Độ phân giải :</label>Retina (2560 x 1600)</li>
+                        <li><label data-id="650">Công nghệ màn hình :</label>Công nghệ IPS, LED Backlit</li>
+                        <li><label data-id="651">Màn hình cảm ứng :</label>Không</li>
+
+                        <li style="color: #ff3300">Đồ họa và Âm thanh</li>
+
+                        <li><label data-id="652">Thiết kế card :</label>Card đồ họa tích hợp</li>
+                        <li><label data-id="653">Card đồ họa :</label>Intel UHD Graphics 617</li>
+                        <li><label data-id="1345">Công nghệ âm thanh :</label>3 microphones, Headphones, Loa kép (2 kênh)</li>
+
+                        <li style="color: #ff3300">Cổng kết nối & tính năng mở rộng</li>
+
+                        <li><label data-id="23">Cổng giao tiếp :</label>2 x Thunderbolt 3 (USB-C)</li>
+                        <li><label data-id="24">Kết nối không dây :</label>Bluetooth 4.2, Wi-Fi 802.11 a/b/g/n/ac</li>
+                        <li><label data-id="1327">Khe đọc thẻ nhớ :</label>Không</li>
+                        <li><label data-id="25">Ổ đĩa quang :</label>Không</li>
+                        <li><label data-id="151">Webcam :</label>FaceTime Camera</li>
+                        <li><label data-id="748">Đèn bàn phím :</label>Có</li>
+                        <li><label data-id="1247">Tính năng khác :</label>	Bảo mật vân tay, Hỗ trợ eGPU rời</li>
+
+                        <li style="color: #ff3300">PIN</li>
+
+                        <li><label data-id="749">Loại PIN :</label>PIN liền</li>
+                        <li><label data-id="212">Thông tin Pin :</label>Khoảng 10 giờ</li>
+
+                        <li style="color: #ff3300">Hệ điều hành</li>
+
+                        <li><label data-id="1248">Hệ điều hành :</label>Mac OS</li>
+
+                        <li style="color: #ff3300">Kích thước & trọng lượng</li>
+
+                        <li><label data-id="194">Kích thước :</label>Dài 304.1 mm - Rộng 212.1 mm - Dày 4.1 đến 15.6 mm</li>
+                        <li><label data-id="36">Dung lượng pin :</label>4100 mAh</li>
+                        <li><label data-id="750">Trọng lượng :</label>1.25 kg</li>
+                        <li><label data-id="1250">Chất liệu:</label>Vỏ kim loại nguyên khối</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
       <div class="container">
         <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
 
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="client-logo">
-              <!-- <img src="img/clients/client-1.png" class="img-fluid" alt=""> -->
               <img src="img/clients/khoahoc.png" class="img-fluid" alt="">
             </div>
           </div>
@@ -125,173 +233,19 @@
       </div>
 
     </section>
-    <!--==========================
-      Portfolio Section
-    ============================-->
-    <!-- <section id="portfolio" class="clearfix">
-      <div class="container">
-
-        <header class="section-header">
-          <h3 class="section-title">Our Portfolio</h3>
-        </header>
-
-        <div class="row">
-          <div class="col-lg-12">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Web 3</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 2</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 2</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Web 2</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 3</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 1</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 3</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Web 1</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section> -->
-    <!-- #portfolio -->
-
   <!-- ======= Portfolio Section ======= -->
   <section id="portfolio" class="portfolio">
     <div class="container">
 
-      <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+      <div class="section-title" data-aos="fade-in" data-aos-delay="100" style="text-align: center;
+      padding-bottom: 30px;">
         <h2>Tất cả sách</h2>
         <p>Em có rảnh không? Nếu em rảnh thì hai đứa mình yêu nhau đi cho nó bận, anh cũng đang rảnh.</p>
       </div>
 
       <div class="row" data-aos="fade-in">
         <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
+          <ul id="portfolio-flters" >
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">Hót nhất</li>
             <li data-filter=".filter-card">Mới nhất</li>
@@ -304,9 +258,9 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="img/portfolio/vanhoc.jfif" class="img-fluid" alt="">
+            <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
             <div class="portfolio-links">
-              <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+              <a href="img/portfolio/app1.jpg"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
@@ -396,6 +350,7 @@
 
     </div>
   </section><!-- End Portfolio Section -->
+  
   </main>
 
    <!-- ======= Footer ======= -->
