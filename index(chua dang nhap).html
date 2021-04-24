@@ -88,6 +88,7 @@
 
 <body>
 
+
   <div class="main-container main-cont-page-auth">
     <div id="auth-page-main-container">
         <div class="user-auth-modal-container" id="user-registration-modal">
@@ -345,7 +346,7 @@
                                                       </button>
                                                       <div class="form-group">
                                                           <div class="forgot-pass">
-                                                              <span data-anchor="http://127.0.0.1:5500/quenmk.html">Quên mật khẩu?</span>
+                                                              <a class="reset-password_a" href="#Quenmatkhau">Quên mật khẩu?</a>
                                                               <!-- <span data-anchor="http://127.0.0.1:5500/dangki.html">Đăng ký</span> -->
                                                               <a class="registration_a" href="#Dangky">Đăng ký</a>
                                                           </div>
@@ -499,11 +500,237 @@
 
 </div>
 
+<div class="main-container main-cont-page-auth">
+  <div id="auth-page-main-container">
+      <div class="user-auth-modal-container" id="user-passwordreset-modal">
+          <div class="user-auth-modal-wrapper">
+            <i class="fas fa-times cancel"></i>
+              <div class="user-auth-modal animated fadeIn" id="user-auth-modal">
+                  <div class="user-reset-passwd-modal-inner">
+                      <div class="main-part">
+                          <div class="auth-form-container">
+                              <div class="header">
+                                  <h2>
+                                      <a href="#">
+                                          Khôi phục mật khẩu
+                                      </a>
+                                  </h2>
+                                  <div class="icon">
+                                      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
+                                          <g id="surface1">
+                                              <path d="M 512 256 C 512 397.386719 397.386719 512 256 512 C 114.617188 512 0 397.386719 0 256 C 0 114.613281 114.617188 0 256 0 C 397.386719 0 512 114.613281 512 256 Z M 512 256 "
+                                                    style=" stroke:none;fill-rule:nonzero;fill:rgb(3.529412%,80.784314%,40.392157%);fill-opacity:1;"></path>
+                                              <path d="M 510.957031 279.054688 L 331.0625 99.15625 L 195.046875 93.402344 L 135 415.414062 L 230.308594 510.722656 C 238.757812 511.5625 247.328125 512 256 512 C 389.613281 512 499.296875 409.632812 510.957031 279.054688 Z M 510.957031 279.054688 "
+                                                    style=" stroke:none;fill-rule:nonzero;fill:rgb(10.196078%,67.843137%,36.078431%);fill-opacity:1;"></path>
+                                              <path d="M 355.773438 330.855469 L 321.292969 330.855469 L 321.292969 164.808594 C 321.292969 128.808594 292.003906 99.519531 256 99.519531 C 220 99.519531 190.710938 128.808594 190.710938 164.808594 L 190.710938 330.855469 L 156.230469 330.855469 L 156.230469 164.808594 C 156.230469 109.796875 200.988281 65.039062 256 65.039062 C 311.015625 65.039062 355.773438 109.796875 355.773438 164.808594 Z M 355.773438 330.855469 "
+                                                    style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;"></path>
+                                              <path d="M 256 65.039062 C 255.921875 65.039062 255.839844 65.042969 255.761719 65.042969 L 255.761719 99.523438 C 255.84375 99.523438 255.921875 99.519531 256 99.519531 C 292 99.519531 321.292969 128.808594 321.292969 164.808594 L 321.292969 330.851562 L 355.773438 330.851562 L 355.773438 164.808594 C 355.773438 109.796875 311.015625 65.039062 256 65.039062 Z M 256 65.039062 "
+                                                    style=" stroke:none;fill-rule:nonzero;fill:rgb(91.372549%,92.941176%,96.078431%);fill-opacity:1;"></path>
+                                              <path d="M 135 213.011719 L 377 213.011719 L 377 415.410156 L 135 415.410156 Z M 135 213.011719 "
+                                                    style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,83.137255%,0%);fill-opacity:1;"></path>
+                                              <path d="M 255.761719 213.011719 L 377 213.011719 L 377 415.410156 L 255.761719 415.410156 Z M 255.761719 213.011719 "
+                                                    style=" stroke:none;fill-rule:nonzero;fill:rgb(99.215686%,72.941176%,7.058824%);fill-opacity:1;"></path>
+                                              <path d="M 320 238.210938 L 398 238.210938 L 398 277.207031 L 320 277.207031 Z M 320 238.210938 "
+                                                    style=" stroke:none;fill-rule:nonzero;fill:#ff7676;fill-opacity:1;"></path>
+                                              <path d="M 320 294.714844 L 398 294.714844 L 398 333.710938 L 320 333.710938 Z M 320 294.714844 "
+                                                    style=" stroke:none;fill-rule:nonzero;fill:#ff7676;fill-opacity:1;"></path>
+                                              <path d="M 320 351.21875 L 398 351.21875 L 398 390.214844 L 320 390.214844 Z M 320 351.21875 "
+                                                    style=" stroke:none;fill-rule:nonzero;fill:#ff7676;fill-opacity:1;"></path>
+                                          </g>
+                                      </svg>
+                                  </div>
+                                  <div class="sub-title">
+                                      <small>
+                                          Quên mật khẩu? Hãy điền địa chỉ email của bạn. Bạn sẽ nhận được một liên kết
+                                          để tạo một mật khẩu mới qua email
+                                      </small>
+                                  </div>
+                              </div>
+                              <div class="body">
+                                  <div class="auth-form-body">
+                                      <form class="form" id="reset-password-form">
+                                          <input type="hidden" class="hidden d-none" name="hash"
+                                                 value="1606307009:36c48a4786eafadfbd56ad840ec7cba38d1e4367">
+                                          <div class="form-group" data-form-field="email">
+                                              <input name="email" type="email" class="form-control"
+                                                     placeholder="E-mail">
+                                          </div>
+                                          <div class="form-group">
+                                              <button class="btn fluid btn-submit-form" type="submit">
+                                                  khôi phục mật khẩu
+                                              </button>
+                                              <div class="form-group">
+                                                  <div class="login">
+                                                      <span>Nhớ mật khẩu của bạn?</span>
+                                                      <a class="login_a" href="#Dangnhap">Đăng nhập tại đây</a>
+                                                      <span data-anchor="dangnhap.html"></span> </span>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </form>
+                                  </div>
+                              </div>
+                              <div class="footer">
+                                  <div class="join-us">
+              <span>
+                Chưa có tài khoản?
+              </span>
+              <a class="registration_a" href="#Dangky">Đăng ký</a>
+                                      <!-- <span data-anchor="http://127.0.0.1:5500/dangki.html">
+                                       
+              </span> -->
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="market-copyright">
+      <span>
+        Book Exchange © 2020			</span>
+                  </div>
+              </div>
+          </div>
+          <!-- <div class="prods-items-container auth-page gridalicious" id="prods-items-container">
+ 
+          </div> -->
+
+          <div id="clear9ex8v" style="clear: both; height: 0px; width: 0px; display: block;"></div>
+      </div>
+  </div>
+  <script>
+      jQuery(document).ready(function ($) {
+          "use strict";
+          var AUTH_PAGE_CONTAINER = $("div#auth-page-main-container");
+          var AUTH_PAGE_PASSWD_FORM = AUTH_PAGE_CONTAINER.find("form#reset-password-form");
+          var AUTH_PAGE_ITEMS_FLW = AUTH_PAGE_CONTAINER.find("div#prods-items-container");
+          var GRID_BLOCK_WIDTH = (AUTH_PAGE_ITEMS_FLW.width() / 5);
+
+          if (AUTH_PAGE_ITEMS_FLW.width() >= 768 && AUTH_PAGE_ITEMS_FLW.width() <= 1024) {
+              GRID_BLOCK_WIDTH = (AUTH_PAGE_ITEMS_FLW.width() / 4);
+          } else if (AUTH_PAGE_ITEMS_FLW.width() >= 481 && AUTH_PAGE_ITEMS_FLW.width() <= 820) {
+              GRID_BLOCK_WIDTH = (AUTH_PAGE_ITEMS_FLW.width() / 3);
+          } else if (AUTH_PAGE_ITEMS_FLW.width() >= 320 && AUTH_PAGE_ITEMS_FLW.width() <= 480) {
+              GRID_BLOCK_WIDTH = (AUTH_PAGE_ITEMS_FLW.width() / 2);
+          } else if (AUTH_PAGE_ITEMS_FLW.width() <= 320) {
+              GRID_BLOCK_WIDTH = AUTH_PAGE_ITEMS_FLW.width();
+          }
+
+          var AUTH_PAGE_GRID_CTRL = {
+              infinity_scroll: function (object = null) {
+                  if (hs_empty(object)) {
+                      return false;
+                  } else {
+                      var scrolled = 20;
+                      var inter = setInterval(function () {
+                          if (object.scrollTop() + object.innerHeight() >= object.get(0).scrollHeight) {
+                              if (AUTH_PAGE_GRID_CTRL.getoffset()) {
+                                  $.ajax({
+                                      url: 'http://localhost/project//req/auth/get_prods',
+                                      type: 'GET',
+                                      dataType: 'json',
+                                      data: {offset: AUTH_PAGE_GRID_CTRL.getoffset()},
+                                  }).done(function (data) {
+                                      if (data.status == 200) {
+                                          AUTH_PAGE_ITEMS_FLW.gridalicious('append', $(data.html));
+                                          scrolled += 20;
+                                          object.animate({scrollTop: scrolled}, (1000));
+                                      } else {
+                                          clearInterval(inter);
+                                      }
+                                  }).fail(function () {
+                                      clearInterval(inter);
+                                  });
+                              } else {
+                                  clearInterval(inter);
+                              }
+                          } else {
+                              scrolled += 20;
+                              object.animate({scrollTop: scrolled}, (1000));
+                              if (scrolled > (1000 * 1000)) {
+                                  scrolled = 20;
+                              }
+                          }
+
+                      }, 1100);
+                  }
+              },
+              getoffset: function () {
+                  var items_list = [];
+                  AUTH_PAGE_ITEMS_FLW.find('div.prod-item').each(function (index, el) {
+                      items_list.push(Number($(el).attr('data-product-li')));
+                  });
+
+                  var last_item = Math.min.apply(Math, items_list);
+
+                  if (last_item && $.isNumeric(last_item)) {
+                      return last_item;
+                  } else {
+                      return 0;
+                  }
+              },
+              ga_conf: {
+                  selector: 'div.prod-item',
+                  gutter: 0,
+                  width: (GRID_BLOCK_WIDTH),
+                  animate: true,
+                  animationOptions: {
+                      speed: 100,
+                      duration: 200
+                  }
+              }
+          };
+          AUTH_PAGE_ITEMS_FLW.gridalicious(AUTH_PAGE_GRID_CTRL.ga_conf);
+
+          AUTH_PAGE_PASSWD_FORM.ajaxForm({
+              url: 'http://localhost/project//req/auth/reset_password',
+              type: 'POST',
+              dataType: 'json',
+              beforeSend: function () {
+                  AUTH_PAGE_PASSWD_FORM.find('button[type="submit"]').attr('disabled', 'true');
+                  AUTH_PAGE_PASSWD_FORM.find('div[data-form-field]').each(function (index, el) {
+                      $(this).find('input').removeClass('animated');
+                      $(this).find('input').removeClass('flash');
+                      $(this).find('input').removeClass('v-error');
+                      $(this).find('small.error-message').remove();
+                  });
+              },
+              success: function (data) {
+                  if (data.status == 200) {
+                      AUTH_PAGE_PASSWD_FORM.find('button[type="submit"]').addClass('success');
+                      AUTH_PAGE_PASSWD_FORM.find('button[type="submit"]').text("E-mail đã gửi!");
+
+                      delay(function () {
+                          AUTH_PAGE_CONTAINER.find('div#user-auth-modal').fadeOut(300, function () {
+                              $(this).replaceWith($(data.html));
+                          });
+                      }, 1500);
+                  } else if (data.status == 400) {
+                      AUTH_PAGE_PASSWD_FORM.find('button[type="submit"]').removeAttr('disabled');
+                      AUTH_PAGE_PASSWD_FORM.find('[data-form-field="email"]').append($("<small>", {
+                          class: 'animated flash error-message',
+                          text: data.message
+                      }));
+                  } else if (data.status == 500) {
+                      AUTH_PAGE_PASSWD_FORM.find('button[type="submit"]').text("Đối thủ ..");
+                      delay(function () {
+                          AUTH_PAGE_CONTAINER.find('div#user-auth-modal').fadeOut(300, function () {
+                              $(this).replaceWith($(data.html));
+                          });
+                      }, 1500);
+                  }
+              }
+          });
+
+          AUTH_PAGE_GRID_CTRL.infinity_scroll(AUTH_PAGE_ITEMS_FLW);
+      });
+  </script>
+</div>
+
   <!--==========================
   Header
   ============================-->
   <header id="header" class="fixed-top">
-    <div class="container">
+    <div class="container" style="display: flex;">
 
       <div class="logo float-left">
         <a href="#intro" class="scrollto"><img src="img/portfolio/logobookexchange.png" alt="" class="img-fluid"></a>
@@ -527,41 +754,9 @@
       <nav class="main-nav float-right d-none d-lg-block">
         <ul style="float: right;">
           <li class="login active" style=" margin-right: 5px;padding-left: 10px;padding-right: 10px;"><a class="registration_a" href="#Dangky">Đăng ký</a></li>
-          <!-- <li><a href="#">Demo</a></li> -->
+        
           <li class="signup active"><a class="login_a" href="#clients">Đăng nhập</a></li>
-          <!-- <li class="nav-item profile-nav-dd">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                <!-- <img src="images/user-avatar.png" alt="User avatar" data-user-avatar-image="4"> 
-                <span class="user-name">
-                    Người dùng
-                </span>
-            </a>
-            <div class="dropdown-menu scale-up-tr">
-                <a class="dropdown-item" href="index.html">
-                    <span>Trang chủ</span>
-                </a>
-                <a class="dropdown-item" href="HoSo.html">
-                    <span>Hồ sơ của tôi</span>
-                </a>
-                <a class="dropdown-item" href="#" class="btn btn-primary" data-toggle="modal" data-target="#specifications">
-                    <span>Sách của tôi</span>
-                </a>
-                <a class="dropdown-item" href="#">
-                    <span>Thêm sách mới</span>
-                </a>
-                <hr>
-                <a class="dropdown-item" href="caidattaikhoan.html">
-                    <span>Cài đặt tài khoản</span>
-                </a>
-                <a class="dropdown-item" href="Help.html">
-                    <span>Trợ giúp</span>
-                </a>
-                <hr>
-                <a class="dropdown-item" href="dangnhap.html">
-                    <span>Đăng xuất</span>
-                </a>
-            </div>
-        </li> -->
+    
         </ul>
       </nav><!-- .main-nav -->
   
@@ -571,103 +766,11 @@
   <!--==========================
       Clients Section
     ============================-->
-    <section id="clients" class="section-bg">
-      <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#specifications">
-        Xem cấu hình chi tiết
-    </button> -->
-    <div class="modal fade" id="specifications" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content"> 
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Thông số kỹ thuật chi tiết Apple Macbook Air 2019 i5 1.6GHz/8GB/128GB (MVFM2SA/A)</h4>
-                </div>
-                <div class="modal-body">
-                    <ul>
-                        <p><img alt="Màn hình Galaxy S10+" data-src="https://cdn.tgdd.vn/Products/Images/44/207682/Kit/apple-macbook-air-2019-i5-16ghz-8gb-128gb-mvfm2sa-note.jpg" src="https://cdn.tgdd.vn/Products/Images/44/207682/Kit/apple-macbook-air-2019-i5-16ghz-8gb-128gb-mvfm2sa-note.jpg" title="Màn hình Galaxy S10+" /></p>
-
-                        <li style="color: #ff3300">Bộ xử lý</li>
-
-                        <li><label data-id="204">Công nghệ CPU :</label>Intel Core i5 Coffee Lake</li>
-                        <li><label data-id="10">Loại CPU :</label>Hãng không công bố</li>
-                        <li><label data-id="534">Tốc độ CPU :</label>1.60 GHz</li>
-                        <li><label data-id="12">Tốc độ tối đa :</label>Turbo Boost 3.6 GHz</li>
-                        <li><label data-id="1160">Tốc độ Bus :</label></li>
-                        <li><label data-id="1246">RAM :</label>8 GB</li>
-
-                        <li style="color: #ff3300">Bộ nhớ, RAM, Ổ cứng</li>
-
-                        <li><label data-id="1332">RAM :</label>8 GB</li>
-                        <li><label data-id="1334">Loại RAM :</label>DDR3</li>
-                        <li><label data-id="1328">Tốc độ Bus RAM :</label>2133 MHz</li>
-                        <li><label data-id="1329">Hỗ trợ RAM tối đa :</label>Không hỗ trợ nâng cấp</li>
-                        <li><label data-id="1330">Ổ cứng :</label>SSD: 128 GB</li>
-
-                        <li style="color: #ff3300">Màn hình</li>
-
-                        <li><label data-id="1331">Kích thước màn hình :</label>13.3 inch</li>
-                        <li><label data-id="649">Độ phân giải :</label>Retina (2560 x 1600)</li>
-                        <li><label data-id="650">Công nghệ màn hình :</label>Công nghệ IPS, LED Backlit</li>
-                        <li><label data-id="651">Màn hình cảm ứng :</label>Không</li>
-
-                        <li style="color: #ff3300">Đồ họa và Âm thanh</li>
-
-                        <li><label data-id="652">Thiết kế card :</label>Card đồ họa tích hợp</li>
-                        <li><label data-id="653">Card đồ họa :</label>Intel UHD Graphics 617</li>
-                        <li><label data-id="1345">Công nghệ âm thanh :</label>3 microphones, Headphones, Loa kép (2 kênh)</li>
-
-                        <li style="color: #ff3300">Cổng kết nối & tính năng mở rộng</li>
-
-                        <li><label data-id="23">Cổng giao tiếp :</label>2 x Thunderbolt 3 (USB-C)</li>
-                        <li><label data-id="24">Kết nối không dây :</label>Bluetooth 4.2, Wi-Fi 802.11 a/b/g/n/ac</li>
-                        <li><label data-id="1327">Khe đọc thẻ nhớ :</label>Không</li>
-                        <li><label data-id="25">Ổ đĩa quang :</label>Không</li>
-                        <li><label data-id="151">Webcam :</label>FaceTime Camera</li>
-                        <li><label data-id="748">Đèn bàn phím :</label>Có</li>
-                        <li><label data-id="1247">Tính năng khác :</label>	Bảo mật vân tay, Hỗ trợ eGPU rời</li>
-
-                        <li style="color: #ff3300">PIN</li>
-
-                        <li><label data-id="749">Loại PIN :</label>PIN liền</li>
-                        <li><label data-id="212">Thông tin Pin :</label>Khoảng 10 giờ</li>
-
-                        <li style="color: #ff3300">Hệ điều hành</li>
-
-                        <li><label data-id="1248">Hệ điều hành :</label>Mac OS</li>
-
-                        <li style="color: #ff3300">Kích thước & trọng lượng</li>
-
-                        <li><label data-id="194">Kích thước :</label>Dài 304.1 mm - Rộng 212.1 mm - Dày 4.1 đến 15.6 mm</li>
-                        <li><label data-id="36">Dung lượng pin :</label>4100 mAh</li>
-                        <li><label data-id="750">Trọng lượng :</label>1.25 kg</li>
-                        <li><label data-id="1250">Chất liệu:</label>Vỏ kim loại nguyên khối</li>
-<!--                                                    <li>Kết nối &amp; Cổng giao tiếp</li>-->
-<!--                                                    <li><label data-id="156">Loại SIM :</label>Nano SIM</li>-->
-<!--                                                    <li><label data-id="753">Khe cắm sim :</label>2</li>-->
-<!--                                                    <li><label data-id="28">Wifi :</label>Wi-Fi 802.11 a/b/g/n/ac,&nbsp;Dual-band,&nbsp;Wi-Fi Direct,&nbsp;Wi-Fi hotspot</li>-->
-<!--                                                    <li><label data-id="31">GPS :</label>A-GPS, GLONASS, BDS</li>-->
-<!--                                                    <li><label data-id="30">Bluetooth :</label>v5.0,&nbsp;apt-X,&nbsp;A2DP,&nbsp;LE</li>-->
-<!--                                                    <li><label data-id="754">GPRS/EDGE :</label>Không</li>-->
-<!--                                                    <li><label data-id="396">NFC :</label>Có</li>-->
-<!--                                                    <li><label data-id="755">Cổng sạc :</label>Type-C 1.0</li>-->
-<!--                                                    <li><label data-id="35">Jack (Input &amp; Output) :</label>3.5mm</li>-->
-<!--                                                    <li>Giải trí &amp; Ứng dụng</li>-->
-<!--                                                    <li><label data-id="756">Xem phim :</label>True</li>-->
-<!--                                                    <li><label data-id="757">Nghe nhạc :</label>True</li>-->
-<!--                                                    <li><label data-id="758">Ghi âm :</label>Có</li>-->
-<!--                                                    <li><label data-id="760">FM radio :</label>Có</li>-->
-<!--                                                    <li><label data-id="1251">Đèn pin :</label>Có</li>-->
-<!--                                                    <li><label data-id="193">Chức năng khác :</label>Đang cập nhật</li>-->
-<!--                                                    <li>Bảo hành</li>-->
-<!--                                                    <li><label data-id="46">Thời gian bảo hành :</label>12 Tháng</li>-->
-<!--                                                    <li>Hệ điều hành</li>-->
-<!--                                                    <li><label data-id="1350">Hệ điều hành :</label>Android 9.0 (Pie)</li>-->
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+    <section id="clients" class="section-bg"  style="background-repeat: round;">
+      
+                
       <div class="container">
+        <!-- <img src="img/thu-vien.jpg" alt="hình nền"> -->
         <div class="row no-gutters clients-wrap clearfix wow fadeInUp">
 
           <div class="col-lg-3 col-md-4 col-xs-6">
@@ -723,278 +826,124 @@
 
       </div>
 
-    </section>
-    <!--==========================
-      Portfolio Section
-    ============================-->
-    <!-- <section id="portfolio" class="clearfix">
+  </section>
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
       <div class="container">
-
-        <header class="section-header">
-          <h3 class="section-title">Our Portfolio</h3>
-        </header>
-
-        <div class="row">
-          <div class="col-lg-12">
+  
+        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+          <h2>Tất cả sách</h2>
+          <p>Em có rảnh không? Nếu em rảnh thì hai đứa mình yêu nhau đi cho nó bận, anh cũng đang rảnh.</p>
+        </div>
+  
+        <div class="row" data-aos="fade-in">
+          <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">Hót nhất</li>
+              <li data-filter=".filter-card">Mới nhất</li>
+              <li data-filter=".filter-web">Được tìm nhiều nhất</li>
             </ul>
           </div>
         </div>
-
-        <div class="row portfolio-container">
-
+  
+        <div class="row portfolio-container" data-aos="fade-up">
+  
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 1</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="img/portfolio/app1.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
+              <img src="img/portfolio/vanhoc.jfif" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Web 3</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
+              <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 2</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
+              <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="book-details.html" title="More Details" ><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-
+  
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 2</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
+              <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.1s">
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Web 2</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
+              <img src="img/portfolio/vanhoc.jfif" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="img/portfolio/vanhoc.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app" data-wow-delay="0.2s">
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">App 3</a></h4>
-                <p>App</p>
-                <div>
-                  <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
+              <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-
+  
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 1</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
+              <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card" data-wow-delay="0.1s">
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Card 3</a></h4>
-                <p>Card</p>
-                <div>
-                  <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
+              <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" data-wow-delay="0.2s">
+  
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4><a href="#">Web 1</a></h4>
-                <p>Web</p>
-                <div>
-                  <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                  <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-                </div>
+              <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="img/portfolio/vanhoc.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
-
+  
         </div>
-
+  
       </div>
-    </section> -->
-    <!-- #portfolio -->
+    </section><!-- End Portfolio Section -->
 
-  <!-- ======= Portfolio Section ======= -->
-  <section id="portfolio" class="portfolio">
-    <div class="container">
-
-      <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-        <h2>Tất cả sách</h2>
-        <p>Em có rảnh không? Nếu em rảnh thì hai đứa mình yêu nhau đi cho nó bận, anh cũng đang rảnh.</p>
-      </div>
-
-      <div class="row" data-aos="fade-in">
-        <div class="col-lg-12 d-flex justify-content-center">
-          <ul id="portfolio-flters">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">Hót nhất</li>
-            <li data-filter=".filter-card">Mới nhất</li>
-            <li data-filter=".filter-web">Được tìm nhiều nhất</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="row portfolio-container" data-aos="fade-up">
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="img/portfolio/vanhoc.jfif" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="book-details.html" title="More Details" ><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="img/portfolio/vanhoc.jfif" class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="img/portfolio/vanhoc.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-          <div class="portfolio-wrap">
-            <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="img/portfolio/vanhoc.jfif"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-          <div class="portfolio-wrap">
-            <img src="img/portfolio/vanhoc.jfif"  class="img-fluid" alt="">
-            <div class="portfolio-links">
-              <a href="img/portfolio/vanhoc.jfif" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section><!-- End Portfolio Section -->
   </main>
 
    <!-- ======= Footer ======= -->

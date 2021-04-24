@@ -325,7 +325,9 @@ section {
   padding: 60px 0;
   overflow: hidden;
 }
-
+.test{
+  padding: 70px;
+}
 .section-bg {
   background-color: #f4f9fc;
 }
@@ -830,7 +832,7 @@ section {
 }
 
 #footer .footer-top .footer-info {
-  margin-top: -90px;
+  margin-top: -50px;
   margin-bottom: 15px;
   background: #242525;
   color: #3c3d3d;

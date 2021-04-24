@@ -40,17 +40,18 @@
 </head>
 
 <body>
+  
   <!--==========================
   Header
   ============================-->
   <header id="header" class="fixed-top">
-    <div class="container">
+    <div class="container" style="display: flex;">
       <div class="logo float-left">
         <a href="#intro" class="scrollto"><img src="img/portfolio/logobookexchange.png" alt="" class="img-fluid"></a>
       </div>
       <div class="col-lg-3 col-md-3 add-arrow">
         <form class="search-bar has-validation-callback" action="/search" method="get" role="search">
-            <input type="search" name="query" value="" placeholder="Tìm kiếm..." class="input-group-field search-text" autocomplete="off">
+            <input type="search" name="query" style="width: 100%;" value="" placeholder="Tìm kiếm..." class="input-group-field search-text" autocomplete="off">
             <button class="btn icon-fallback-text" style="position: absolute; top: -6px; left: 0px; padding: 0; margin-left: 2px;">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 451 451" style="enable-background:new 0 0 451 451;" xml:space="preserve" width="20px" height="20px">
                    <g>
@@ -79,7 +80,7 @@
                 <a class="dropdown-item" href="#" class="btn btn-primary" data-toggle="modal" data-target="#specifications">
                     <span>Sách của tôi</span>
                 </a>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="/Quanlysach/themsach.html">
                     <span>Thêm sách mới</span>
                 </a>
                 <hr>
@@ -258,7 +259,7 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="img/portfolio/app1.jpg" class="img-fluid" alt="">
+            <img src="img/portfolio/vanhoc.jfif" class="img-fluid" alt="">
             <div class="portfolio-links">
               <a href="img/portfolio/app1.jpg"  data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
               <a href="book-details.html" title="More Details"><i class="bx bx-link"></i></a>

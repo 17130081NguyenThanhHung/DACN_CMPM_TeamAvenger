@@ -124,17 +124,25 @@
   $('a.registration_a').on('click', function(){
     $('#user-registration-modal').addClass('user-registration-modal-active');
     $('#user-login-modal').removeClass('user-login-modal-active');
+    $('#user-passwordreset-modal').removeClass('user-passwordreset-modal-active');
 
   });
   $('a.login_a').on('click', function(){
     $('#user-registration-modal').removeClass('user-registration-modal-active');
     $('#user-login-modal').addClass('user-login-modal-active');
+    $('#user-passwordreset-modal').removeClass('user-passwordreset-modal-active');
     
+  });
+   $('a.reset-password_a').on('click', function(){
+    $('#user-passwordreset-modal').addClass('user-passwordreset-modal-active');
+    $('#user-registration-modal').removeClass('user-registration-modal-active');
+    $('#user-login-modal').removeClass('user-login-modal-active');
   });
 
   $('i.fa-times').on('click', function(){
     $('#user-registration-modal').removeClass('user-registration-modal-active');
     $('#user-login-modal').removeClass('user-login-modal-active');
+    $('#user-passwordreset-modal').removeClass('user-passwordreset-modal-active');
   });
 })(jQuery);
 
